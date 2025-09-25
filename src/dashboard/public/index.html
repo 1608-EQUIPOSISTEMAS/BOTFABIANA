@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard W|E</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="logo glow">DASHBOARD W|E</h1>
+            <p class="subtitle">Panel de Control Moderno</p>
+        </header>
+
+        <nav class="nav">
+            <button class="nav-btn" onclick="showSection('programas')">📋 Programas</button>
+            <button class="nav-btn" onclick="showSection('mensajes-globales')">✨ Mensajes Globales</button>
+            <button class="nav-btn" onclick="showSection('otros')">⚙️ Configuración</button>
+            <button id="restart-bot-btn" class="nav-btn danger-btn">🔄 Vinculación Bot</button>
+        </nav>
+
+        <div id="programas-section" class="content-section">
+            <div class="table-container">
+                <div class="table-header">
+                    <h3 class="table-title">Catálogo de Programas</h3>
+
+                    <div class="search-container">
+                        <input type="text" id="busqueda-programa" placeholder="Buscar programa..." class="input-style">
+                        <button id="btn-buscar-programa" class="reload-btn" onclick="buscarProgramas()">🔍 Buscar</button>
+                    </div>
+
+                    <button class="reload-btn" onclick="buscarProgramas()">🔄 Recargar</button>
+                </div>
+
+                <div id="programas-loading" class="loading">
+                    <div class="loading-spinner"></div>
+                    <p>Cargando programas...</p>
+                </div>
+
+                <div id="programas-error" class="error" style="display: none;">
+                    <h4>❌ Error al cargar programas</h4>
+                    <p>No se pudo cargar el archivo programas.json</p>
+                </div>
+
+                <div id="programas-cards" class="cards-grid" style="display: none;"></div>
+            </div>
+        </div>
+
+        <div id="mensajes-globales-section" class="content-section">
+            <div class="table-container">
+                <h2 class="title-with-icon">
+                    <span class="icon">👋🏼</span>
+                    Saludo Global
+                </h2>
+                <div class="editor-container">
+                    <textarea id="saludos-texto" class="input-style editor-textarea" rows="5"
+                        placeholder="Escribe el mensaje de saludo aquí..."></textarea>
+                    <div class="editor-actions">
+                        <button id="guardar-saludos-btn" class="reload-btn">💾 Guardar Saludo</button>
+                        <button id="recargar-saludos-btn" class="reload-btn">🔄 Recargar</button>
+                    </div>
+                    <div id="saludos-status-msg" class="status-msg"></div>
+                </div>
+
+                <hr style="margin: 20px 0; border: 0; border-top: 1px solid #555;">
+
+                <h2 class="title-with-icon">
+                    <span class="icon">👤</span>
+                    Perfil Cliente
+                </h2>
+                <div class="editor-container">
+                    <textarea id="perfil-texto" class="input-style editor-textarea" rows="5"
+                        placeholder="Escribe el perfil aquí..."></textarea>
+                    <div class="editor-actions">
+                        <button id="guardar-perfil-btn" class="reload-btn">💾 Guardar Perfil</button>
+                        <button id="recargar-perfil-btn" class="reload-btn">🔄 Recargar</button>
+                    </div>
+                    <div id="perfil-status-msg" class="status-msg"></div>
+                </div>
+
+                <hr style="margin: 20px 0; border: 0; border-top: 1px solid #555;">
+
+                <h2 class="title-with-icon">
+                    <span class="icon">🎁</span>
+                    Beneficio Extra Global
+                </h2>
+                <div class="editor-container">
+                    <textarea id="plus-texto" class="input-style editor-textarea" rows="5"
+                        placeholder="Escribe el mensaje de beneficio extra aquí..."></textarea>
+                    <div class="editor-actions">
+                        <button id="guardar-plus-btn" class="reload-btn">💾 Guardar Beneficio Extra</button>
+                        <button id="recargar-plus-btn" class="reload-btn">🔄 Recargar</button>
+                    </div>
+                    <div id="plus-status-msg" class="status-msg"></div>
+                </div>
+
+                <hr style="margin: 20px 0; border: 0; border-top: 1px solid #555;">
+
+                <h2 class="title-with-icon">
+                    <span class="icon">🤝</span>
+                    Llamada a la Acción (CTA)
+                </h2>
+                <div class="editor-container">
+                    <textarea id="cta-texto" class="input-style editor-textarea" rows="5"
+                        placeholder="Escribe el mensaje de CTA aquí..."></textarea>
+                    <div class="editor-actions">
+                        <button id="guardar-cta-btn" class="reload-btn">💾 Guardar CTA</button>
+                        <button id="recargar-cta-btn" class="reload-btn">🔄 Recargar</button>
+                    </div>
+                    <div id="cta-status-msg" class="status-msg"></div>
+                </div>
+            </div>
+        </div>
+
+        <section id="otros-section" class="content-section">
+            <div class="container">
+                <h2>Descuentos</h2>
+                <br>
+                <div class="form-container">
+                    <div class="programa-detalle">
+                        <label for="descuento-cuota">Descuento por Cuota:</label>
+                        <input type="number" id="descuento-cuota" min="0" max="100" placeholder="Ej: 45">
+                        <span>%</span>
+                    </div>
+                    <div class="programa-detalle">
+                        <label for="descuento-campana">Descuento al Contado:</label>
+                        <input type="number" id="descuento-campana" min="0" max="100" placeholder="Ej: 55">
+                        <span>%</span>
+                    </div>
+                    <div class="btn-group">
+                        <button id="guardar-descuentos-btn" class="reload-btn">💾 Guardar Descuentos</button>
+                        <button id="recargar-descuentos-btn" class="reload-btn">🔄 Recargar</button>
+                    </div>
+                    <p id="descuentos-status-msg"></p>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
