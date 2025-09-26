@@ -1,7 +1,7 @@
 const fs = require("fs");
 const path = require("path");
 
-const SEGUIMIENTO_PATH = path.join(__dirname, "../../programas.json");
+const SEGUIMIENTO_PATH = path.join(__dirname, "../database/programas.json");
 
 // 📅 Obtener fecha actual (solo la parte YYYY-MM-DD)
 function obtenerFechaActual() {

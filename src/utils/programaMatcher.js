@@ -1,5 +1,5 @@
 const sinonimos = require('../../sinonimos.json');
-const programas = require('../../programas.json');
+const programas = require('../database/programas.json');
 
 function normalizarTexto(texto) {
   return texto

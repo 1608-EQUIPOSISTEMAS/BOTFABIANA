@@ -1,5 +1,5 @@
-const programasRaw = require("../../programas.json");
-const sinonimos = require("../../sinonimos.json");
+const programasRaw = require("../database/programas.json");
+const sinonimos = require("../database/sinonimos.json");
 const { normalizarTexto } = require("../utils/normalizar");
 
 const programas = Array.isArray(programasRaw) ? programasRaw : [programasRaw];

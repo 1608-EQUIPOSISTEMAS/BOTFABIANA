@@ -24,11 +24,12 @@ app.use('/media/images', express.static(path.join(mediaPath, 'images')));
 app.use('/media/videos', express.static(path.join(mediaPath, 'videos')));
 app.use('/media/pdfs', express.static(path.join(mediaPath, 'pdfs')));
 
-const PROGRAMAS_PATH = path.join(projectRoot, "programas.json");
-const PLUS_PATH = path.join(projectRoot, "plus.json");
-const SALUDOS_PATH = path.join(projectRoot, "saludos.json");
-const PERFIL_PATH = path.join(projectRoot, "perfil.json");
-const CTA_PATH = path.join(projectRoot, "cta.json");
+
+const PROGRAMAS_PATH = path.join('./src/database/', "programas.json");
+const PLUS_PATH = path.join('./src/database/', "plus.json");
+const SALUDOS_PATH = path.join('./src/database/', "saludos.json");
+const PERFIL_PATH = path.join('./src/database/', "perfil.json");
+const CTA_PATH = path.join('./src/database/', "cta.json");
 const DESCUENTOS_PATH = path.join(__dirname, "descuentos.json"); // Agrega esta línea
 
 
@@ -519,6 +520,7 @@ function iniciarServidor() {
         // Aquí puedes iniciar el bot por primera vez
     });
 }
+
 
 
 module.exports = {
