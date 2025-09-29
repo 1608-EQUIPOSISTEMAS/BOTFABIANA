@@ -10,9 +10,8 @@ const { normalizarTexto } = require("./src/utils/normalizar");
 const { encontrarPrograma } = require("./src/services/encontrarPrograma");
 
 // ✅ IMPORTA y ejecuta la función para iniciar el servidor
-const { iniciarServidor } = require("./src/dashboard/server");
+const { app, iniciarServidor } = require("./src/dashboard/server");
 iniciarServidor();
-
 
 const client = crearCliente();
 
@@ -23,12 +22,11 @@ const estadoUsuarios = {};
 const projectRoot = process.cwd();
 const mediaPath = path.join(projectRoot, 'media');
 
-// ✅ Constantes para las rutas de los JSON
-const PROGRAMAS_PATH = path.join(projectRoot, "programas.json");
-const PLUS_PATH = path.join(projectRoot, "plus.json");
-const SALUDOS_PATH = path.join(projectRoot, "saludos.json");
-const PERFIL_PATH = path.join(projectRoot, "perfil.json"); // Agrega esta línea
-const CTA_PATH = path.join(projectRoot, "cta.json"); // Agrega esta línea
+const PROGRAMAS_PATH = path.join(projectRoot, "src", "database", "programas.json");
+const PLUS_PATH = path.join(projectRoot, "src", "database", "plus.json");
+const SALUDOS_PATH = path.join(projectRoot, "src", "database", "saludos.json");
+const PERFIL_PATH = path.join(projectRoot, "src", "database", "perfil.json");
+const CTA_PATH = path.join(projectRoot, "src", "database", "cta.json");
 
 client.on("message", async (message) => {
     try {

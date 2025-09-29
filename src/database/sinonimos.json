@@ -62,7 +62,7 @@
     "MS PROJECT": ["MS Project","Microsoft Project","project"],
     "PEE ANALIST DATOS": ["pee de dato","pee | analista de datos","Pee Analista de Datos","PEE Datos"],
     "PEE ANALIST PROC": ["pee de proceso","Pee Analista de Procesos","pee procesos"],
-    "PEE ANALIST PROY V3": ["pee de proyecto","PEE | Analista de Proyectos","Pee Analista de Proyectos","Pee Analista de Proyectos","pee proyectos","pee proyecto"],
+    "PEE ANALIST PROY V4": ["pee de proyecto","PEE | Analista de Proyectos","Pee Analista de Proyectos","Pee Analista de Proyectos","pee proyectos","pee proyecto"],
     "PEE PLAN. DEMAN.": ["Pee Demand Planner","Pee | Demand Planner","pee planner","PEE planeamiento","PEE planeamiento demanda","PEE demanda"],
     "PLAN. FINANCIERO": [],
     "PLAN. Y PRONOSTICO": ["Planeamiento y pronóstico de la demanda","plan y pronostico","plan y prono"],
@@ -75,7 +75,7 @@
     "PROG. MACROS": ["Programación con VBA Macros","VBA MACROS"],
     "PROG. WEB": ["Introducción a la Programación Web","programacion web"],
     "PYTHON AVANZ.": ["python avanzado","python avanz","Pyhton Avanzado: Machine Learning"],
-    "PYTHON. DATOS": ["Python Análisis de datos"],
+    "PYTHON. DATOS": ["Python Análisis de datos","python"],
     "REACT JS": ["React Js & React Native"],
     "ROBOTIZ. UIPATH": ["Robotización de Procesos con UiPath","uipath"],
     "SAP HANA EWM": ["SAP EWM","SAP WM"],
@@ -92,7 +92,5 @@
     "SQL AVANZ": ["SQL Avanzado"],
     "SQL PRESENCIAL": ["SQL Server Presencial"],
     "SQL SERVER": ["SQL Server, sql"],
-    "SUPPLY CHAIN ANALYTICS": ["Supply Chain Analytics"],
-    "DIP SUPPLY V3": ["dip supply"]
+    "DIP SUPPLY V3": ["dip supply","diplo supply"]
   }
-  

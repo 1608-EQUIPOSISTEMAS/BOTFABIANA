@@ -14,7 +14,7 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-const projectRoot = path.join(__dirname, "..", "..");
+const projectRoot = path.join(__dirname, "..");
 const mediaPath = path.join(projectRoot, "media");
 
 
@@ -25,11 +25,14 @@ app.use('/media/videos', express.static(path.join(mediaPath, 'videos')));
 app.use('/media/pdfs', express.static(path.join(mediaPath, 'pdfs')));
 
 
-const PROGRAMAS_PATH = path.join('./src/database/', "programas.json");
-const PLUS_PATH = path.join('./src/database/', "plus.json");
-const SALUDOS_PATH = path.join('./src/database/', "saludos.json");
-const PERFIL_PATH = path.join('./src/database/', "perfil.json");
-const CTA_PATH = path.join('./src/database/', "cta.json");
+// ✅ CORRECCIÓN: Rutas de los JSON
+// La carpeta 'database' está en 'src', no en 'src/dashboard'
+const PROGRAMAS_PATH = path.join(projectRoot,  "database", "programas.json");
+const PLUS_PATH = path.join(projectRoot,  "database", "plus.json");
+const SALUDOS_PATH = path.join(projectRoot, "database", "saludos.json");
+const PERFIL_PATH = path.join(projectRoot, "database", "perfil.json");
+const CTA_PATH = path.join(projectRoot, "database", "cta.json");
+
 const DESCUENTOS_PATH = path.join(__dirname, "descuentos.json"); // Agrega esta línea
 
 
@@ -523,7 +526,8 @@ function iniciarServidor() {
 
 
 
-module.exports = {
+module.exports ={
+    app,
     iniciarServidor,
     programasEnMemoria,
     plusEnMemoria,

@@ -575,11 +575,12 @@ async function cargarSaludos() {
     const statusMsg = document.getElementById("saludos-status-msg");
     statusMsg.textContent = "Cargando...";
     try {
-        const res = await fetch("http://localhost:9000/api/saludos");
+        const res = await fetch("/api/saludos"); // <-- aquí ya relativo
         if (!res.ok) throw new Error("Error al cargar saludos");
         const data = await res.json();
         textarea.value = data.texto;
         statusMsg.textContent = "✅ Saludo cargado correctamente";
+        statusMsg.style.color = "var(--color-success)";
     } catch (err) {
         console.error("❌ Error cargando saludo:", err);
         statusMsg.textContent = `❌ No se pudo cargar el saludo: ${err.message}`;
@@ -593,7 +594,7 @@ async function guardarSaludos() {
     const texto = textarea.value.trim();
     statusMsg.textContent = "Guardando...";
     try {
-        const res = await fetch("http://localhost:9000/api/saludos", {
+        const res = await fetch("/api/saludos", {
             method: "PUT",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ texto })
@@ -603,7 +604,7 @@ async function guardarSaludos() {
         statusMsg.textContent = "✅ Saludo actualizado correctamente";
         statusMsg.style.color = "var(--color-success)";
     } catch (err) {
-        console.gloria("❌ Error guardando saludo:", err);
+        console.error("❌ Error guardando saludo:", err);
         statusMsg.textContent = `❌ No se pudo guardar el saludo: ${err.message}`;
         statusMsg.style.color = "var(--color-danger)";
     }
