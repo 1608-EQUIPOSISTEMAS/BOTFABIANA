@@ -291,7 +291,7 @@ Y listo! 🌟 Cuando realices el pago y envío de tus datos, me avisas para come
             const nombreYape = esCurso ? "yapecursos.jpeg" : "yapeprog.jpeg";
             const nombreDepo = esCurso ? "depocursos.jpg" : "depoprog.jpg";
 
-            if (texto === "1") { // Yape
+            if (texto.includes("1") || texto.includes("yape")) { // Yape
                 await client.sendMessage(numero, `*Perfecto* ✨
 
 Te envío el número de Yape y Código QR 👇
@@ -315,7 +315,7 @@ Te envío el número de Yape y Código QR 👇
                 return;
             }
 
-            if (texto === "2") { // Depósito o transferencia
+            if (texto.includes("2") || texto.includes("bcp") || texto.includes("deposito")) { // Depósito o transferencia
                 let mensajeDepo = "";
                 if (esCurso) {
                     mensajeDepo = `¡Excelente! Te comparto los datos de nuestra cuenta para que realices la transferencia:
@@ -345,7 +345,7 @@ CCI: 002-19300928551103810
                 return;
             }
 
-            if (texto === "3") { // Tarjeta
+            if (texto.includes("3") || texto.includes("web")) { 
                 const nombrePrograma = estadoUsuarios[numero].nombrePrograma;
                 const edicion = estadoUsuarios[numero].edicion;
 
@@ -357,7 +357,6 @@ CCI: 002-19300928551103810
                 );
 
                 if (!p || !p.ENLACE) {
-                    await client.sendMessage(numero, "⚠️ No se encontró un enlace de pago para este programa. Por favor, intenta de nuevo o comunícate con un asesor.");
                     delete estadoUsuarios[numero]; // Limpieza
                     return;
                 }
@@ -381,12 +380,11 @@ Y listo! 🌟 Cuando realices el pago y envío de tus datos, me avisas para come
         }
 
         // ✅ Flujo principal cuando viene de "hola estoy en"
-        if (texto.includes("hola estoy en") || texto.includes("info")) {
+        if (texto.includes("hola estoy en") || texto.includes("info")|| texto.includes("facilitar")) {
             // ✅ Actualizado: Pasar los datos de los programas a la función
             const resultados = encontrarPrograma(textoOriginal, programasData);
 
             if (resultados.length === 0) {
-                await message.reply("Hola 👋🏻 No pude encontrar el programa que buscas. ¿Podrías indicarme el nombre del programa o curso?");
                 return;
             }
 
