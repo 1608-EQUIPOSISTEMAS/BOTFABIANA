@@ -27,6 +27,93 @@ function hideAlert() {
 }
 let programasData = [];
 
+// 📄 script.js (Nueva Función)
+
+/**
+ * Función encargada de dibujar las tarjetas de programas en el DOM.
+ * @param {Array} programasArray - El array de programas a renderizar (puede ser completo o filtrado).
+ */
+function renderizarProgramas(programasArray) {
+    const cardsContainer = document.getElementById("programas-cards");
+    cardsContainer.innerHTML = ""; // Limpiar antes de dibujar
+
+    if (!Array.isArray(programasArray) || programasArray.length === 0) {
+        // En caso de que se llame con array vacío (p. ej., después de la búsqueda fallida)
+        showAlert("No se encontraron programas para mostrar", false); 
+        cardsContainer.style.display = "none";
+        return;
+    }
+    
+    // Aquí usamos programasData (la variable global) para encontrar el índice real 
+    // en el array completo, lo cual es necesario para editar/eliminar con el PUT/DELETE de la API.
+
+    const programasUnicos = {};
+    programasArray.forEach(p => {
+        // Encuentra el índice original en programasData para las acciones de edición/eliminación
+        const indexReal = programasData.findIndex(item => item === p); 
+        
+        if (!programasUnicos[p.PROGRAMA]) {
+            programasUnicos[p.PROGRAMA] = [];
+        }
+        // Usamos indexReal si existe, si no, usamos el -1 o el actual del loop (para el ejemplo)
+        programasUnicos[p.PROGRAMA].push({ ...p, index: indexReal !== -1 ? indexReal : programasData.indexOf(p) }); 
+    });
+
+    Object.entries(programasUnicos).forEach(([nombre, ediciones], idx) => {
+        const card = document.createElement("div");
+        card.className = "programa-card";
+
+        // 🚨 TODO ESTE CÓDIGO HTML ERA EL BLOQUE GRANDE QUE ESTABA EN cargarProgramas
+        card.innerHTML = `
+            <div class="programa-header">
+                <div class="programa-nombre">${nombre}</div>
+            </div>
+
+            <div class="programa-acciones">
+                <button class="programa-btn info-programa-btn" data-programa="${nombre}" style="margin-right:8px;">
+                    ℹ️ Información de programa
+                </button>
+                <button class="programa-btn ver-ediciones-btn" style="margin-right:8px;">
+                    📂 Ver ediciones
+                </button>
+                <button class="programa-btn agregar-edicion-btn" data-programa="${nombre}">
+                    ➕ Agregar Edición
+                </button>
+            </div>
+
+            <div class="ediciones" id="ediciones-${idx}" style="display:none; margin-top:10px;">
+                ${ediciones.map(ed => `
+                    <div class="programa-edicion" style="margin-top:8px;">
+                        <div><b>${ed.EDICION}</b> — Inicio: ${ed.INICIO || "?"} — Docente: ${ed.DOCENTE || "?"}</div>
+                        <div class="mini-form" id="form-${ed.index}" style="display:none; margin-top:8px; border:1px solid #ddd; padding:8px; border-radius:8px;">
+                            <div class="programa-detalle">🗓 Edición: <input value="${ed.EDICION || ""}" data-field="EDICION"></div>
+                            <div class="programa-detalle">🗓 Inicio: <input value="${ed.INICIO || ""}" data-field="INICIO"></div>
+                            <div class="programa-detalle">🗓 Fin: <input value="${ed.FIN || ""}" data-field="FIN"></div>
+                            <div class="programa-detalle">👨‍🏫 Docente: <input value="${ed.DOCENTE || ""}" data-field="DOCENTE"></div>
+                            <div class="programa-detalle">🖼 Foto Docente: <input type="file" accept="image/*" data-field="POSTDOCEN">${ed.POSTDOCEN ? `<img src="/media/${ed.POSTDOCEN}" style="max-width:80px; margin-top:5px;">` : ""}</div>
+                            <div class="programa-detalle">🎬 Video Promo: <input type="file" accept="video/*" data-field="VIDEO">${ed.VIDEO ? `<video src="/media/${ed.VIDEO}" controls style="max-width:120px; margin-top:5px;"></video>` : ""}</div>
+                            <div style="margin-top:10px;">
+                                <button class="programa-btn1 guardar-btn" data-index="${ed.index}">💾 Guardar</button>
+                                <button class="programa-btn1 cancelar-btn" data-index="${ed.index}">❌ Cancelar</button>
+                            </div>
+                        </div>
+                        <button class="programa-btn2 editar-btn" data-index="${ed.index}">✏️ Editar esta edición</button>
+                        <button class="programa-btn2 eliminar-btn" data-index="${ed.index}">🗑️ Eliminar</button>
+                    </div>
+                `).join('')}
+            </div>
+        `;
+
+        cardsContainer.appendChild(card);
+    });
+    
+    // Si manejas los clics en el contenedor, vuelve a poner el escuchador:
+    cardsContainer.addEventListener("click", manejarClick); 
+    cardsContainer.style.display = "grid";
+}
+
+// 📄 script.js (Función cargarProgramas - Simplificada)
+
 async function cargarProgramas() {
     const loading = document.getElementById("programas-loading");
     const error = document.getElementById("programas-error");
@@ -35,106 +122,32 @@ async function cargarProgramas() {
     loading.style.display = "block";
     error.style.display = "none";
     cardsContainer.style.display = "none";
-    cardsContainer.innerHTML = "";
-
+    
     try {
         const res = await fetch("/api/programas");
         const programas = await res.json();
 
-        // Almacena los datos en la variable global para uso posterior
-        programasData = programas;
+        programasData = programas; // Almacena en la variable global
 
         if (!Array.isArray(programas) || programas.length === 0) {
             throw new Error("No hay programas disponibles");
         }
 
-        const programasUnicos = {};
-        programas.forEach((p, i) => {
-            if (!programasUnicos[p.PROGRAMA]) {
-                programasUnicos[p.PROGRAMA] = [];
-            }
-            programasUnicos[p.PROGRAMA].push({ ...p, index: i });
-        });
-
-        Object.entries(programasUnicos).forEach(([nombre, ediciones], idx) => {
-            const card = document.createElement("div");
-            card.className = "programa-card";
-
-            card.innerHTML = `
-        <div class="programa-header">
-            <div class="programa-nombre">${nombre}</div>
-        </div>
-
-        <div class="programa-acciones">
-            <button class="programa-btn info-programa-btn" data-programa="${nombre}" style="margin-right:8px;">
-                ℹ️ Información de programa
-            </button>
-            <button class="programa-btn ver-ediciones-btn" style="margin-right:8px;">
-                📂 Ver ediciones
-            </button>
-            <button class="programa-btn agregar-edicion-btn" data-programa="${nombre}">
-                ➕ Agregar Edición
-            </button>
-        </div>
-
-        <div class="ediciones" id="ediciones-${idx}" style="display:none; margin-top:10px;"></div>
-    `;
-
-            cardsContainer.appendChild(card);
-
-            const edicionesDiv = card.querySelector(`#ediciones-${idx}`);
-            ediciones.forEach(ed => {
-                const edicionEl = document.createElement("div");
-                edicionEl.className = "programa-edicion";
-                edicionEl.style.marginTop = "8px";
-
-                edicionEl.innerHTML = `
-                    <div><b>${ed.EDICION}</b> — Inicio: ${ed.INICIO || "?"} — Docente: ${ed.DOCENTE || "?"}</div>
-                    <div class="mini-form" id="form-${ed.index}" style="display:none; margin-top:8px; border:1px solid #ddd; padding:8px; border-radius:8px;">
-                        <div class="programa-detalle">
-                            🗓 Edición: <input value="${ed.EDICION || ""}" data-field="EDICION">
-                        </div>
-                        <div class="programa-detalle">
-                            🗓 Inicio: <input value="${ed.INICIO || ""}" data-field="INICIO">
-                        </div>
-                        <div class="programa-detalle">
-                            🗓 Fin: <input value="${ed.FIN || ""}" data-field="FIN">
-                        </div>
-                        <div class="programa-detalle">
-                            👨‍🏫 Docente: <input value="${ed.DOCENTE || ""}" data-field="DOCENTE">
-                        </div>
-                        <div class="programa-detalle">
-                            🖼 Foto Docente:
-                            <input type="file" accept="image/*" data-field="POSTDOCEN">
-                            ${ed.POSTDOCEN ? `<img src="/media/${ed.POSTDOCEN}" style="max-width:80px; margin-top:5px;">` : ""}
-                        </div>
-                        <div class="programa-detalle">
-                            🎬 Video Promo:
-                            <input type="file" accept="video/*" data-field="VIDEO">
-                            ${ed.VIDEO ? `<video src="/media/${ed.VIDEO}" controls style="max-width:120px; margin-top:5px;"></video>` : ""}
-                        </div>
-                        <div style="margin-top:10px;">
-                            <button class="programa-btn1 guardar-btn" data-index="${ed.index}">💾 Guardar</button>
-                            <button class="programa-btn1 cancelar-btn" data-index="${ed.index}">❌ Cancelar</button>
-                        </div>
-                    </div>
-                    <button class="programa-btn2 editar-btn" data-index="${ed.index}">✏️ Editar esta edición</button>
-                    <button class="programa-btn2 eliminar-btn" data-index="${ed.index}">🗑️ Eliminar</button>
-                `;
-                edicionesDiv.appendChild(edicionEl);
-            });
-        });
-        cardsContainer.addEventListener("click", manejarClick);
+        // 🚨 USAR LA FUNCIÓN DE DIBUJADO COMPARTIDA 🚨
+        renderizarProgramas(programasData); 
 
         loading.style.display = "none";
-        cardsContainer.style.display = "grid";
-
+        
     } catch (err) {
         console.error("❌ Error cargando programas:", err);
         loading.style.display = "none";
         error.style.display = "block";
     }
 }
+
+
+
+
 
 async function manejarClick(e) {
     const target = e.target;
@@ -841,6 +854,7 @@ document.addEventListener("DOMContentLoaded", () => {
     
     // Muestra la sección de "programas" al cargar la página
     showSection("programas");
+    cargarProgramas();
     cargarSaludos();
     cargarPlus();
     cargarPerfil();

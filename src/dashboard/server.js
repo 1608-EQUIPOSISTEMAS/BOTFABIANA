@@ -154,6 +154,31 @@ app.get("/api/programas", (req, res) => {
     }
 });
 
+// 📌 API Búsqueda de Programas (Para búsquedas avanzadas o en el futuro)
+// =========================
+app.get("/api/programas/buscar", (req, res) => {
+    const query = req.query.q ? req.query.q.toLowerCase() : '';
+    
+    if (!query) {
+        // Si no hay query, devuelve todos los programas
+        return res.json(programasEnMemoria);
+    }
+
+    try {
+        const resultadosFiltrados = programasEnMemoria.filter(programa => {
+            // Asume que buscas en la columna 'PROGRAMA'
+            const nombre = (programa.PROGRAMA || "").toLowerCase();
+            return nombre.includes(query);
+        });
+
+        res.json(resultadosFiltrados);
+
+    } catch (err) {
+        console.error("❌ Error al procesar la búsqueda en el servidor:", err);
+        res.status(500).json({ error: "Fallo interno del servidor al buscar." });
+    }
+});
+
 app.post("/api/programas", (req, res) => {
     try {
         const data = fs.readFileSync(PROGRAMAS_PATH, "utf8");
@@ -197,6 +222,8 @@ app.put("/api/programas/:index", (req, res) => {
         res.status(500).json({ error: "No se pudo actualizar el programa" });
     }
 });
+
+
 
 app.put("/api/programa/:nombrePrograma", (req, res) => {
     try {
