@@ -616,7 +616,7 @@ async function cargarPlus() {
     statusMsg.textContent = "Cargando...";
 
     try {
-        const res = await fetch("http://localhost:9000/api/plus");
+        const res = await fetch("/api/plus");
         if (!res.ok) {
             throw new Error("Error al cargar el mensaje global");
         }
@@ -638,7 +638,7 @@ async function guardarPlus() {
     statusMsg.textContent = "Guardando...";
 
     try {
-        const res = await fetch("http://localhost:9000/api/plus", {
+        const res = await fetch("/api/plus", {
             method: "PUT",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ texto })
@@ -662,7 +662,7 @@ async function cargarPerfil() {
     statusMsg.textContent = "Cargando...";
 
     try {
-        const res = await fetch("http://localhost:9000/api/perfil");
+        const res = await fetch("/api/perfil");
         if (!res.ok) {
             throw new Error("Error al cargar el mensaje de perfil");
         }
@@ -684,7 +684,7 @@ async function guardarPerfil() {
     statusMsg.textContent = "Guardando...";
 
     try {
-        const res = await fetch("http://localhost:9000/api/perfil", {
+        const res = await fetch("/api/perfil", {
             method: "PUT",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ texto })
@@ -708,7 +708,7 @@ async function cargarCta() {
     statusMsg.textContent = "Cargando...";
 
     try {
-        const res = await fetch("http://localhost:9000/api/cta");
+        const res = await fetch("/api/cta");
         if (!res.ok) {
             throw new Error("Error al cargar el mensaje de cta");
         }
@@ -730,7 +730,7 @@ async function guardarCta() {
     statusMsg.textContent = "Guardando...";
 
     try {
-        const res = await fetch("http://localhost:9000/api/cta", {
+        const res = await fetch("/api/cta", {
             method: "PUT",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ texto })
