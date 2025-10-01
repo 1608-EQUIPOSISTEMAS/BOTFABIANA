@@ -141,7 +141,7 @@ client.on("message", async (message) => {
             // ✅ Construcción de inversión según tipo (usando la variable 'p' actualizada)
             if (esCurso) {
                 if (esEstudiante) {
-                    inversionMsg = `*Hasta el Viernes 26 de Septiembre por Campaña Blue Days* 🌼💙
+                    inversionMsg = `*Hasta el Viernes 03 de Octubre por W|E EduFest* 📚🎉🍻
 
 Opciones de pago:
 1️⃣ *Al Contado* Ahorro máximo😉
@@ -153,7 +153,7 @@ Opciones de pago:
 
 *La inversión incluye el CERTIFICADO* 📚`;
                 } else {
-                    inversionMsg = `*Hasta el Viernes 26 de Septiembre por Campaña Blue Days* 🌼💙
+                    inversionMsg = `*Hasta el Viernes 03 de Octubre por W|E EduFest* 📚🎉🍻
 
 Opciones de pago:
 1️⃣ *Al Contado* Ahorro máximo😉
@@ -167,7 +167,7 @@ Opciones de pago:
                 }
             } else {
                 if (esEstudiante) {
-                    inversionMsg = `*Hasta el Viernes 26 de Septiembre por Campaña Blue Days* 🌼💙
+                    inversionMsg = `*Hasta el Viernes 03 de Octubre por W|E EduFest* 📚🎉🍻
 
 Facilidades de pago:
 1️⃣ *En Cuotas sin Intereses* 🔥45% Dcto > S/ ${p["INV EST"]} ~(Normal S/ ${p["INV EST T"]})~
@@ -178,7 +178,7 @@ Facilidades de pago:
 
 *La inversión incluye el CERTIFICADO* 📚`;
                 } else {
-                    inversionMsg = `*Hasta el Viernes 26 de Septiembre por Campaña Blue Days* 🌼💙
+                    inversionMsg = `*Hasta el Viernes 03 de Octubre por W|E EduFest* 📚🎉🍻 
 
 Facilidades de pago:
 1️⃣ *En Cuotas sin Intereses* 🔥45% Dcto > S/ ${p["INV PRO"]} ~(Normal S/ ${p["INV PRO T"]})~
