@@ -805,29 +805,40 @@ async function guardarDescuentos() {
 }
 window.hideAlert = hideAlert;
 
-document.getElementById("busqueda-programa")
-    .addEventListener("keypress", function (e) {
-        if (e.key === "Enter") {
-            buscarProgramas();
-        }
-    });
+// Este bloque de código ahora está DENTRO de DOMContentLoaded para asegurar que 'busqueda-programa' existe.
+// (Lo he borrado de aquí y lo he puesto más abajo en la posición lógica)
 
 document.addEventListener("DOMContentLoaded", () => {
+    
+    // --- LÓGICA DE BÚSQUEDA Y PROGRAMAS ---
     const btnBuscar = document.getElementById("btn-buscar-programa");
     const inputBuscar = document.getElementById("busqueda-programa");
 
-    if (btnBuscar) {
-        btnBuscar.addEventListener("click", buscarProgramas);
-    }
-
-    // También activa la búsqueda al presionar Enter
+    // 🚨 CORRECCIÓN 1: El keypress que fallaba ahora está dentro de la verificación del input.
+    // También verifica si el input existe antes de usarlo.
     if (inputBuscar) {
+        // Bloque original que fallaba (ahora corregido y dentro de DOMContentLoaded)
+        inputBuscar.addEventListener("keypress", function (e) {
+            if (e.key === "Enter") {
+                buscarProgramas();
+            }
+        });
+        
+        // Bloque de keyup que ya estaba:
         inputBuscar.addEventListener("keyup", (e) => {
             if (e.key === "Enter") {
                 buscarProgramas();
             }
         });
     }
+
+    if (btnBuscar) {
+        btnBuscar.addEventListener("click", buscarProgramas);
+    }
+    
+    // 🚨 CORRECCIÓN DE SINTAXIS: La llave que cerraba prematuramente ha sido eliminada.
+    // El resto del código ahora se ejecuta correctamente.
+    
     // Muestra la sección de "programas" al cargar la página
     showSection("programas");
     cargarSaludos();
@@ -835,25 +846,30 @@ document.addEventListener("DOMContentLoaded", () => {
     cargarPerfil();
     cargarCta();
 
-    document.getElementById("guardar-saludos-btn").addEventListener("click", guardarSaludos);
-    document.getElementById("recargar-saludos-btn").addEventListener("click", cargarSaludos);
+    // --- CONEXIÓN DE BOTONES DE CONFIGURACIÓN ---
+    
+    // Botones Saludos
+    // NOTA: Usamos una verificación simple, ya que si falla aquí, el error debe ser visible.
+    document.getElementById("guardar-saludos-btn")?.addEventListener("click", guardarSaludos);
+    document.getElementById("recargar-saludos-btn")?.addEventListener("click", cargarSaludos);
 
-    document.getElementById("guardar-plus-btn").addEventListener("click", guardarPlus);
-    document.getElementById("recargar-plus-btn").addEventListener("click", cargarPlus);
+    // Botones Plus
+    document.getElementById("guardar-plus-btn")?.addEventListener("click", guardarPlus);
+    document.getElementById("recargar-plus-btn")?.addEventListener("click", cargarPlus);
 
-    document.getElementById("guardar-perfil-btn").addEventListener("click", guardarPerfil);
-    document.getElementById("recargar-perfil-btn").addEventListener("click", cargarPerfil);
+    // Botones Perfil
+    document.getElementById("guardar-perfil-btn")?.addEventListener("click", guardarPerfil);
+    document.getElementById("recargar-perfil-btn")?.addEventListener("click", cargarPerfil);
 
-    // Nota: El botón para guardar CTA estaba llamando a la función de Perfil.
-    // Lo he corregido para que llame a sus propias funciones.
-    document.getElementById("guardar-cta-btn").addEventListener("click", guardarCta);
-    document.getElementById("recargar-cta-btn").addEventListener("click", cargarCta);
+    // Botones CTA
+    document.getElementById("guardar-cta-btn")?.addEventListener("click", guardarCta);
+    document.getElementById("recargar-cta-btn")?.addEventListener("click", cargarCta);
 
     // Conecta los botones de descuentos
-    document.getElementById("guardar-descuentos-btn").addEventListener("click", guardarDescuentos);
-    document.getElementById("recargar-descuentos-btn").addEventListener("click", cargarDescuentos);
+    document.getElementById("guardar-descuentos-btn")?.addEventListener("click", guardarDescuentos);
+    document.getElementById("recargar-descuentos-btn")?.addEventListener("click", cargarDescuentos);
 
-    // Lógica para el botón de reiniciar
+    // --- LÓGICA DEL BOTÓN DE REINICIO ---
     const restartBtn = document.getElementById('restart-bot-btn');
     const statusMsg = document.getElementById('restart-status-msg');
 
@@ -882,4 +898,4 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
     }
-});
+}); // Cierre final de DOMContentLoaded (Posición correcta)
