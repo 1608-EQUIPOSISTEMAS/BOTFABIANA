@@ -1,7 +1,19 @@
+
 {
     "DATA ANALYTICS": ["Data Analytics","data analy","data"],
+    "ESP. EXCEL EXP": ["especialización en Excel Expert, excel expert"],
+    "ESPEC. EXCEL": ["especialización en Excel","Especialización en Microsoft Excel"],
+    "GEST FINANC. PROYECT": ["Gestión Financiera de Proyectos","gest financiera","gest fi proy","gest financiera"],
+    "GEST PROYECT I": ["Gestión de Proyectos I","gest de proyectos","gestion de proyectos"],
     "PEE ANALIST PROY V4": ["pee de proyecto","PEE | Analista de Proyectos","Pee Analista de Proyectos","Pee Analista de Proyectos","pee proyectos","pee proyecto"],
+    "POWER BI AVANZ": ["Power BI Avanzado","power bi avanz"],
     "POWER BI": ["Power BI"],
-    "DIP SUPPLY V3": ["dip supply","diplo supply"],
-    "PYTHON. DATOS": ["Python Análisis de datos","python","phy","py"]
+    "PYTHON AVANZ.": ["python avanzado","python avanz","Pyhton Avanzado: Machine Learning"],
+    "PYTHON. DATOS": ["Análisis de datos","python","phy","py"],
+    "SAP HANA MM": ["SAP MM"],
+    "SQL SERVER": ["SQL Server, sql"],
+    "DIP SUPPLY V3": ["dip supply","diplo supply"]
   }
+
+
+

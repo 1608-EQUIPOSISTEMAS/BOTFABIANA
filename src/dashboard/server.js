@@ -32,6 +32,8 @@ const PLUS_PATH = path.join(projectRoot,  "database", "plus.json");
 const SALUDOS_PATH = path.join(projectRoot, "database", "saludos.json");
 const PERFIL_PATH = path.join(projectRoot, "database", "perfil.json");
 const CTA_PATH = path.join(projectRoot, "database", "cta.json");
+const STATS_PATH = path.join(projectRoot, "database", "stats.json"); 
+
 
 const DESCUENTOS_PATH = path.join(__dirname, "descuentos.json"); // Agrega esta línea
 
@@ -42,7 +44,42 @@ let plusEnMemoria = {};
 let saludosEnMemoria = {};
 let perfilEnMemoria = {};
 let ctaEnMemoria = {};
+let statsEnMemoria = {};
 let botProcess = null; // Variable para el proceso del bot
+
+function recargarStatsEnMemoria() {
+    try {
+        const data = fs.readFileSync(STATS_PATH, "utf8");
+        statsEnMemoria = JSON.parse(data);
+        console.log("✅ Datos de estadísticas recargados en memoria.");
+    } catch (err) {
+        console.error("❌ Error al recargar estadísticas en memoria:", err);
+        statsEnMemoria = { totalReceived: 0, totalResponded: 0, keywords: { info: 0, hola: 0, estoy: 0 } };
+    }
+}
+// Llama a recargarStatsEnMemoria() al iniciar el servidor
+
+// =========================
+// 📌 API Estadísticas
+// =========================
+app.get("/api/stats", (req, res) => {
+    recargarStatsEnMemoria(); // Asegura los datos más recientes
+    res.json(statsEnMemoria);
+});
+
+app.post("/api/stats/reset", (req, res) => {
+    const defaultStats = { totalReceived: 0, totalResponded: 0, keywords: { info: 0, hola: 0, estoy: 0 } };
+    try {
+        fs.writeFileSync(STATS_PATH, JSON.stringify(defaultStats, null, 2), "utf8");
+        recargarStatsEnMemoria();
+        // Si el bot está corriendo en el mismo proceso (no es tu caso), debes reiniciar la memoria en index.js.
+        // Dado que usas 'fork' (child_process), el bot se reiniciará con el reset si lo reinicias.
+        res.json({ success: true, message: "Estadísticas reiniciadas." });
+    } catch (err) {
+        console.error("❌ Error reiniciando estadísticas:", err);
+        res.status(500).json({ error: "No se pudieron reiniciar las estadísticas." });
+    }
+});
 
 // ===================================
 // 📌 Funciones para Recargar los datos en memoria

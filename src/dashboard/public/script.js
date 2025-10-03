@@ -27,6 +27,51 @@ function hideAlert() {
 }
 let programasData = [];
 
+
+// 📄 index.js (Asegúrate de que estas funciones estén definidas)
+
+const STATS_PATH = path.join(__dirname, "database", "stats.json");
+let statsEnMemoria = {}; // Debe ser cargada al inicio del bot
+
+// Estructura de estadísticas por defecto
+const DEFAULT_STATS = { 
+  "totalReceived": 0,
+  "totalResponded": 0,
+  "keywords": {
+    "info": 0,
+    "hola": 0,
+    "estoy": 0
+    // Puedes añadir más palabras clave aquí
+  },
+  "programInquiries": {} // Contará las consultas por nombre de programa
+};
+
+function loadStats() {
+    try {
+        const data = fs.readFileSync(STATS_PATH, "utf8");
+        statsEnMemoria = JSON.parse(data);
+        // Asegura que la estructura de keywords y programInquiries exista, 
+        // útil si el archivo se creó antes de esta actualización.
+        statsEnMemoria.keywords = statsEnMemoria.keywords || DEFAULT_STATS.keywords;
+        statsEnMemoria.programInquiries = statsEnMemoria.programInquiries || DEFAULT_STATS.programInquiries;
+    } catch (err) {
+        console.error("❌ Error cargando stats.json. Inicializando por defecto:", err.message);
+        statsEnMemoria = DEFAULT_STATS;
+    }
+}
+
+function saveStats() {
+    try {
+        fs.writeFileSync(STATS_PATH, JSON.stringify(statsEnMemoria, null, 2), "utf8");
+    } catch (err) {
+        console.error("❌ Error guardando stats.json:", err.message);
+    }
+}
+
+// 🚨 Asegúrate de llamar a loadStats() al inicio de index.js
+// loadStats();
+
+
 // 📄 script.js (Nueva Función)
 
 /**
