@@ -36,7 +36,7 @@ jobs:
 
               # Elimina versión anterior y vuelve a clonar
               rm -rf ~/$project
-              git clone -b main https://github.com/1608-EQUIPOSISTEMAS/WhatsBotAdivisor.git ~/$project
+              git clone -b main https://github.com/1608-EQUIPOSISTEMAS/BOTENVIVO.git ~/$project
 
               cd ~/$project
               npm install
