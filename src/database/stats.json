@@ -1,20 +1,20 @@
 {
-  "totalReceived": 166,
-  "totalResponded": 79,
+  "totalReceived": 248,
+  "totalResponded": 82,
   "keywords": {
-    "info": 24,
+    "info": 27,
     "hola": 0,
     "estoy": 0
   },
   "programInquiries": {
-    "POWER BI": 2,
-    "SAP HANA MM": 6,
+    "POWER BI": 3,
+    "SAP HANA MM": 7,
     "PYTHON. DATOS": 1,
     "ESPEC. EXCEL": 2,
     "DIP SUPPLY V3": 2,
     "PEE ANALIST DATOS": 4,
     "SAP HANA SD": 1,
-    "SAP HANA PM": 4,
+    "SAP HANA PM": 5,
     "MS PROJECT": 1,
     "DATA ANALYTICS": 1
   }

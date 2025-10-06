@@ -283,7 +283,7 @@ client.on("message", async (message) => {
             }
 
             // Respuesta Inválida
-            await client.sendMessage(numero, "⚠️ Por favor, elige una opción válida: *1* (Yape), *2* (Depósito/Transferencia) o *3* (Pago Web).");
+            await client.sendMessage(numero, "Por favor, elige una opción válida: *1* (Yape), *2* (Depósito/Transferencia) o *3* (Pago Web).");
             return;
         }
 
@@ -308,7 +308,6 @@ client.on("message", async (message) => {
                     return;
 
                 default:
-                    await client.sendMessage(numero, "⚠️ Por favor selecciona *1* o *2* para inscripción, o *3* o *4* para llamada.");
                     return;
             }
         }
@@ -324,7 +323,6 @@ client.on("message", async (message) => {
             );
 
             if (!p) {
-                await client.sendMessage(numero, "⚠️ Lo siento, no pude encontrar el programa. Por favor, inicia la conversación nuevamente.");
                 delete estadoUsuarios[numero];
                 return;
             }
@@ -337,7 +335,6 @@ client.on("message", async (message) => {
                 case "4": resKeyName = "RES4"; break;
                 case "5": resKeyName = "RES5"; break;
                 default:
-                    await client.sendMessage(numero, "⚠️ Por favor elige una opción válida (1 a 5).");
                     return;
             }
 

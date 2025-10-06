@@ -34,7 +34,8 @@
     "PLAN. Y PRONOSTICO": ["Planeamiento y pronóstico de la demanda","plan y pronostico","plan y prono"],
     "POWER APPS AVANZ": ["power avanz","power apps avanzado","Power Apps y Power Automate Avanzado"],
     "POWER APPS Y AUT.": ["Power Apps y Power Automate","power apps. & automate","power apps y aut."],
-    "POWER BI AVANZ": ["Power BI Avanzado","power bi avanz"],
+    "POWER BI":["Power BI","power bi"],
+    "POWER BI PRESENCIAL":["Power BI presencial","power bi pres."],
     "PROG. MACROS": ["Programación con VBA Macros","VBA MACROS"],
     "PROG. WEB": ["Introducción a la Programación Web","programacion web"],
     "PYTHON AVANZ.": ["python avanzado","python avanz","Pyhton Avanzado: Machine Learning"],
@@ -44,9 +45,9 @@
     "SAP HANA EWM": ["SAP HANA EWM","SAP WM"],
     "SAP HANA FI": ["SAP HANA FI","SAP FI"],
     "SAP HANA IN PRESENCIAL": ["SAP HANA IN PRESENCIAL","sap in presencial"],
-    "SAP HANA IN": ["SAP HANA IN"],
-    "SAP HANA MM": ["SAP HANA MM"],
+    "SAP HANA IN": ["SAP HANA IN","SAP IN"],
+    "SAP HANA MM": ["SAP HANA MM","SAP MM"],
     "SAP HANA PM": ["SAP HANA PM","SAP PM"],
-    "SAP HANA SD": ["SAP HANA SD"],
+    "SAP HANA SD": ["SAP HANA SD","SAP SD"],
     "SQL SERVER": ["SQL Server, sql"]
   }
