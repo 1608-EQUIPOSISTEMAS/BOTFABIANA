@@ -3,6 +3,5 @@ node_modules/
 # Ignorar carpetas de autenticación y caché de whatsapp-web.js
 .wwebjs_auth/
 .wwebjs_cache/
-videos/
 # Ignorar carpeta de datos de sesión
 session/
