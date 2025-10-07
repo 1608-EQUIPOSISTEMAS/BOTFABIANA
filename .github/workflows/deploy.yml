@@ -1,4 +1,5 @@
 name: Deploy to Production VPS
+
 on:
   push:
     branches:
@@ -8,52 +9,52 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      # Clona el repo
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # Despliega múltiples servicios
-      - name: Deploy multiple services to VPS via SSH
+      - name: Deploy multiple bots to VPS (separate folders)
         uses: appleboy/ssh-action@v1.0.3
         with:
           host: ${{ secrets.VPS_HOST }}
           username: ${{ secrets.VPS_USERNAME }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
-            PROJECT_NAME="BOTENVIVO"
+            BASE_DIR="$HOME"
             REPO_URL="https://github.com/1608-EQUIPOSISTEMAS/BOTENVIVO.git"
 
-            # 1. Clonar o actualizar el repositorio una sola vez
-            if [ -d ~/$PROJECT_NAME ]; then
-              echo ">>> Actualizando el repositorio..."
-              cd ~/$PROJECT_NAME
-              git pull origin master
-            else
-              echo ">>> Clonando el repositorio por primera vez..."
-              git clone -b master $REPO_URL ~/$PROJECT_NAME
-              cd ~/$PROJECT_NAME
-            fi
-            
-            # 2. Instalar dependencias una sola vez
-            echo ">>> Instalando dependencias..."
-            npm install
-
-            # 3. Definir servicios y puertos
-            declare -A projects=( 
+            declare -A projects=(
               ["alexis1"]=3050
-              ["alexis2"]=3051 
-              ["alexis3"]=3052 
-              ["alexis4"]=3053 
+              ["alexis2"]=3051
+              ["alexis3"]=3052
+              ["alexis4"]=3053
               ["alexis5"]=3054
               ["alexis6"]=3055
             )
 
-            # 4. Iniciar/reiniciar cada proceso con su propio puerto
-            for project in "${!projects[@]}"
-            do
-              echo ">>> Desplegando $project en puerto ${projects[$project]}"
-              PORT=${projects[$project]} pm2 restart $project || PORT=${projects[$project]} pm2 start index.js --name $project
-            done
+            echo ">>> Iniciando despliegue por carpetas..."
 
-            # 5. Guardar la lista de procesos de PM2
-            pm2 save
+            for project in "${!projects[@]}"; do
+              FOLDER="${BASE_DIR}/BOTENVIVO-${project}"
+              PORT=${projects[$project]}
+
+              echo "-----------------------------------------"
+              echo ">>> Desplegando ${project} en ${FOLDER} (puerto ${PORT})"
+
+              # 1. Clonar o actualizar cada carpeta
+              if [ -d "$FOLDER" ]; then
+                echo ">>> Actualizando repo existente en $FOLDER"
+                cd "$FOLDER"
+                git pull origin master
+              else
+                echo ">>> Clonando nueva copia del repo..."
+                git clone -b master "$REPO_URL" "$FOLDER"
+                cd "$FOLDER"
+              fi
+
+              # 2. Instalar dependencias
+              echo ">>> Instalando dependencias..."
+              npm install --omit=dev
+
+              # 3. Iniciar/reiniciar con PM2
+              echo ">>> Iniciando servicio PM2..."
+              PORT=$PORT pm2 restart $project || PORT=$PORT p
