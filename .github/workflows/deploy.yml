@@ -57,4 +57,12 @@ jobs:
 
               # 3. Iniciar/reiniciar con PM2
               echo ">>> Iniciando servicio PM2..."
-              PORT=$PORT pm2 restart $project || PORT=$PORT p
+              PORT=$PORT pm2 restart $project || PORT=$PORT pm2 start index.js --name $project --cwd "$FOLDER"
+
+            done
+
+            # 4. Guardar configuración de PM2
+            pm2 save
+
+            echo "✅ Despliegue finalizado correctamente."
+
