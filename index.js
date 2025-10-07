@@ -188,7 +188,6 @@ client.on("message", async (message) => {
 
                 // 3. Opcion: Respuesta inválida (BUG CORREGIDO)
             } else {
-                await client.sendMessage(numero, "⚠️ Por favor, responde con *1* (pago completado) o *2* (necesito ayuda).");
                 return; // Mantiene el estado esperandoDecisionWeb
             }
         }
@@ -281,9 +280,7 @@ client.on("message", async (message) => {
 
                 return;
             }
-
             // Respuesta Inválida
-            await client.sendMessage(numero, "Por favor, elige una opción válida: *1* (Yape), *2* (Depósito/Transferencia) o *3* (Pago Web).");
             return;
         }
 
