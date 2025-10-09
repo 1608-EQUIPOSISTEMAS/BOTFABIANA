@@ -45,6 +45,7 @@ jobs:
               if [ -d "$FOLDER" ]; then
                 echo ">>> Actualizando repo existente en $FOLDER"
                 cd "$FOLDER"
+                git reset --hard
                 git pull origin master
               else
                 echo ">>> Clonando nueva copia del repo..."
@@ -52,18 +53,21 @@ jobs:
                 cd "$FOLDER"
               fi
 
-              # 2. Instalar dependencias
+              # 2. Eliminar sesiones/caché de WhatsApp
+              echo ">>> Eliminando sesiones anteriores de WhatsApp..."
+              rm -rf .wwebjs_auth .wwebjs_cache .wwebjs .session session.json auth/ WWebJS/ sessions/ temp/ cache/ || true
+
+              # 3. Instalar dependencias
               echo ">>> Instalando dependencias..."
               npm install --omit=dev
 
-              # 3. Iniciar/reiniciar con PM2
+              # 4. Iniciar/reiniciar con PM2
               echo ">>> Iniciando servicio PM2..."
               PORT=$PORT pm2 restart $project || PORT=$PORT pm2 start index.js --name $project --cwd "$FOLDER"
 
             done
 
-            # 4. Guardar configuración de PM2
+            # 5. Guardar configuración de PM2
             pm2 save
 
             echo "✅ Despliegue finalizado correctamente."
-
