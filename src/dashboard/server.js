@@ -474,7 +474,7 @@ app.put("/api/cta", (req, res) => {
 });
 
 // Crear el archivo de descuentos si no existe
-const descuentosPorDefecto = { cuota: 45, campana: 55 };
+const descuentosPorDefecto = { cuota: 50, campana: 55 };
 if (!fs.existsSync(DESCUENTOS_PATH)) {
     fs.writeFileSync(DESCUENTOS_PATH, JSON.stringify(descuentosPorDefecto, null, 2));
 }
@@ -532,9 +532,6 @@ app.put('/api/descuentos', (req, res) => {
     }
 });
 
-// =========================
-// 📌 NUEVA RUTA: Reiniciar Bot
-// =========================
 app.post("/api/restart-bot", (req, res) => {
     console.log("🤖 Solicitud de reinicio recibida.");
 
@@ -587,8 +584,6 @@ function iniciarServidor() {
         // Aquí puedes iniciar el bot por primera vez
     });
 }
-
-
 
 module.exports ={
     app,

@@ -355,7 +355,7 @@ Opciones de pago:
 🔥55% Dcto > S/ ${p["EXEST"]} ~(Normal S/ ${p["INV EST T"]})~
 
 2️⃣ *En Cuotas sin intereses*
-45% Dcto > S/ ${p["INV EST"]} ~(Normal S/ ${p["INV EST T"]})~
+50% Dcto > S/ ${p["INV EST"]} ~(Normal S/ ${p["INV EST T"]})~
 💳 Reserva con S/ ${p["RESEST"]}
 
 *La inversión incluye el CERTIFICADO* 📚`;
@@ -367,7 +367,7 @@ Opciones de pago:
 🔥55% Dcto > S/ ${p["EXPRO"]} ~(Normal S/ ${p["INV PRO T"]})~
 
 2️⃣ *En Cuotas sin intereses*
-45% Dcto > S/ ${p["INV PRO"]} ~(Normal S/ ${p["INV PRO T"]})~
+50% Dcto > S/ ${p["INV PRO"]} ~(Normal S/ ${p["INV PRO T"]})~
 💳 Reserva con S/ ${p["RESPRO"]}
 
 *La inversión incluye el CERTIFICADO* 📚`;
@@ -378,7 +378,8 @@ Opciones de pago:
                     inversionMsg = `*Hasta el Viernes 10 de Octubre por W|E EduFest* 📚🎉🍻
 
 Facilidades de pago:
-1️⃣ *En Cuotas sin Intereses* 🔥45% Dcto > S/ ${p["INV EST"]} ~(Normal S/ ${p["INV EST T"]})~
+1️⃣ *En Cuotas sin Intereses* 
+🔥50% Dcto > S/ ${p["INV EST"]} ~(Normal S/ ${p["INV EST T"]})~
 💳 Reserva con S/ ${p["RESEST"]}
 
 2️⃣ *Al Contado* Ahorro máximo😉
@@ -391,7 +392,7 @@ Facilidades de pago:
 
 Facilidades de pago:
 1️⃣ *En Cuotas sin Intereses* 
-🔥45% Dcto > S/ ${p["INV PRO"]} ~(Normal S/ ${p["INV PRO T"]})~
+🔥50% Dcto > S/ ${p["INV PRO"]} ~(Normal S/ ${p["INV PRO T"]})~
 💳 Reserva con S/ ${p["RESPRO"]}
 
 2️⃣ *Al Contado* Ahorro máximo😉

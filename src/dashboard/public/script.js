@@ -358,8 +358,8 @@ async function mostrarInfoPrograma(nombrePrograma, cardElement) {
                     <textarea data-field="BENEFICIOS" class="input-style" rows="10">${programaInfo.RES5 || ""}</textarea>
                 </div>
                 <div style="margin-top: 10px;">
-                    <button class="programa-btn1 guardar-programa-btn" data-programa="${nombrePrograma}">💾 Guardar</button>
-                    <button class="programa-btn1 cancelar-programa-btn">❌ Cancelar</button>
+                    <button class="programa-btn guardar-programa-btn" data-programa="${nombrePrograma}">💾 Guardar</button>
+                    <button class="programa-btn cancelar-programa-btn">❌ Cancelar</button>
                 </div>
                 
             </div>
