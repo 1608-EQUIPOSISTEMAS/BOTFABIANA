@@ -957,4 +957,4 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
     }
-}); // Cierre final de DOMContentLoaded (Posición correcta)
+});
