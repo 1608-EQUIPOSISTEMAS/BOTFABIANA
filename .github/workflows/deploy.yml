@@ -24,12 +24,10 @@ jobs:
             REPO_URL="https://github.com/1608-EQUIPOSISTEMAS/BOTENVIVO.git"
 
             declare -A projects=(
-              ["alexis1"]=3050
-              ["alexis2"]=3051
-              ["alexis3"]=3052
-              ["alexis4"]=3053
-              ["alexis5"]=3054
-              ["alexis6"]=3055
+              ["arleth"]=3050
+              ["camilo"]=3053
+              ["isabel"]=3054
+              ["fabiana"]=3055
             )
 
             echo ">>> Iniciando despliegue por carpetas..."
