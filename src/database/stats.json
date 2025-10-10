@@ -1,27 +1,39 @@
 {
-  "totalReceived": 290,
-  "totalResponded": 119,
+  "totalReceived": 603,
+  "totalResponded": 138,
   "keywords": {
-    "info": 41,
+    "info": 60,
     "hola": 0,
     "estoy": 0
   },
   "programInquiries": {
     "POWER BI": 6,
     "SAP HANA MM": 7,
-    "PYTHON. DATOS": 1,
+    "PYTHON. DATOS": 2,
     "ESPEC. EXCEL": 3,
     "DIP SUPPLY V3": 2,
     "PEE ANALIST DATOS": 4,
     "SAP HANA SD": 1,
     "SAP HANA PM": 5,
     "MS PROJECT": 1,
-    "DATA ANALYTICS": 1,
-    "ESP. EXCEL EXP": 1,
+    "DATA ANALYTICS": 2,
+    "ESP. EXCEL EXP": 2,
     "POWER BI PRESENCIAL": 4,
-    "POWER BI AVANZ": 2,
+    "POWER BI AVANZ": 3,
     "EXCEL BÁSICO": 1,
     "EXCEL INTERM": 1,
-    "EXCEL AVANZ": 1
+    "EXCEL AVANZ": 1,
+    "ROBOTIZ.  UIPATH": 2,
+    "PYTHON AVANZ.": 2,
+    "SAP HANA IN PRESENCIAL": 2,
+    "AZURE": 1,
+    "COST Y PRESUP": 1,
+    "SQL SERVER": 1,
+    "PROG. WEB": 1,
+    "POWER APPS Y AUT.": 1,
+    "POWER APPS AVANZ": 1,
+    "CONT. FINANCIERA": 1,
+    "SAP HANA EWM": 1,
+    "GER. CENTRO DISTRIB.": 1
   }
 }
