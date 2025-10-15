@@ -2,11 +2,19 @@
     "AZURE":["Azure"],
     "CONT. FINANCIERA":["Contabilidad financiera"],
     "COST Y PRESUP": ["Costos y Presupuestos"],
-    "DATA ANALYTICS": ["Data Analytics","data analy"],
+    "DATA ANALYTICS": ["Data Analytics"],
+
+    "DATABRICKS":["Data Bricks"],
+
     "DIP INTELIG. Y ANALIST. DATOS V2": ["Inteligencia y Análisis de Datos","diplo int","dip int","diplo de int","dip de intel","diplomado en Inteligencia y Análisis de Datos"],
     "DIP PROC Y MEJORA V3": ["Procesos y Mejora Continua","dip proc","dip de proc","diplomado de Procesos y Mejora Continua"],
     "DIP GEST PROYECTOS V4": ["diplo de proyectos","diplomado de proyectos","diplomado proyectos","diplomado en Gestión de Proyectos"],
     "DIP SUPPLY V3": ["dip supply","diplo supply","Diplomado Supply Chain Management"],
+    
+    "DIP FINANZAS":["diplomado en gestión financiera"],
+    "PLAN. FINANCIERO":["Planeamiento Financiero"],
+
+    
     "ESP. EN PYTHON DATA SCIENCE": ["especialización Python Data Science","Especialización en Python Data Science"],
     "ESP. EXCEL EXP": ["especialización en Excel Expert"],
     "ESP. FRONTEND": ["especialización Front End: Desarrollo Web"],
@@ -15,12 +23,16 @@
     "ESP. POWER APPS Y AUT.": ["Especialización en Power Apps","especialización en Power Apps y Power Automate","esp power app"],
     "ESP. POWER BI": ["especialización en Power BI","esp power bi","esp de power bi"],
     "ESP. SAP MINERÍA": ["especialización en SAP S/4 HANA: Minería"],
-    "ESP. SQL SERVER": ["especialización en SQL Server","esp sql","esp de sql"],
+    "ESP. SQL SERVER": ["especialización en SQL Server"],
     "ESPEC. EXCEL": ["especialización en Excel","Especialización en Microsoft Excel"],
     "ESPEC.SAP HANA PLANIF. DE LA PROD.": ["especilización SAP HANNA Planificación de la producción"],
     "ESPEC.SAP HANA": ["especialización en SAP","esp sap"],
     "EXCEL AVANZ": ["Excel Avanzado","excel avanz."],
     "EXCEL BÁSICO": ["Excel Básico","excel basico"],
+
+    "ESTR. Y TEC. COMERCIALES":["Estrategias y Técnicas Comerciales"],
+    "GEST. COMP. Y PROV.":["Gestión de Compras y Proveedores"],
+
     "EXCEL INTERM": ["Excel Intermedio","excel nivel 2"],
     "GER. CENTRO DISTRIB.": ["Distribución y Almacenes"],
     "GEST FINANC. PROYECT": ["Gestión Financiera de Proyectos","gest financiera","gest fi proy","gest financiera"],
@@ -28,6 +40,9 @@
     "GEST PROYECT I": ["Gestión de Proyectos I","gest de proyectos","gestion de proyectos"],
     "GEST TRANSPORTES": ["Gestión de Transportes","transporte"],
     "GEST. ÁGIL PROYECT": ["Gestión Ágil de Proyectos","gest agil proyecto"],
+
+    "IA & DEEP LEARNING V2":["IA & Deep Learning"],
+
     "KPIS Y OKRS": ["KPI's y OKR's","kpis"],
     "LEAN LOGISTICS": ["Lean Logistics"],
     "MODEL BIZ.": ["Bizagi","Modelamiento de Procesos con BIZAGI"],
@@ -49,10 +64,16 @@
     "ROBOTIZ.  UIPATH": ["Robotización de Procesos con UiPath","uipath"],
     "SAP HANA EWM": ["SAP HANA EWM","SAP EWM"],
     "SAP HANA FI": ["SAP HANA FI","SAP FI"],
-    "SAP HANA IN PRESENCIAL": ["SAP HANA IN PRESENCIAL","sap in presencial"],
+    "SAP HANA IN PRESENCIAL": ["SAP HANA IN PRESENCIAL","sap in presencial","SAP HANA Integral | Presencial"],
     "SAP HANA IN": ["SAP HANA IN","SAP IN"],
+
+    "SAP HANA HCM":["SAP HANA HCM","SAP HCM"],
+    "SAP HANA PP":["SAP HANA PP","SAP PP"],
     "SAP HANA MM": ["SAP HANA MM","SAP MM"],
     "SAP HANA PM": ["SAP HANA PM","SAP PM"],
     "SAP HANA SD": ["SAP HANA SD","SAP SD"],
-    "SQL SERVER": ["SQL Server", "sql"]
+    "SQL SERVER": ["SQL Server"],
+
+    "SQL AVANZ":["SQL Avanzado"],
+    "SQL PRESENCIAL":["SQL Presencial"]
   }

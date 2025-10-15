@@ -208,7 +208,7 @@
     "SESIONES": 6,
     "BROCHURE": "pdfs/BROCHURE SAP HANA FI MODULO FINANZAS.pdf",
     "BENEFICIOS": "🔵 *Utilizarán SAP HANA* 👩🏻‍💻\n👉🏼 Incluye tutorial y manual de instalación\n👉🏼 12 meses de Licencia SAP para practicar\n👉🏼 Contarás con Soporte técnico\n💻 _*Importante*: Para la instalación se necesita una Laptop *Windows*_\n\n🚨 *Por favor, revisa el BROCHURE* 👇🏻\nAqui encontrarás la información completa del programa, el TEMARIO (malla curricular) y todos los BENEFICIOS 📚",
-    "POSTDOCEN": "images/sapfi",
+    "POSTDOCEN": "images/sapfi.jpg",
     "AVALADO": "Avalado por SAP Partner Open",
     "CURSO MES": "NO",
     "INV PRO T": 900,
@@ -852,7 +852,7 @@
     "SESIONES": 12,
     "BROCHURE": "pdfs/BROCHURE ESPECIALIZACION DE SQL.pdf",
     "BENEFICIOS": "🔵 *Utilizarán SQL Server* 👩🏻‍💻\n👉🏼 Incluye tutorial y manual de instalación\n💻 _*Importante*: Para la instalación se necesita una Laptop *Windows*_\n\n🚨 *Por favor, revisa el BROCHURE* 👇🏻\nAqui encontrarás la información completa del programa, el TEMARIO (malla curricular) y todos los BENEFICIOS 📚",
-    "POSTDOCEN": "images/espsqljpg",
+    "POSTDOCEN": "images/espsql.jpg",
     "AVALADO": "Avalado por Microsoft Partner Network",
     "CURSO MES": "NO",
     "INV PRO T": 1600,
@@ -1588,7 +1588,7 @@
     "SESIONES": 2,
     "BROCHURE": "",
     "BENEFICIOS": "",
-    "POSTDOCEN": "#N/A",
+    "POSTDOCEN": "",
     "AVALADO": "",
     "CURSO MES": "",
     "INV PRO T": "",
@@ -1658,144 +1658,6 @@
   {
     "LLAVE KEY": "PWE-037",
     "EDICION": "OCT. I - ED25",
-    "LINEA": "PROCESOS",
-    "CATEGORIA": "DIPLOMADO",
-    "PROGRAMA": "DIP PROC Y MEJORA V3",
-    "INICIO6": "25/10/2025",
-    "CURSO1": "GEST PROCESOS",
-    "INICIO1": "25/10/2025",
-    "CURSO2": "MODEL BIZ.",
-    "INICIO2": "13/12/2025",
-    "CURSO3": "LEAN SIX SIGMA YELLOW",
-    "INICIO3": "24/1/2026",
-    "CURSO4": "KPIS Y OKRS",
-    "INICIO4": "7/3/2026",
-    "CURSO5": "ROBOTIZ.  UIPATH",
-    "INICIO5": "11/4/2026",
-    "DOCENTE": "Juan Novoa\nDavid Ashcallay\nMaryan Quiñones\nLuis Euribe\nChristian Rojas",
-    "DIAS": "Sáb",
-    "HORARIO": "9AM - 12PM",
-    "INICIO": "Sábado 25 Octubre",
-    "FIN": "Sábado 16 Mayo",
-    "SESIONES": 29,
-    "BROCHURE": "pdfs/BROCHURE DIPLOMADO PROCESOS Y MEJORA CONTINUA.pdf",
-    "BENEFICIOS": "🔵 *Utilizarán Visio, Bizagi, Minitab y UiPath* 👩🏻‍💻\n👉🏼 Incluye tutorial y manual de instalación\n💻 _*Importante*: Para la instalación se necesita una Laptop *Windows*_\n\n🚨 *Por favor, revisa el BROCHURE* 👇🏻\nAqui encontrarás la información completa del programa, el TEMARIO (malla curricular) y todos los BENEFICIOS 📚",
-    "POSTDOCEN": "images/dipproc.jpg",
-    "AVALADO": "",
-    "CURSO MES": "NO",
-    "INV PRO T": 3740,
-    "INV EST T": 3346,
-    "INV PRO": 1870,
-    "INV EST": 1673,
-    "RESEST": 250,
-    "RESPRO": 350,
-    "VIDEO": "",
-    "EXEST": 1505.7,
-    "EXPRO": 1683,
-    "PERSONALIZADO": "Mejorar procesos es sinónimo de crecer 🔄\nAprende a optimizar la eficiencia operativa con herramientas de gestión y mejora continua 🏭\n👉🏻 Aquí está la información a detalle.",
-    "RES1": "⚙️ Excelente, el Diplomado en Procesos y Mejora Continua te convierte en experto en Lean & Six Sigma.",
-    "RES2": "💼 Muy bien, este Diplomado es requerido en empresas que priorizan la eficiencia operativa.",
-    "RES3": "📚 ¡Genial! Desde la universidad podrás aplicar conceptos de mejora continua a tus proyectos.",
-    "RES4": "🚀 ¡Perfecto! Con este Diplomado destacarás en prácticas en áreas de calidad y optimización.",
-    "RES5": "📊 ¡Excelente! Podrás aplicar mejoras de procesos directamente en tu negocio.",
-    "ENLACE": "https://we-educacion.com/slides/diplomado-de-procesos-y-mejora-continua-205",
-    "HABITILITADO": 1
-  },
-  {
-    "LLAVE KEY": "PWE-038",
-    "EDICION": "OCT. I - ED25",
-    "LINEA": "PROCESOS",
-    "CATEGORIA": "PEE",
-    "PROGRAMA": "PEE ANALIST PROC",
-    "INICIO6": "25/10/2025",
-    "CURSO1": "GEST PROCESOS",
-    "INICIO1": "25/10/2025",
-    "CURSO2": "MODEL BIZ.",
-    "INICIO2": "13/12/2025",
-    "CURSO3": "LEAN SIX SIGMA YELLOW",
-    "INICIO3": "24/1/2026",
-    "CURSO4": "",
-    "INICIO4": "",
-    "CURSO5": "",
-    "INICIO5": "",
-    "DOCENTE": "Juan Novoa\nDavid Ashcallay\nMaryan Quiñones",
-    "DIAS": "Sáb",
-    "HORARIO": "9AM - 12PM",
-    "INICIO": "Sábado 25 Octubre",
-    "FIN": "Sábado 28 Febrero",
-    "SESIONES": 18,
-    "BROCHURE": "pdfs/BROCHURE PEE ANALISTA DE PROCESOS.pdf",
-    "BENEFICIOS": "🔵 *Utilizarán Visio, Bizagi, Minitab y UiPath* 👩🏻‍💻\n👉🏼 Incluye tutorial y manual de instalación\n💻 _*Importante*: Para la instalación se necesita una Laptop *Windows*_\n\n🚨 *Por favor, revisa el BROCHURE* 👇🏻\nAqui encontrarás la información completa del programa, el TEMARIO (malla curricular) y todos los BENEFICIOS 📚",
-    "POSTDOCEN": "images/peeprocesos.jpg",
-    "AVALADO": "",
-    "CURSO MES": "NO",
-    "INV PRO T": 2280,
-    "INV EST T": 2040,
-    "INV PRO": 1140,
-    "INV EST": 1020,
-    "RESEST": 250,
-    "RESPRO": 350,
-    "VIDEO": "",
-    "EXEST": 918,
-    "EXPRO": 1026,
-    "PERSONALIZADO": "La mejora de procesos es el camino a la eficiencia 🔄\nEspecialízate en análisis y gestión de procesos para optimizar el rendimiento de las organizaciones 🏭\n👉🏻 Te paso el detalle.",
-    "RES1": "⚡ Excelente, el PEE Analista de Procesos te formará en gestión y mejora de operaciones.",
-    "RES2": "💼 Buenísimo, este perfil es clave en empresas que buscan optimizar tiempos y costos.",
-    "RES3": "📚 ¡Genial! Desde la universidad aprenderás mapa de procesos y metodologías de mejora.",
-    "RES4": "🚀 ¡Perfecto! Este PEE es ideal para destacar en la gestión de eficiencia.",
-    "RES5": "📊 ¡Excelente! Podrás rediseñar procesos para hacer más rentable tu negocio.",
-    "ENLACE": "https://we-educacion.com/slides/pee-analista-de-procesos-187",
-    "HABITILITADO": 1
-  },
-  {
-    "LLAVE KEY": "PWE-039",
-    "EDICION": "OCT. I - ED25",
-    "LINEA": "PROCESOS",
-    "CATEGORIA": "CURSO",
-    "PROGRAMA": "GEST PROCESOS",
-    "INICIO6": "25/10/2025",
-    "CURSO1": "",
-    "INICIO1": "",
-    "CURSO2": "",
-    "INICIO2": "",
-    "CURSO3": "",
-    "INICIO3": "",
-    "CURSO4": "",
-    "INICIO4": "",
-    "CURSO5": "",
-    "INICIO5": "",
-    "DOCENTE": "Juan Novoa",
-    "DIAS": "Sáb",
-    "HORARIO": "9AM - 12PM",
-    "INICIO": "Sábado 25 Octubre",
-    "FIN": "Sábado 6 Diciembre",
-    "SESIONES": 6,
-    "BROCHURE": "pdfs/BROCHURE GESTION DE PROCESOS.pdf",
-    "BENEFICIOS": "🔵 *Utilizarán Visio, Bizagi, Minitab y UiPath* 👩🏻‍💻\n👉🏼 Incluye tutorial y manual de instalación\n💻 _*Importante*: Para la instalación se necesita una Laptop *Windows*_\n\n🚨 *Por favor, revisa el BROCHURE* 👇🏻\nAqui encontrarás la información completa del programa, el TEMARIO (malla curricular) y todos los BENEFICIOS 📚",
-    "POSTDOCEN": "images/gestprocesos.jpg",
-    "AVALADO": "",
-    "CURSO MES": "NO",
-    "INV PRO T": 880,
-    "INV EST T": 770,
-    "INV PRO": 440,
-    "INV EST": 385,
-    "RESEST": 150,
-    "RESPRO": 150,
-    "VIDEO": "",
-    "EXEST": 346.5,
-    "EXPRO": 396,
-    "PERSONALIZADO": "El lenguaje de los líderes de hoy es la eficiencia operativa ⚙️\nCon Gestión de Procesos aprenderás a optimizar y rediseñar flujos de trabajo aplicados a casos reales 💼.\nAquí te comparto la información 👇🏻",
-    "RES1": "⚡ *Excelente*, actualízate con *GEST PROCESOS* y mantente competitivo en el mercado laboral.",
-    "RES2": "✨ Buenísimo, *GEST PROCESOS* es de las competencias más pedidas por las empresas y aumentará tus oportunidades laborales.",
-    "RES3": "🌍 ¡Genial! Con *GEST PROCESOS* sumarás una habilidad poderosa que te diferenciará desde la universidad.",
-    "RES4": "🔑 ¡Perfecto! Saber *GEST PROCESOS* te dará ventaja frente a otros postulantes para conseguir prácticas.",
-    "RES5": "📈 ¡Excelente! Con *GEST PROCESOS* podrás aplicarlo en tu negocio y tomar decisiones más inteligentes.",
-    "ENLACE": "https://we-educacion.com/slides/gestion-de-procesos-188",
-    "HABITILITADO": 1
-  },
-  {
-    "LLAVE KEY": "PWE-040",
-    "EDICION": "OCT. I - ED25",
     "LINEA": "BI",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "AZURE",
@@ -1840,7 +1702,7 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-041",
+    "LLAVE KEY": "PWE-038",
     "EDICION": "OCT. II - ED25",
     "LINEA": "PROCESOS",
     "CATEGORIA": "CURSO",
@@ -1886,7 +1748,7 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-042",
+    "LLAVE KEY": "PWE-039",
     "EDICION": "OCT. I - ED25",
     "LINEA": "PROCESOS",
     "CATEGORIA": "CURSO",
@@ -1932,7 +1794,7 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-043",
+    "LLAVE KEY": "PWE-040",
     "EDICION": "OCT. I - ED25",
     "LINEA": "BI",
     "CATEGORIA": "CURSO",
@@ -1956,7 +1818,7 @@
     "SESIONES": 5,
     "BROCHURE": "pdfs/BROCHURE POWER BI PRESENCIAL.pdf",
     "BENEFICIOS": "🔹 Recuerda que si traes tu Propia Laptop a todas las sesiones, te descontamos S/50 en tu inscripción\n\n🚨 Por favor, revisa el BROCHURE 👇🏻\nAqui encontrarás la información completa del programa: Temario (malla curricular) y todos los BENEFICIOS 📚\n\n👉🏼 Te comparto un Modelo de Certificado que elevará tu perfil profesional ",
-    "POSTDOCEN": "",
+    "POSTDOCEN": "images/powerbipres.jpg",
     "AVALADO": "Avalado por Microsoft Partner Network",
     "CURSO MES": "NO",
     "INV PRO T": 940,
@@ -1978,7 +1840,7 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-044",
+    "LLAVE KEY": "PWE-041",
     "EDICION": "OCT. I - ED25",
     "LINEA": "LOGÍSTICA",
     "CATEGORIA": "CURSO",
@@ -2024,7 +1886,7 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-045",
+    "LLAVE KEY": "PWE-042",
     "EDICION": "OCT. III - ED25",
     "LINEA": "BI",
     "CATEGORIA": "CURSO",
@@ -2070,7 +1932,7 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-046",
+    "LLAVE KEY": "PWE-043",
     "EDICION": "OCT. I - ED25",
     "LINEA": "SAP",
     "CATEGORIA": "ESP.",
@@ -2097,15 +1959,15 @@
     "POSTDOCEN": "images/espsap.jpg",
     "AVALADO": "Avalado por SAP Partner Open",
     "CURSO MES": "NO",
-    "INV PRO T": 2250,
-    "INV EST T": 1920,
-    "INV PRO": 1125,
-    "INV EST": 960,
+    "INV PRO T": 1900,
+    "INV EST T": 1750,
+    "INV PRO": 950,
+    "INV EST": 875,
     "RESEST": 250,
     "RESPRO": 350,
     "VIDEO": "",
-    "EXEST": 864,
-    "EXPRO": 1012.5,
+    "EXEST": 787.5,
+    "EXPRO": 855,
     "PERSONALIZADO": "El futuro de SAP está en HANA ⚡\nAprende a manejar esta plataforma de alto rendimiento para impulsar la transformación digital 🌐\n👉🏻 Aquí tienes la información.",
     "RES1": "⚡ Excelente, actualízate en SAP HANA, la base de datos más avanzada del mercado.",
     "RES2": "🏢 Buenísimo, muy buscado en proyectos de transformación digital empresarial.",
@@ -2116,53 +1978,7 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-047",
-    "EDICION": "OCT. I - ED25",
-    "LINEA": "SAP",
-    "CATEGORIA": "ESP.",
-    "PROGRAMA": "ESP. SAP MINERÍA",
-    "INICIO6": "30/10/2025",
-    "CURSO1": "SAP HANA MM",
-    "INICIO1": "30/10/2025",
-    "CURSO2": "SAP HANA PP",
-    "INICIO2": "27/11/2025",
-    "CURSO3": "SAP HANA PM",
-    "INICIO3": "23/12/2025",
-    "CURSO4": "",
-    "INICIO4": "",
-    "CURSO5": "",
-    "INICIO5": "",
-    "DOCENTE": "David Gonzales\nAndy Leyton\nRoller Rubio",
-    "DIAS": "Mar-Jue",
-    "HORARIO": "7PM - 10PM",
-    "INICIO": "Jueves 30 Octubre",
-    "FIN": "Jueves 15 Enero",
-    "SESIONES": 18,
-    "BROCHURE": "pdfs/BROCHURE ESPECIALIZACION SAP HANA MINERIA.pdf",
-    "BENEFICIOS": "🔵 *Utilizarán SAP HANA* 👩🏻‍💻\n👉🏼 Incluye tutorial y manual de instalación\n👉🏼 12 meses de Licencia SAP para practicar 🌟\n👉🏼 Contarás con Soporte técnico\n👉🏼 Incluye Guía básica de las Funciones SAP HANA\n💻 _*Importante*: Para la instalación se necesita una Laptop *Windows*_\n\n🚨 *Por favor, revisa el BROCHURE* 👇🏻\nAqui encontrarás la información completa del programa, el TEMARIO (malla curricular) y todos los BENEFICIOS 📚",
-    "POSTDOCEN": "images/espsapmineria.jpg",
-    "AVALADO": "Avalado por SAP Partner Open",
-    "CURSO MES": "NO",
-    "INV PRO T": 2250,
-    "INV EST T": 1920,
-    "INV PRO": 1125,
-    "INV EST": 960,
-    "RESEST": 250,
-    "RESPRO": 350,
-    "VIDEO": "",
-    "EXEST": 864,
-    "EXPRO": 1012.5,
-    "PERSONALIZADO": "El sector minero apuesta por SAP ⛏️\nEspecialízate en SAP aplicado a minería y lleva tu perfil al siguiente nivel en industrias clave 💼\n👉🏻 Te paso la info completa.",
-    "RES1": "⛏️ Excelente, actualízate en SAP aplicado a minería y potencia tu perfil en un sector clave.",
-    "RES2": "💼 Buenísimo, las empresas mineras requieren especialistas en procesos con SAP.",
-    "RES3": "📊 Genial, dominar SAP Minería te dará un diferencial en industrias estratégicas.",
-    "RES4": "🚀 Perfecto, tener SAP Minería te abrirá ventaja en prácticas del sector industrial.",
-    "RES5": "📈 Excelente, podrás optimizar proyectos mineros en tu propio negocio.",
-    "ENLACE": "https://we-educacion.com/slides/especializacion-en-sap-s-4-hana-mineria-1128#",
-    "HABITILITADO": 1
-  },
-  {
-    "LLAVE KEY": "PWE-048",
+    "LLAVE KEY": "PWE-044",
     "EDICION": "OCT. I - ED25",
     "LINEA": "SAP",
     "CATEGORIA": "CURSO",
@@ -2208,7 +2024,7 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-049",
+    "LLAVE KEY": "PWE-045",
     "EDICION": "NOV. I - ED25",
     "LINEA": "EXCEL",
     "CATEGORIA": "CURSO",
@@ -2254,7 +2070,7 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-050",
+    "LLAVE KEY": "PWE-046",
     "EDICION": "NOV. I - ED25",
     "LINEA": "LOGÍSTICA",
     "CATEGORIA": "CURSO",
@@ -2300,7 +2116,7 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-051",
+    "LLAVE KEY": "PWE-047",
     "EDICION": "NOV. I - ED25",
     "LINEA": "BI",
     "CATEGORIA": "ESP.",
@@ -2346,7 +2162,7 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-052",
+    "LLAVE KEY": "PWE-048",
     "EDICION": "NOV. I - ED25",
     "LINEA": "BI",
     "CATEGORIA": "CURSO",
@@ -2392,7 +2208,7 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-053",
+    "LLAVE KEY": "PWE-049",
     "EDICION": "NOV. I - ED25",
     "LINEA": "SAP",
     "CATEGORIA": "CURSO",
@@ -2438,7 +2254,7 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-054",
+    "LLAVE KEY": "PWE-050",
     "EDICION": "NOV. I - ED25",
     "LINEA": "EXCEL",
     "CATEGORIA": "CURSO",
@@ -2484,7 +2300,7 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-055",
+    "LLAVE KEY": "PWE-051",
     "EDICION": "NOV. I - ED25",
     "LINEA": "BI",
     "CATEGORIA": "PEE",
@@ -2530,7 +2346,7 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-056",
+    "LLAVE KEY": "PWE-052",
     "EDICION": "NOV. I - ED25",
     "LINEA": "BI",
     "CATEGORIA": "CURSO",
@@ -2576,7 +2392,7 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-057",
+    "LLAVE KEY": "PWE-053",
     "EDICION": "NOV. I - ED25",
     "LINEA": "BI",
     "CATEGORIA": "CURSO",
@@ -2599,7 +2415,7 @@
     "FIN": "Martes 25 Noviembre",
     "SESIONES": 6,
     "BROCHURE": "pdfs/BROCHURE DATABRICKS.pdf",
-    "BENEFICIOS": "",
+    "BENEFICIOS": "🔹 Utilizarán Azure Cloud 👩🏻‍💻\n👉🏼 Te guiamos en clases a crear tu Cuenta \n\n🚨 Por favor, revisa el BROCHURE 👇🏻\nAqui encontrarás la información completa del programa: Temario (malla curricular) y todos los BENEFICIOS 📚",
     "POSTDOCEN": "images/databri.jpg",
     "AVALADO": "",
     "CURSO MES": "",
@@ -2622,7 +2438,7 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-058",
+    "LLAVE KEY": "PWE-054",
     "EDICION": "NOV. I - ED25",
     "LINEA": "EXCEL",
     "CATEGORIA": "ESP.",
@@ -2668,7 +2484,7 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-059",
+    "LLAVE KEY": "PWE-055",
     "EDICION": "NOV. I - ED25",
     "LINEA": "EXCEL",
     "CATEGORIA": "ESP.",
@@ -2714,7 +2530,7 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-060",
+    "LLAVE KEY": "PWE-056",
     "EDICION": "NOV. I - ED25",
     "LINEA": "EXCEL",
     "CATEGORIA": "CURSO",
@@ -2760,7 +2576,7 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-061",
+    "LLAVE KEY": "PWE-057",
     "EDICION": "NOV. I - ED25",
     "LINEA": "PROYECTOS",
     "CATEGORIA": "CURSO",
@@ -2806,7 +2622,7 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-062",
+    "LLAVE KEY": "PWE-058",
     "EDICION": "NOV. I - ED25",
     "LINEA": "PROCESOS",
     "CATEGORIA": "CURSO",
@@ -2852,7 +2668,7 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-063",
+    "LLAVE KEY": "PWE-059",
     "EDICION": "NOV. I - ED25",
     "LINEA": "SAP",
     "CATEGORIA": "CURSO",
@@ -2898,7 +2714,7 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-064",
+    "LLAVE KEY": "PWE-060",
     "EDICION": "NOV. I - ED25",
     "LINEA": "PROYECTOS",
     "CATEGORIA": "CURSO",
@@ -2944,7 +2760,7 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-065",
+    "LLAVE KEY": "PWE-061",
     "EDICION": "NOV. I - ED25",
     "LINEA": "FINANZ",
     "CATEGORIA": "CURSO",
@@ -2990,7 +2806,7 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-066",
+    "LLAVE KEY": "PWE-062",
     "EDICION": "NOV. I - ED25",
     "LINEA": "SAP",
     "CATEGORIA": "CURSO",
@@ -3014,7 +2830,7 @@
     "SESIONES": 6,
     "BROCHURE": "pdfs/BROCHURE SAP HANA FI MODULO FINANZAS.pdf",
     "BENEFICIOS": "🔵 *Utilizarán SAP HANA* 👩🏻‍💻\n👉🏼 Incluye tutorial y manual de instalación\n👉🏼 12 meses de Licencia SAP para practicar\n👉🏼 Contarás con Soporte técnico\n💻 _*Importante*: Para la instalación se necesita una Laptop *Windows*_\n\n🚨 *Por favor, revisa el BROCHURE* 👇🏻\nAqui encontrarás la información completa del programa, el TEMARIO (malla curricular) y todos los BENEFICIOS 📚",
-    "POSTDOCEN": "images/sapfi",
+    "POSTDOCEN": "images/sapfi.jpg",
     "AVALADO": "Avalado por SAP Partner Open",
     "CURSO MES": "NO",
     "INV PRO T": 900,
@@ -3036,7 +2852,7 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-067",
+    "LLAVE KEY": "PWE-063",
     "EDICION": "NOV. I - ED25",
     "LINEA": "PROCESOS",
     "CATEGORIA": "CURSO",
@@ -3082,7 +2898,7 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-068",
+    "LLAVE KEY": "PWE-064",
     "EDICION": "NOV. I - ED25",
     "LINEA": "SAP",
     "CATEGORIA": "CURSO",
@@ -3128,7 +2944,7 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-069",
+    "LLAVE KEY": "PWE-065",
     "EDICION": "NOV. I - ED25",
     "LINEA": "SAP",
     "CATEGORIA": "CURSO",
@@ -3152,7 +2968,7 @@
     "SESIONES": 6,
     "BROCHURE": "pdfs/BROCHURE SAP S4 HANA HCM.pdf",
     "BENEFICIOS": "🔵 *Conoce TODOS los BENEFICIOS a los que accedes*\r\n\r\n🔹 Acceso a Campus Virtual WE 👩🏻‍🏫\r\n🔹 Material digital y grabación de clases \r\n🔹 Certificado digital con respaldo *SAP Partner*\r\n🔹 03 Cursos Online de regalo con acceso ilimitado 📚\r\n🔹 Taller de Automatización SAP con RPA\r\n🔹 Garantía de Aprendizaje 100% \r\n🔹 Desarrollo y seguimiento de tu proyecto *(Evaluado)*\r\n\r\n🔹 *Utilizarán SAP HANA* 👩🏻‍💻\r\n👉🏼 Incluye tutorial y manual de instalación\r\n👉🏼 12 meses de Licencia SAP para practicar\r\n👉🏼 Contarás con Soporte técnico\r\n💻 _*Importante*: Para la instalación se necesita una Laptop *Windows*_\r\n\r\n🚨 *Revisa el BROCHURE* 👇🏻",
-    "POSTDOCEN": "",
+    "POSTDOCEN": "images/hcm.jpg",
     "AVALADO": "Avalado por SAP Partner Open",
     "CURSO MES": "NO",
     "INV PRO T": 900,
@@ -3174,7 +2990,7 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-070",
+    "LLAVE KEY": "PWE-066",
     "EDICION": "NOV. I - ED25",
     "LINEA": "PROCESOS",
     "CATEGORIA": "CURSO",
@@ -3198,7 +3014,7 @@
     "SESIONES": 6,
     "BROCHURE": "",
     "BENEFICIOS": "",
-    "POSTDOCEN": "#N/A",
+    "POSTDOCEN": "",
     "AVALADO": "",
     "CURSO MES": "",
     "INV PRO T": "",
@@ -3220,7 +3036,7 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-071",
+    "LLAVE KEY": "PWE-067",
     "EDICION": "NOV. I - ED25",
     "LINEA": "WEB",
     "CATEGORIA": "CURSO",
@@ -3266,7 +3082,7 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-072",
+    "LLAVE KEY": "PWE-068",
     "EDICION": "NOV. I - ED25",
     "LINEA": "LOGÍSTICA",
     "CATEGORIA": "CURSO",
@@ -3312,7 +3128,7 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-073",
+    "LLAVE KEY": "PWE-069",
     "EDICION": "NOV. I - ED25",
     "LINEA": "PROYECTOS",
     "CATEGORIA": "DIPLOMADO",
@@ -3358,7 +3174,7 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-074",
+    "LLAVE KEY": "PWE-070",
     "EDICION": "NOV. I - ED25",
     "LINEA": "PROYECTOS",
     "CATEGORIA": "PEE",
@@ -3404,7 +3220,7 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-075",
+    "LLAVE KEY": "PWE-071",
     "EDICION": "NOV. I - ED25",
     "LINEA": "PROYECTOS",
     "CATEGORIA": "ESP.",
@@ -3450,7 +3266,7 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-076",
+    "LLAVE KEY": "PWE-072",
     "EDICION": "NOV. I - ED25",
     "LINEA": "PROYECTOS",
     "CATEGORIA": "CURSO",
@@ -3496,7 +3312,7 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-077",
+    "LLAVE KEY": "PWE-073",
     "EDICION": "NOV. I - ED25",
     "LINEA": "LOGÍSTICA",
     "CATEGORIA": "CURSO",
@@ -3519,7 +3335,7 @@
     "FIN": "Sábado 20 Diciembre",
     "SESIONES": 6,
     "BROCHURE": "pdfs/BROCHURE SUPPLY CHAIN ANALYTICS.pdf",
-    "BENEFICIOS": "🔵 *Conoce TODOS los BENEFICIOS a los que accedes*\r\n\r\n🧑🏻‍🏫 *Docente* Supervisor de Cadena de Suministros En *Samsung* \r\n🔹 Acceso a *Campus Virtual* WE 👩🏻‍🏫\r\n🔹 Material digital y grabación de clases \r\n🔹 Certificado digital incluido\r\n🔹 05 Cursos Online de regalo con acceso ilimitado 📚\r\n🔹 Desarrollo y seguimiento de tu proyecto *(Evaluado)*\r\n🔹 Garantía de Aprendizaje 100%\r\n\r\n🔹 Utilizarán Python👩🏻‍💻\r\n👉🏼 *¡Te regalamos el Curso Python Online!*\r\n👉🏼 Incluye videotutorial y manual de Instalación\r\n💻 _*Importante*: Para la instalación se necesita una Laptop *Windows*_\r\n\r\n🚨 *Revisa el BROCHURE* 👇🏻",
+    "BENEFICIOS": "🔵 *Conoce TODOS los BENEFICIOS a los que accedes*\n\n🧑🏻‍🏫 *Docente* Supervisor de Cadena de Suministros En *Samsung* \n🔹 Acceso a *Campus Virtual* WE 👩🏻‍🏫\n🔹 Material digital y grabación de clases \n🔹 Certificado digital incluido\n🔹 05 Cursos Online de regalo con acceso ilimitado 📚\n🔹 Desarrollo y seguimiento de tu proyecto *(Evaluado)*\n🔹 Garantía de Aprendizaje 100%\n\n🔹 Utilizarán Python👩🏻‍💻\n👉🏼 *¡Te regalamos el Curso Python Online!*\n👉🏼 Incluye videotutorial y manual de Instalación\n💻 _*Importante*: Para la instalación se necesita una Laptop *Windows*_\n\n🚨 *Por favor, revisa el BROCHURE* 👇🏻\nAqui encontrarás la información completa del programa, el TEMARIO (malla curricular) y todos los BENEFICIOS 📚",
     "POSTDOCEN": "",
     "AVALADO": "Avalado por IBM® Partner World",
     "CURSO MES": "NO",
@@ -3542,7 +3358,7 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-078",
+    "LLAVE KEY": "PWE-074",
     "EDICION": "NOV. I - ED25",
     "LINEA": "BI",
     "CATEGORIA": "CURSO",
@@ -3565,8 +3381,8 @@
     "FIN": "Sábado 13 Diciembre",
     "SESIONES": 5,
     "BROCHURE": "pdfs/BROCHURE SQL PRESENCIAL.pdf",
-    "BENEFICIOS": "🔵 *Conoce TODOS los BENEFICIOS a los que accedes* \n\n🔹 Laptop con el sistema SQL Server incluido 👩🏻‍💻\n👉🏼 Si traes tu propia laptop, *obtén un descuento de S/50* \n\n🔹 Acceso a tu *Campus Virtual* WE 👩🏻‍🏫\n🔹 *Material digital y grabación* de clases.\n🔹 Certificado digital con *respaldo Microsoft Partner Network*\n🔹 03 Curso Online de regalo con acceso ilimitado 📚\n🔹 Desarrollo y seguimiento de tu proyecto *(Evaluado)*\n🔹 Garantía de Aprendizaje 100%\n\n🚨 *Revisa el BROCHURE* 👇🏻",
-    "POSTDOCEN": "",
+    "BENEFICIOS": "🔵 *Conoce TODOS los BENEFICIOS a los que accedes* \n\n🔹 Laptop con el sistema SQL Server incluido 👩🏻‍💻\n👉🏼 Si traes tu propia laptop, *obtén un descuento de S/50* \n\n🔹 Acceso a tu *Campus Virtual* WE 👩🏻‍🏫\n🔹 *Material digital y grabación* de clases.\n🔹 Certificado digital con *respaldo Microsoft Partner Network*\n🔹 03 Curso Online de regalo con acceso ilimitado 📚\n🔹 Desarrollo y seguimiento de tu proyecto *(Evaluado)*\n🔹 Garantía de Aprendizaje 100%\n\n🚨 *Por favor, revisa el BROCHURE* 👇🏻\nAqui encontrarás la información completa del programa, el TEMARIO (malla curricular) y todos los BENEFICIOS 📚",
+    "POSTDOCEN": "images/sqlprese.jpg",
     "AVALADO": "Avalado por Microsoft Partner Network",
     "CURSO MES": "NO",
     "INV PRO T": 940,
@@ -3588,7 +3404,7 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-079",
+    "LLAVE KEY": "PWE-075",
     "EDICION": "NOV. I - ED25",
     "LINEA": "BI",
     "CATEGORIA": "DIPLOMADO",
@@ -3634,7 +3450,7 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-080",
+    "LLAVE KEY": "PWE-076",
     "EDICION": "NOV. I - ED25",
     "LINEA": "BI",
     "CATEGORIA": "CURSO",
@@ -3680,7 +3496,7 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-081",
+    "LLAVE KEY": "PWE-077",
     "EDICION": "NOV. II - ED25",
     "LINEA": "PROCESOS",
     "CATEGORIA": "CURSO",
@@ -3726,7 +3542,7 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-082",
+    "LLAVE KEY": "PWE-078",
     "EDICION": "NOV. I - ED25",
     "LINEA": "PROCESOS",
     "CATEGORIA": "ESP.",
@@ -3772,7 +3588,7 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-083",
+    "LLAVE KEY": "PWE-079",
     "EDICION": "NOV. I - ED25",
     "LINEA": "PROCESOS",
     "CATEGORIA": "CURSO",
@@ -3818,7 +3634,7 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-084",
+    "LLAVE KEY": "PWE-080",
     "EDICION": "NOV. I - ED25",
     "LINEA": "PROCESOS",
     "CATEGORIA": "CURSO",
@@ -3841,8 +3657,8 @@
     "FIN": "Domingo 28 Diciembre",
     "SESIONES": 6,
     "BROCHURE": "pdfs/BROCHURE LEAN SIX SIGMA YELLOW BELT.pdf",
-    "BENEFICIOS": "*Conoce TODOS los BENEFICIOS a los que accedes* \r\n\r\n🔹 Acceso a Campus Virtual WE 👩🏻‍🏫\r\n🔹 Material digital y grabación de clases \r\n🔹 Certificado digital del curso\r\n🔹 02 Cursos Online de regalo con acceso ilimitado 📚\r\n🔹 Desarrollo y seguimiento de tu proyecto *(Evaluado)*\r\n🔹 Garantía de Aprendizaje 100%\r\n\r\n*¡Certificados Adicionales!* ⭐\r\n👉🏻 Certificado *WHITE BELT* tiene la inversión de *$10* ~(Normal $50)~\r\n👉🏻 Certificado *YELLOW BELT* tiene la inversión de *$50* ~(Normal $150)~\r\n_Incluye material de práctica y 2 intentos del examen_\r\n\r\n🔹 *Utilizarán Minitab* 👩🏻‍💻\r\n👉🏻 Incluye tutorial y manual de instalación\r\n💻 _*Importante*: Para la instalación se necesita una Laptop *Windows*_\r\n\r\n🚨 *Revisa el BROCHURE* 👇🏻",
-    "POSTDOCEN": "",
+    "BENEFICIOS": "🔵  *Utilizarán Minitab* 👩🏻‍💻\n👉🏻 Incluye tutorial y manual de instalación\n💻 _*Importante*: Para la instalación se necesita una Laptop *Windows*_\n\n🚨 *Por favor, revisa el BROCHURE* 👇🏻\nAqui encontrarás la información completa del programa, el TEMARIO (malla curricular) y todos los BENEFICIOS 📚",
+    "POSTDOCEN": "images/leansix.jpg",
     "AVALADO": "",
     "CURSO MES": "NO",
     "INV PRO T": 820,
@@ -3864,7 +3680,7 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-085",
+    "LLAVE KEY": "PWE-081",
     "EDICION": "NOV. I - ED25",
     "LINEA": "BI",
     "CATEGORIA": "CURSO",
@@ -3888,7 +3704,7 @@
     "SESIONES": 6,
     "BROCHURE": "pdfs/BROCHURE IA & DEEP LEARNING.pdf",
     "BENEFICIOS": "🔵 *Conoce TODOS los BENEFICIOS a los que accedes*\r\n\r\n🔹 Acceso a *Campus Virtual* WE 👩🏻‍🏫\r\n🔹 Material digital y grabación de clases \r\n🔹 Certificado digital con respaldo *IBM Partner*\r\n🔹 02 Cursos Online de regalo con acceso ilimitado 📚\r\n🔹 Desarrollo y seguimiento de tu proyecto *(Evaluado)*\r\n🔹 Garantía de Aprendizaje 100% \r\n\r\n🔹 *Necesitas tener conocimientos en PYTHON* 👩🏻‍💻\r\n👉🏼 ¡Te regalamos el Curso Online Certificado!\r\n👉🏼 Incluye tutorial y manual de instalación\r\n\r\n*¡Certificado Adicional!* ⭐\r\n👉🏻 Certificado *Artificial Intelligence Professional* tiene la inversión de *$50* ~(Normal $150)~\r\n_Incluye material de práctica y 2 intentos del examen_\r\n\r\n🚨 *Revisa el BROCHURE* 👇🏻",
-    "POSTDOCEN": "",
+    "POSTDOCEN": "images/iadeep.jpg",
     "AVALADO": "Avalado por IBM® Partner World",
     "CURSO MES": "SI",
     "INV PRO T": 690,
@@ -3910,7 +3726,7 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-086",
+    "LLAVE KEY": "PWE-082",
     "EDICION": "NOV. II - ED25",
     "LINEA": "PROYECTOS",
     "CATEGORIA": "CURSO",
@@ -3956,7 +3772,7 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-087",
+    "LLAVE KEY": "PWE-083",
     "EDICION": "NOV. I - ED25",
     "LINEA": "PROYECTOS",
     "CATEGORIA": "CURSO",
@@ -4002,7 +3818,7 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-088",
+    "LLAVE KEY": "PWE-084",
     "EDICION": "NOV. I - ED25",
     "LINEA": "BI",
     "CATEGORIA": "CURSO",
@@ -4025,8 +3841,8 @@
     "FIN": "Domingo 28 Diciembre",
     "SESIONES": 6,
     "BROCHURE": "pdfs/BROCHURE SQL SERVER AVANZADO.pdf",
-    "BENEFICIOS": "🔵 *Conoce TODOS los BENEFICIOS a los que accedes*\n\n🔹 Acceso a *Campus Virtual* WE 👩🏻‍🏫\n🔹 Material digital y grabación de clases \n🔹 Certificado digital con respaldo *Microsoft Partner*\n🔹 03 Cursos Online de regalo con acceso ilimitado 📚\n🔹 Desarrollo y seguimiento de tu proyecto *(Evaluado)*\n🔹 Contenido Integrado con - Chat GPT\n🔹 Garantía de Aprendizaje 100% \n\n🔹 *Utilizarán SQL Server* 👩🏻‍💻\n👉🏼 Incluye tutorial y manual de instalación\n💻 _*Importante*: Para la instalación se necesita una Laptop *Windows*_\n\n🚨 *Revisa el BROCHURE* 👇🏻",
-    "POSTDOCEN": "",
+    "BENEFICIOS": "🔵 *Conoce TODOS los BENEFICIOS a los que accedes*\n\n🔹 Acceso a *Campus Virtual* WE 👩🏻‍🏫\n🔹 Material digital y grabación de clases \n🔹 Certificado digital con respaldo *Microsoft Partner*\n🔹 03 Cursos Online de regalo con acceso ilimitado 📚\n🔹 Desarrollo y seguimiento de tu proyecto *(Evaluado)*\n🔹 Contenido Integrado con - Chat GPT\n🔹 Garantía de Aprendizaje 100% \n\n🔹 *Utilizarán SQL Server* 👩🏻‍💻\n👉🏼 Incluye tutorial y manual de instalación\n💻 _*Importante*: Para la instalación se necesita una Laptop *Windows*_\n\n🚨 *Por favor, revisa el BROCHURE* 👇🏻\nAqui encontrarás la información completa del programa, el TEMARIO (malla curricular) y todos los BENEFICIOS 📚",
+    "POSTDOCEN": "images/sqlavanz.jpg",
     "AVALADO": "Avalado por Microsoft Partner Network",
     "CURSO MES": "NO",
     "INV PRO T": 830,
@@ -4048,7 +3864,7 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-089",
+    "LLAVE KEY": "PWE-085",
     "EDICION": "NOV. I - ED25",
     "LINEA": "BI",
     "CATEGORIA": "ESP.",
@@ -4094,7 +3910,7 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-090",
+    "LLAVE KEY": "PWE-086",
     "EDICION": "NOV. I - ED25",
     "LINEA": "BI",
     "CATEGORIA": "CURSO",
@@ -4140,7 +3956,7 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-091",
+    "LLAVE KEY": "PWE-087",
     "EDICION": "NOV. I - ED25",
     "LINEA": "SAP",
     "CATEGORIA": "ESP.",
@@ -4167,15 +3983,15 @@
     "POSTDOCEN": "images/espsaphanaplan.jpg",
     "AVALADO": "Avalado por SAP Partner Open",
     "CURSO MES": "NO",
-    "INV PRO T": 1600,
-    "INV EST T": 1370,
-    "INV PRO": 800,
-    "INV EST": 685,
+    "INV PRO T": 1350,
+    "INV EST T": 1250,
+    "INV PRO": 675,
+    "INV EST": 625,
     "RESEST": 250,
     "RESPRO": 350,
     "VIDEO": "",
-    "EXEST": 616.5,
-    "EXPRO": 720,
+    "EXEST": 562.5,
+    "EXPRO": 607.5,
     "PERSONALIZADO": "La producción inteligente necesita planificación 🏗️\nAprende SAP HANA Producción para optimizar operaciones industriales 🔧\n👉🏻 Te paso la info completa.",
     "RES1": "🏭 Excelente, actualízate en SAP HANA Producción y optimiza procesos productivos.",
     "RES2": "💼 Buenísimo, muy demandado en empresas industriales que requieren planificación de planta.",
@@ -4186,7 +4002,7 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-092",
+    "LLAVE KEY": "PWE-088",
     "EDICION": "NOV. I - ED25",
     "LINEA": "SAP",
     "CATEGORIA": "CURSO",
@@ -4232,7 +4048,7 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-093",
+    "LLAVE KEY": "PWE-089",
     "EDICION": "NOV. I - ED25",
     "LINEA": "EXCEL",
     "CATEGORIA": "CURSO",
@@ -4256,7 +4072,7 @@
     "SESIONES": 6,
     "BROCHURE": "pdfs/BROCHURE EXCEL AVANZADO.pdf",
     "BENEFICIOS": "🔵 *Conoce TODOS los BENEFICIOS a los que accedes*\r\n\r\n🔹 Acceso a *Campus Virtual* WE 👩🏻‍🏫\r\n🔹 Material digital y grabación de clases \r\n🔹 Certificado digital con respaldo *Microsoft Partner*\r\n🔹 03 Cursos Online de regalo con acceso ilimitado 📚\r\n🔹 Desarrollo y seguimiento de tu proyecto *(Evaluado)*\r\n🔹 Contenido Integrado con Chat GPT\r\n🔹 Garantía de Aprendizaje 100%\r\n\r\n🚨 *Revisa el BROCHURE* 👇🏻",
-    "POSTDOCEN": "",
+    "POSTDOCEN": "images/excelavanz.jpg",
     "AVALADO": "Avalado por Microsoft Partner Network",
     "CURSO MES": "NO",
     "INV PRO T": 420,
@@ -4278,7 +4094,7 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-094",
+    "LLAVE KEY": "PWE-090",
     "EDICION": "NOV. III - ED25",
     "LINEA": "PROYECTOS",
     "CATEGORIA": "CURSO",
@@ -4324,7 +4140,7 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-095",
+    "LLAVE KEY": "PWE-091",
     "EDICION": "NOV. I - ED25",
     "LINEA": "SAP",
     "CATEGORIA": "CURSO",
@@ -4348,7 +4164,7 @@
     "SESIONES": 6,
     "BROCHURE": "pdfs/BROCHURE SAP HANA PP MODULO PRODUCCION.pdf",
     "BENEFICIOS": "🔵 *Conoce TODOS los BENEFICIOS a los que accedes*\r\n\r\n🔹 Acceso a *Campus Virtual* WE 👩🏻‍🏫\r\n🔹 Material digital y grabación de clases \r\n🔹 Certificado digital con respaldo *SAP Partner*\r\n🔹 04 Cursos Online de regalo con acceso ilimitado 📚\r\n🔹 Acceso a *Curso SAP R3 con certificación* incluida\r\n🔹 Taller de Automatización SAP con RPA\r\n🔹 Garantía de Aprendizaje 100% \r\n\r\n🔹 *Utilizarán SAP HANA* 👩🏻‍💻\r\n👉🏼 Incluye tutorial y manual de instalación\r\n👉🏼 12 meses de Licencia SAP para practicar\r\n👉🏼 Contarás con Soporte técnico\r\n💻 _*Importante*: Para la instalación se necesita una Laptop *Windows*_\r\n\r\n🚨 *Revisa el BROCHURE* 👇🏻",
-    "POSTDOCEN": "",
+    "POSTDOCEN": "images/sappp.jpg",
     "AVALADO": "Avalado por SAP Partner Open",
     "CURSO MES": "NO",
     "INV PRO T": 900,
@@ -4370,7 +4186,7 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-096",
+    "LLAVE KEY": "PWE-092",
     "EDICION": "NOV. I - ED25",
     "LINEA": "LOGÍSTICA",
     "CATEGORIA": "DIPLOMADO",
@@ -4416,7 +4232,7 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-097",
+    "LLAVE KEY": "PWE-093",
     "EDICION": "NOV. I - ED25",
     "LINEA": "LOGÍSTICA",
     "CATEGORIA": "CURSO",
@@ -4462,7 +4278,7 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-098",
+    "LLAVE KEY": "PWE-094",
     "EDICION": "NOV. I - ED25",
     "LINEA": "MKT",
     "CATEGORIA": "CURSO",
@@ -4508,7 +4324,7 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-099",
+    "LLAVE KEY": "PWE-095",
     "EDICION": "NOV. I - ED25",
     "LINEA": "BI",
     "CATEGORIA": "CURSO",
@@ -4532,7 +4348,7 @@
     "SESIONES": 5,
     "BROCHURE": "",
     "BENEFICIOS": "",
-    "POSTDOCEN": "#N/A",
+    "POSTDOCEN": "",
     "AVALADO": "",
     "CURSO MES": "",
     "INV PRO T": "",
@@ -4554,7 +4370,7 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-100",
+    "LLAVE KEY": "PWE-096",
     "EDICION": "NOV. I - ED25",
     "LINEA": "LOGÍSTICA",
     "CATEGORIA": "CURSO",
@@ -4578,7 +4394,7 @@
     "SESIONES": 6,
     "BROCHURE": "pdfs/BROCHURE GEST DE COMPRAS Y PROVEEDORES.pdf",
     "BENEFICIOS": "🔵 *Conoce TODOS los BENEFICIOS a los que accedes*\n\n🔹 Acceso a Campus Virtual WE 👩🏻‍🏫\n🔹 Material digital y grabación de clases \n🔹 Certificado digital \n🔹 04 Cursos Online de regalo con acceso ilimitado 📚\n🔹 Desarrollo y seguimiento de tu proyecto *(Evaluado)*\n🔹 Garantía de Aprendizaje 100%\n\n🚨 *Revisa el BROCHURE* 👇🏻",
-    "POSTDOCEN": "",
+    "POSTDOCEN": "images/gestcomp.jpg",
     "AVALADO": "",
     "CURSO MES": "SI",
     "INV PRO T": 830,
@@ -4600,7 +4416,7 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-101",
+    "LLAVE KEY": "PWE-097",
     "EDICION": "NOV. I - ED25",
     "LINEA": "EXCEL",
     "CATEGORIA": "ESP.",
@@ -4646,7 +4462,7 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-102",
+    "LLAVE KEY": "PWE-098",
     "EDICION": "NOV. II - ED25",
     "LINEA": "EXCEL",
     "CATEGORIA": "CURSO",
@@ -4670,7 +4486,7 @@
     "SESIONES": 6,
     "BROCHURE": "pdfs/BROCHURE EXCEL AVANZADO.pdf",
     "BENEFICIOS": "🔵 *Conoce TODOS los BENEFICIOS a los que accedes*\r\n\r\n🔹 Acceso a *Campus Virtual* WE 👩🏻‍🏫\r\n🔹 Material digital y grabación de clases \r\n🔹 Certificado digital con respaldo *Microsoft Partner*\r\n🔹 03 Cursos Online de regalo con acceso ilimitado 📚\r\n🔹 Desarrollo y seguimiento de tu proyecto *(Evaluado)*\r\n🔹 Contenido Integrado con Chat GPT\r\n🔹 Garantía de Aprendizaje 100%\r\n\r\n🚨 *Revisa el BROCHURE* 👇🏻",
-    "POSTDOCEN": "",
+    "POSTDOCEN": "images/excelavanz.jpg",
     "AVALADO": "Avalado por Microsoft Partner Network",
     "CURSO MES": "NO",
     "INV PRO T": 420,
@@ -4692,7 +4508,7 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-103",
+    "LLAVE KEY": "PWE-099",
     "EDICION": "NOV. I - ED25",
     "LINEA": "BI",
     "CATEGORIA": "CURSO",
@@ -4716,7 +4532,7 @@
     "SESIONES": 5,
     "BROCHURE": "pdfs/BROCHURE POWER BI PRESENCIAL.pdf",
     "BENEFICIOS": "🔹 Recuerda que si traes tu Propia Laptop a todas las sesiones, te descontamos S/50 en tu inscripción\n\n🚨 Por favor, revisa el BROCHURE 👇🏻\nAqui encontrarás la información completa del programa: Temario (malla curricular) y todos los BENEFICIOS 📚\n\n👉🏼 Te comparto un Modelo de Certificado que elevará tu perfil profesional ",
-    "POSTDOCEN": "",
+    "POSTDOCEN": "images/powerbipres.jpg",
     "AVALADO": "Avalado por Microsoft Partner Network",
     "CURSO MES": "NO",
     "INV PRO T": 940,
@@ -4738,7 +4554,7 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-104",
+    "LLAVE KEY": "PWE-100",
     "EDICION": "DIC. I - ED25",
     "LINEA": "PROCESOS",
     "CATEGORIA": "DIPLOMADO",
@@ -4784,7 +4600,7 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-105",
+    "LLAVE KEY": "PWE-101",
     "EDICION": "DIC. I - ED25",
     "LINEA": "PROCESOS",
     "CATEGORIA": "PEE",
@@ -4830,7 +4646,7 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-106",
+    "LLAVE KEY": "PWE-102",
     "EDICION": "DIC. I - ED25",
     "LINEA": "PROCESOS",
     "CATEGORIA": "CURSO",
@@ -4876,7 +4692,7 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-107",
+    "LLAVE KEY": "PWE-103",
     "EDICION": "DIC. I - ED25",
     "LINEA": "LOGÍSTICA",
     "CATEGORIA": "CURSO",
@@ -4922,7 +4738,7 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-108",
+    "LLAVE KEY": "PWE-104",
     "EDICION": "DIC. I - ED25",
     "LINEA": "BI",
     "CATEGORIA": "CURSO",
@@ -4968,7 +4784,7 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-109",
+    "LLAVE KEY": "PWE-105",
     "EDICION": "DIC. I - ED25",
     "LINEA": "FINANZ",
     "CATEGORIA": "DIPLOMADO",
@@ -4984,7 +4800,7 @@
     "INICIO4": "12/3/2026",
     "CURSO5": "GEST FINANC. PROYECT",
     "INICIO5": "7/4/2026",
-    "DOCENTE": "César Bezada\nChristian Montánchez\nRalphi Jauregui\nAndy Leyton\nElmer León",
+    "DOCENTE": "Maria Palacios\nChristian Montánchez\nJosé Botonero\nAndy Leyton\nElmer León",
     "DIAS": "Mar-Jue",
     "HORARIO": "7PM - 10PM",
     "INICIO": "Jueves 4 Diciembre",
@@ -4992,7 +4808,7 @@
     "SESIONES": 30,
     "BROCHURE": "pdfs/BROCHURE DIPLOMADO EN GESTION FINANCIERA.pdf",
     "BENEFICIOS": "🔹 Utilizarán SAP HANA 👩🏻‍💻\n👉🏼 Incluye tutorial y manual de instalación\n👉🏼 12 meses de Licencia SAP para practicar\n🔹 Utilizarán CONCAR \n💻 Importante: Para la instalación se necesita una Laptop Windows\n\n🚨 Por favor, revisa el BROCHURE 👇🏻\nAqui encontrarás la información completa del programa: Temario (malla curricular) y todos los BENEFICIOS 📚\n\n👉🏼 Te comparto un Modelo de Certificado que elevará tu perfil profesional ",
-    "POSTDOCEN": "",
+    "POSTDOCEN": "images/dipfin.jpg",
     "AVALADO": "",
     "CURSO MES": "",
     "INV PRO T": 3810,
@@ -5014,7 +4830,7 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-110",
+    "LLAVE KEY": "PWE-106",
     "EDICION": "DIC. I - ED25",
     "LINEA": "FINANZ",
     "CATEGORIA": "CURSO",
@@ -5030,15 +4846,15 @@
     "INICIO4": "",
     "CURSO5": "",
     "INICIO5": "",
-    "DOCENTE": "César Bezada",
+    "DOCENTE": "Maria Palacios",
     "DIAS": "Mar-Jue",
     "HORARIO": "7PM - 10PM",
     "INICIO": "Jueves 4 Diciembre",
     "FIN": "Martes 23 Diciembre",
     "SESIONES": 6,
     "BROCHURE": "pdfs/BROCHURE PLANEAMIENTO FINANCIERO.pdf",
-    "BENEFICIOS": "",
-    "POSTDOCEN": "",
+    "BENEFICIOS": "🔹 Utilizarán Excel 👩🏻‍💻\n\n🚨 Por favor, revisa el BROCHURE 👇🏻\nAqui encontrarás la información completa del programa: Temario (malla curricular) y todos los BENEFICIOS 📚",
+    "POSTDOCEN": "images/planfinan.jpg",
     "AVALADO": "",
     "CURSO MES": "NO",
     "INV PRO T": 750,
@@ -5060,7 +4876,7 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-111",
+    "LLAVE KEY": "PWE-107",
     "EDICION": "DIC. I - ED25",
     "LINEA": "LOGÍSTICA",
     "CATEGORIA": "CURSO",
@@ -5106,7 +4922,7 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-112",
+    "LLAVE KEY": "PWE-108",
     "EDICION": "DIC. I - ED25",
     "LINEA": "PROCESOS",
     "CATEGORIA": "CURSO",
@@ -5152,7 +4968,7 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-113",
+    "LLAVE KEY": "PWE-109",
     "EDICION": "DIC. I - ED25",
     "LINEA": "BI",
     "CATEGORIA": "ESP.",
@@ -5176,7 +4992,7 @@
     "SESIONES": 12,
     "BROCHURE": "pdfs/BROCHURE ESPECIALIZACION DE SQL.pdf",
     "BENEFICIOS": "🔵 *Utilizarán SQL Server* 👩🏻‍💻\n👉🏼 Incluye tutorial y manual de instalación\n💻 _*Importante*: Para la instalación se necesita una Laptop *Windows*_\n\n🚨 *Por favor, revisa el BROCHURE* 👇🏻\nAqui encontrarás la información completa del programa, el TEMARIO (malla curricular) y todos los BENEFICIOS 📚",
-    "POSTDOCEN": "images/espsqljpg",
+    "POSTDOCEN": "images/espsql.jpg",
     "AVALADO": "Avalado por Microsoft Partner Network",
     "CURSO MES": "NO",
     "INV PRO T": 1600,
@@ -5195,11 +5011,11 @@
     "RES4": "🚀 Perfecto, SQL será tu ventaja en prácticas de análisis y TI.",
     "RES5": "📊 Excelente, podrás gestionar tus datos con control y rapidez como independiente.",
     "ENLACE": "https://we-educacion.com/slides/especializacion-en-sql-server-107",
-    "HABITILITADO": ""
+    "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-114",
-    "EDICION": "ED2025-dic-I",
+    "LLAVE KEY": "PWE-110",
+    "EDICION": "DIC. I - ED25",
     "LINEA": "BI",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "SQL SERVER",
@@ -5244,54 +5060,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-115",
-    "EDICION": "ED2025-dic-I",
-    "LINEA": "PROCESOS",
-    "CATEGORIA": "CURSO",
-    "PROGRAMA": "MODEL BIZ.",
-    "INICIO6": "13/12/2025",
-    "CURSO1": "",
-    "INICIO1": "",
-    "CURSO2": "",
-    "INICIO2": "",
-    "CURSO3": "",
-    "INICIO3": "",
-    "CURSO4": "",
-    "INICIO4": "",
-    "CURSO5": "",
-    "INICIO5": "",
-    "DOCENTE": "David Ashcallay",
-    "DIAS": "Sáb",
-    "HORARIO": "9AM - 12PM",
-    "INICIO": "Sábado 13 Diciembre",
-    "FIN": "Sábado 17 Enero",
-    "SESIONES": 6,
-    "BROCHURE": "pdfs/BROCHURE MODELAMIENTO DE PROCESOS CON BIZAGI.pdf",
-    "BENEFICIOS": "🔵 *Utilizarán Bizagi Modeler & Studio* 👩🏻‍💻\n👉🏼 Incluye tutorial y manual de instalación\n👉🏼 Incluye contenido para Simulación y Automatización de proceso\n\n🚨 *Por favor, revisa el BROCHURE* 👇🏻\nAqui encontrarás la información completa del programa, el TEMARIO (malla curricular) y todos los BENEFICIOS 📚",
-    "POSTDOCEN": "images/bizagi.jpg",
-    "AVALADO": "",
-    "CURSO MES": "NO",
-    "INV PRO T": 610,
-    "INV EST T": 550,
-    "INV PRO": 305,
-    "INV EST": 275,
-    "RESEST": 150,
-    "RESPRO": 150,
-    "VIDEO": "",
-    "EXEST": 247.5,
-    "EXPRO": 274.5,
-    "PERSONALIZADO": "*Entender el proceso es clave para cualquier proyecto* 🚀 \nAprende a diseñar, optimizar y automatizar procesos con Bizagi de forma práctica ⚙️\nAhora te adjunto la información a detalle 👇🏻",
-    "RES1": "📈 Excelente, actualízate con Model Biz. y potencia tu visión estratégica en los negocios.",
-    "RES2": "💼 Buenísimo, dominar Model Biz. te dará más oportunidades en empresas que buscan perfiles analíticos.",
-    "RES3": "🎓 ¡Genial! Con Model Biz. sumarás una habilidad clave que te diferenciará desde la universidad.",
-    "RES4": "🚀 ¡Perfecto! Conocer Model Biz. será un plus para destacar en prácticas profesionales.",
-    "RES5": "📊 ¡Excelente! Con Model Biz. podrás optimizar tu propio negocio y tomar decisiones más inteligentes.",
-    "ENLACE": "https://we-educacion.com/slides/modelamiento-de-procesos-con-bizagi-118",
-    "HABITILITADO": 1
-  },
-  {
-    "LLAVE KEY": "PWE-116",
-    "EDICION": "ED2025-dic-I",
+    "LLAVE KEY": "PWE-111",
+    "EDICION": "DIC. I - ED25",
     "LINEA": "WEB",
     "CATEGORIA": "ESP.",
     "PROGRAMA": "ESP. FRONTEND",
@@ -5336,8 +5106,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-117",
-    "EDICION": "ED2025-dic-I",
+    "LLAVE KEY": "PWE-112",
+    "EDICION": "DIC. I - ED25",
     "LINEA": "WEB",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "PROG. WEB",
@@ -5382,8 +5152,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-118",
-    "EDICION": "ED2025-dic-I",
+    "LLAVE KEY": "PWE-113",
+    "EDICION": "DIC. I - ED25",
     "LINEA": "FINANZ",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "PRICING Y RENTABILIDAD",
@@ -5406,7 +5176,7 @@
     "SESIONES": 6,
     "BROCHURE": "",
     "BENEFICIOS": "",
-    "POSTDOCEN": "#N/A",
+    "POSTDOCEN": "",
     "AVALADO": "",
     "CURSO MES": "",
     "INV PRO T": "",
@@ -5425,11 +5195,11 @@
     "RES4": "",
     "RES5": "",
     "ENLACE": "#N/A",
-    "HABITILITADO": 1
+    "HABITILITADO": ""
   },
   {
-    "LLAVE KEY": "PWE-119",
-    "EDICION": "ED2025-dic-I",
+    "LLAVE KEY": "PWE-114",
+    "EDICION": "DIC. I - ED25",
     "LINEA": "EXCEL",
     "CATEGORIA": "ESP.",
     "PROGRAMA": "ESP. EXCEL EXP",
@@ -5474,8 +5244,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-120",
-    "EDICION": "ED2025-dic-I",
+    "LLAVE KEY": "PWE-115",
+    "EDICION": "DIC. I - ED25",
     "LINEA": "EXCEL",
     "CATEGORIA": "ESP.",
     "PROGRAMA": "ESPEC. EXCEL",
@@ -5520,8 +5290,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-121",
-    "EDICION": "ED2025-dic-I",
+    "LLAVE KEY": "PWE-116",
+    "EDICION": "DIC. I - ED25",
     "LINEA": "EXCEL",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "EXCEL BÁSICO",
@@ -5566,8 +5336,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-122",
-    "EDICION": "ED2025-dic-I",
+    "LLAVE KEY": "PWE-117",
+    "EDICION": "DIC. I - ED25",
     "LINEA": "BI",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "PYTHON AVANZ.",
@@ -5612,8 +5382,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-123",
-    "EDICION": "ED2025-dic-I",
+    "LLAVE KEY": "PWE-118",
+    "EDICION": "DIC. I - ED25",
     "LINEA": "SAP",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "SAP HANA IN",
@@ -5658,8 +5428,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-124",
-    "EDICION": "ED2025-dic-I",
+    "LLAVE KEY": "PWE-119",
+    "EDICION": "DIC. I - ED25",
     "LINEA": "EXCEL",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "PROG. MACROS",
@@ -5704,8 +5474,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-125",
-    "EDICION": "ED2025-dic-I",
+    "LLAVE KEY": "PWE-120",
+    "EDICION": "DIC. I - ED25",
     "LINEA": "BI",
     "CATEGORIA": "DIPLOMADO",
     "PROGRAMA": "DIP INTELIG. Y ANALIST. DATOS V2",
@@ -5750,8 +5520,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-126",
-    "EDICION": "ED2025-dic-I",
+    "LLAVE KEY": "PWE-121",
+    "EDICION": "DIC. I - ED25",
     "LINEA": "BI",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "DATA ANALYTICS",
@@ -5796,8 +5566,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-127",
-    "EDICION": "ED2025-dic-I",
+    "LLAVE KEY": "PWE-122",
+    "EDICION": "DIC. I - ED25",
     "LINEA": "LOGÍSTICA",
     "CATEGORIA": "PEE",
     "PROGRAMA": "PEE PLAN. DEMAN.",
@@ -5842,8 +5612,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-128",
-    "EDICION": "ED2025-dic-I",
+    "LLAVE KEY": "PWE-123",
+    "EDICION": "DIC. I - ED25",
     "LINEA": "LOGÍSTICA",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "KPIS LOGÍSTICOS POWER BI",
@@ -5888,8 +5658,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-129",
-    "EDICION": "ED2025-dic-I",
+    "LLAVE KEY": "PWE-124",
+    "EDICION": "DIC. I - ED25",
     "LINEA": "PROCESOS",
     "CATEGORIA": "ESP.",
     "PROGRAMA": "ESP. POWER APPS Y AUT.",
@@ -5934,8 +5704,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-130",
-    "EDICION": "ED2025-dic-I",
+    "LLAVE KEY": "PWE-125",
+    "EDICION": "DIC. I - ED25",
     "LINEA": "PROCESOS",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "POWER APPS Y AUT.",
@@ -5980,8 +5750,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-131",
-    "EDICION": "ED2025-dic-I",
+    "LLAVE KEY": "PWE-126",
+    "EDICION": "DIC. I - ED25",
     "LINEA": "EXCEL",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "EXCEL INTERM",
@@ -6026,8 +5796,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-132",
-    "EDICION": "ED2025-dic-I",
+    "LLAVE KEY": "PWE-127",
+    "EDICION": "DIC. I - ED25",
     "LINEA": "SAP",
     "CATEGORIA": "ESP.",
     "PROGRAMA": "ESPEC.SAP HANA",
@@ -6053,15 +5823,15 @@
     "POSTDOCEN": "images/espsap.jpg",
     "AVALADO": "Avalado por SAP Partner Open",
     "CURSO MES": "NO",
-    "INV PRO T": 2250,
-    "INV EST T": 1920,
-    "INV PRO": 1125,
-    "INV EST": 960,
+    "INV PRO T": 1900,
+    "INV EST T": 1750,
+    "INV PRO": 950,
+    "INV EST": 875,
     "RESEST": 250,
     "RESPRO": 350,
     "VIDEO": "",
-    "EXEST": 864,
-    "EXPRO": 1012.5,
+    "EXEST": 787.5,
+    "EXPRO": 855,
     "PERSONALIZADO": "El futuro de SAP está en HANA ⚡\nAprende a manejar esta plataforma de alto rendimiento para impulsar la transformación digital 🌐\n👉🏻 Aquí tienes la información.",
     "RES1": "⚡ Excelente, actualízate en SAP HANA, la base de datos más avanzada del mercado.",
     "RES2": "🏢 Buenísimo, muy buscado en proyectos de transformación digital empresarial.",
@@ -6072,8 +5842,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-133",
-    "EDICION": "ED2025-dic-I",
+    "LLAVE KEY": "PWE-128",
+    "EDICION": "DIC. I - ED25",
     "LINEA": "SAP",
     "CATEGORIA": "ESP.",
     "PROGRAMA": "ESP. SAP MINERÍA",
@@ -6099,15 +5869,15 @@
     "POSTDOCEN": "images/espsapmineria.jpg",
     "AVALADO": "Avalado por SAP Partner Open",
     "CURSO MES": "NO",
-    "INV PRO T": 2250,
-    "INV EST T": 1920,
-    "INV PRO": 1125,
-    "INV EST": 960,
+    "INV PRO T": 1900,
+    "INV EST T": 1750,
+    "INV PRO": 950,
+    "INV EST": 875,
     "RESEST": 250,
     "RESPRO": 350,
     "VIDEO": "",
-    "EXEST": 864,
-    "EXPRO": 1012.5,
+    "EXEST": 787.5,
+    "EXPRO": 855,
     "PERSONALIZADO": "El sector minero apuesta por SAP ⛏️\nEspecialízate en SAP aplicado a minería y lleva tu perfil al siguiente nivel en industrias clave 💼\n👉🏻 Te paso la info completa.",
     "RES1": "⛏️ Excelente, actualízate en SAP aplicado a minería y potencia tu perfil en un sector clave.",
     "RES2": "💼 Buenísimo, las empresas mineras requieren especialistas en procesos con SAP.",
@@ -6118,8 +5888,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-134",
-    "EDICION": "ED2025-dic-I",
+    "LLAVE KEY": "PWE-129",
+    "EDICION": "DIC. I - ED25",
     "LINEA": "SAP",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "SAP HANA MM",
@@ -6164,8 +5934,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-135",
-    "EDICION": "ED2025-dic-I",
+    "LLAVE KEY": "PWE-130",
+    "EDICION": "DIC. I - ED25",
     "LINEA": "SAP",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "SAP HANA FI",
@@ -6188,7 +5958,7 @@
     "SESIONES": 6,
     "BROCHURE": "pdfs/BROCHURE SAP HANA FI MODULO FINANZAS.pdf",
     "BENEFICIOS": "🔵 *Utilizarán SAP HANA* 👩🏻‍💻\n👉🏼 Incluye tutorial y manual de instalación\n👉🏼 12 meses de Licencia SAP para practicar\n👉🏼 Contarás con Soporte técnico\n💻 _*Importante*: Para la instalación se necesita una Laptop *Windows*_\n\n🚨 *Por favor, revisa el BROCHURE* 👇🏻\nAqui encontrarás la información completa del programa, el TEMARIO (malla curricular) y todos los BENEFICIOS 📚",
-    "POSTDOCEN": "images/sapfi",
+    "POSTDOCEN": "images/sapfi.jpg",
     "AVALADO": "Avalado por SAP Partner Open",
     "CURSO MES": "NO",
     "INV PRO T": 900,
@@ -6210,8 +5980,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-136",
-    "EDICION": "ED2025-dic-I",
+    "LLAVE KEY": "PWE-131",
+    "EDICION": "DIC. I - ED25",
     "LINEA": "PROYECTOS",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "PMO",
@@ -6256,54 +6026,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-137",
-    "EDICION": "ED2025-dic-I",
-    "LINEA": "SAP",
-    "CATEGORIA": "CURSO",
-    "PROGRAMA": "SAP HANA PM",
-    "INICIO6": "23/12/2025",
-    "CURSO1": "",
-    "INICIO1": "",
-    "CURSO2": "",
-    "INICIO2": "",
-    "CURSO3": "",
-    "INICIO3": "",
-    "CURSO4": "",
-    "INICIO4": "",
-    "CURSO5": "",
-    "INICIO5": "",
-    "DOCENTE": "Roller Rubio",
-    "DIAS": "Mar-Jue",
-    "HORARIO": "7PM - 10PM",
-    "INICIO": "Martes 23 Diciembre",
-    "FIN": "Jueves 15 Enero",
-    "SESIONES": 6,
-    "BROCHURE": "pdfs/BROCHURE SAP S4 HANA PM.pdf",
-    "BENEFICIOS": "🔵 *Utilizarán SAP HANA* 👩🏻‍💻\n👉🏼 Incluye tutorial y manual de instalación\n👉🏼 12 meses de Licencia SAP para practicar\n👉🏼 Contarás con Soporte técnico\n💻 _*Importante*: Para la instalación se necesita una Laptop *Windows*_\n\n🚨 *Por favor, revisa el BROCHURE* 👇🏻\nAqui encontrarás la información completa del programa, el TEMARIO (malla curricular) y todos los BENEFICIOS 📚",
-    "POSTDOCEN": "images/sappm.jpg",
-    "AVALADO": "Avalado por SAP Partner Open",
-    "CURSO MES": "NO",
-    "INV PRO T": 900,
-    "INV EST T": 750,
-    "INV PRO": 450,
-    "INV EST": 375,
-    "RESEST": 150,
-    "RESPRO": 150,
-    "VIDEO": "",
-    "EXEST": 337.5,
-    "EXPRO": 405,
-    "PERSONALIZADO": "El lenguaje del mantenimiento eficiente es SAP HANA PM ⚙️\nAprenderás a planificar, controlar y optimizar la gestión de mantenimiento en empresas reales 🚀.\nAquí tienes la información 👇🏻",
-    "RES1": "🛠️ Excelente, actualízate con SAP PM y domina el mantenimiento de planta y equipos.",
-    "RES2": "💼 Buenísimo, SAP PM es clave en empresas de manufactura y energía.",
-    "RES3": "🎓 ¡Genial! Con SAP PM aprenderás mantenimiento productivo desde la universidad.",
-    "RES4": "🚀 ¡Perfecto! Saber SAP PM te dará ventaja en prácticas en gestión de operaciones.",
-    "RES5": "📊 ¡Excelente! Con SAP PM podrás planificar y optimizar el mantenimiento en tu negocio.",
-    "ENLACE": "https://we-educacion.com/slides/sap-s-4-hana-pm-1127",
-    "HABITILITADO": 1
-  },
-  {
-    "LLAVE KEY": "PWE-138",
-    "EDICION": "ED2025-dic-I",
+    "LLAVE KEY": "PWE-132",
+    "EDICION": "DIC. I - ED25",
     "LINEA": "PROYECTOS",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "GEST. ÁGIL PROYECT",
@@ -6348,8 +6072,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-139",
-    "EDICION": "ED2025-dic-I",
+    "LLAVE KEY": "PWE-133",
+    "EDICION": "DIC. I - ED25",
     "LINEA": "BI",
     "CATEGORIA": "PEE",
     "PROGRAMA": "PEE ANALIST DATOS",
@@ -6394,8 +6118,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-140",
-    "EDICION": "ED2025-dic-II",
+    "LLAVE KEY": "PWE-134",
+    "EDICION": "DIC. II - ED25",
     "LINEA": "BI",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "SQL SERVER",
@@ -6440,8 +6164,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-141",
-    "EDICION": "ED2026-ene-I",
+    "LLAVE KEY": "PWE-135",
+    "EDICION": "ENE. I - ED26",
     "LINEA": "PROCESOS",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "POWER APPS AVANZ",
@@ -6486,8 +6210,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-142",
-    "EDICION": "ED2026-ene-I",
+    "LLAVE KEY": "PWE-136",
+    "EDICION": "ENE. I - ED26",
     "LINEA": "DISEÑO Y MODELO GRÁFICO",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "BIM MANAGEMEMT ",
@@ -6510,7 +6234,7 @@
     "SESIONES": 6,
     "BROCHURE": "",
     "BENEFICIOS": "",
-    "POSTDOCEN": "#N/A",
+    "POSTDOCEN": "",
     "AVALADO": "",
     "CURSO MES": "",
     "INV PRO T": "",
@@ -6532,8 +6256,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-143",
-    "EDICION": "ED2026-ene-I",
+    "LLAVE KEY": "PWE-137",
+    "EDICION": "ENE. I - ED26",
     "LINEA": "PROCESOS",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "KPIS Y OKRS",
@@ -6578,8 +6302,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-144",
-    "EDICION": "ED2026-ene-I",
+    "LLAVE KEY": "PWE-138",
+    "EDICION": "ENE. I - ED26",
     "LINEA": "PROYECTOS",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "GEST. ÁGIL PROYECT",
@@ -6624,8 +6348,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-145",
-    "EDICION": "ED2026-ene-I",
+    "LLAVE KEY": "PWE-139",
+    "EDICION": "ENE. I - ED26",
     "LINEA": "SAP",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "SAP HANA PP",
@@ -6648,7 +6372,7 @@
     "SESIONES": 6,
     "BROCHURE": "pdfs/BROCHURE SAP HANA PP MODULO PRODUCCION.pdf",
     "BENEFICIOS": "🔵 *Conoce TODOS los BENEFICIOS a los que accedes*\r\n\r\n🔹 Acceso a *Campus Virtual* WE 👩🏻‍🏫\r\n🔹 Material digital y grabación de clases \r\n🔹 Certificado digital con respaldo *SAP Partner*\r\n🔹 04 Cursos Online de regalo con acceso ilimitado 📚\r\n🔹 Acceso a *Curso SAP R3 con certificación* incluida\r\n🔹 Taller de Automatización SAP con RPA\r\n🔹 Garantía de Aprendizaje 100% \r\n\r\n🔹 *Utilizarán SAP HANA* 👩🏻‍💻\r\n👉🏼 Incluye tutorial y manual de instalación\r\n👉🏼 12 meses de Licencia SAP para practicar\r\n👉🏼 Contarás con Soporte técnico\r\n💻 _*Importante*: Para la instalación se necesita una Laptop *Windows*_\r\n\r\n🚨 *Revisa el BROCHURE* 👇🏻",
-    "POSTDOCEN": "",
+    "POSTDOCEN": "images/sappp.jpg",
     "AVALADO": "Avalado por SAP Partner Open",
     "CURSO MES": "NO",
     "INV PRO T": 900,
@@ -6670,8 +6394,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-146",
-    "EDICION": "ED2026-ene-I",
+    "LLAVE KEY": "PWE-140",
+    "EDICION": "ENE. I - ED26",
     "LINEA": "BI",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "POWER BI AVANZ",
@@ -6716,8 +6440,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-147",
-    "EDICION": "ED2026-ene-I",
+    "LLAVE KEY": "PWE-141",
+    "EDICION": "ENE. I - ED26",
     "LINEA": "BI",
     "CATEGORIA": "ESP.",
     "PROGRAMA": "ESP. POWER BI",
@@ -6762,8 +6486,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-148",
-    "EDICION": "ED2026-ene-I",
+    "LLAVE KEY": "PWE-142",
+    "EDICION": "ENE. I - ED26",
     "LINEA": "BI",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "POWER BI",
@@ -6808,8 +6532,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-149",
-    "EDICION": "ED2026-ene-I",
+    "LLAVE KEY": "PWE-143",
+    "EDICION": "ENE. I - ED26",
     "LINEA": "BI",
     "CATEGORIA": "ESP.",
     "PROGRAMA": "ESP. EN PYTHON DATA SCIENCE",
@@ -6854,8 +6578,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-150",
-    "EDICION": "ED2026-ene-I",
+    "LLAVE KEY": "PWE-144",
+    "EDICION": "ENE. I - ED26",
     "LINEA": "BI",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "PYTHON. DATOS",
@@ -6900,8 +6624,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-151",
-    "EDICION": "ED2026-ene-I",
+    "LLAVE KEY": "PWE-145",
+    "EDICION": "ENE. I - ED26",
     "LINEA": "SAP",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "SAP HANA IN PRESENCIAL",
@@ -6946,8 +6670,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-152",
-    "EDICION": "ED2026-ene-I",
+    "LLAVE KEY": "PWE-146",
+    "EDICION": "ENE. I - ED26",
     "LINEA": "PROCESOS",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "LEAN SIX SIGMA YELLOW",
@@ -6969,8 +6693,8 @@
     "FIN": "Miércoles 11 Febrero",
     "SESIONES": 6,
     "BROCHURE": "pdfs/BROCHURE LEAN SIX SIGMA YELLOW BELT.pdf",
-    "BENEFICIOS": "*Conoce TODOS los BENEFICIOS a los que accedes* \r\n\r\n🔹 Acceso a Campus Virtual WE 👩🏻‍🏫\r\n🔹 Material digital y grabación de clases \r\n🔹 Certificado digital del curso\r\n🔹 02 Cursos Online de regalo con acceso ilimitado 📚\r\n🔹 Desarrollo y seguimiento de tu proyecto *(Evaluado)*\r\n🔹 Garantía de Aprendizaje 100%\r\n\r\n*¡Certificados Adicionales!* ⭐\r\n👉🏻 Certificado *WHITE BELT* tiene la inversión de *$10* ~(Normal $50)~\r\n👉🏻 Certificado *YELLOW BELT* tiene la inversión de *$50* ~(Normal $150)~\r\n_Incluye material de práctica y 2 intentos del examen_\r\n\r\n🔹 *Utilizarán Minitab* 👩🏻‍💻\r\n👉🏻 Incluye tutorial y manual de instalación\r\n💻 _*Importante*: Para la instalación se necesita una Laptop *Windows*_\r\n\r\n🚨 *Revisa el BROCHURE* 👇🏻",
-    "POSTDOCEN": "",
+    "BENEFICIOS": "🔵  *Utilizarán Minitab* 👩🏻‍💻\n👉🏻 Incluye tutorial y manual de instalación\n💻 _*Importante*: Para la instalación se necesita una Laptop *Windows*_\n\n🚨 *Por favor, revisa el BROCHURE* 👇🏻\nAqui encontrarás la información completa del programa, el TEMARIO (malla curricular) y todos los BENEFICIOS 📚",
+    "POSTDOCEN": "images/leansix.jpg",
     "AVALADO": "",
     "CURSO MES": "NO",
     "INV PRO T": 820,
@@ -6992,8 +6716,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-153",
-    "EDICION": "ED2026-ene-I",
+    "LLAVE KEY": "PWE-147",
+    "EDICION": "ENE. I - ED26",
     "LINEA": "BI",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "SQL AVANZ",
@@ -7015,8 +6739,8 @@
     "FIN": "Martes 27 Enero",
     "SESIONES": 6,
     "BROCHURE": "pdfs/BROCHURE SQL SERVER AVANZADO.pdf",
-    "BENEFICIOS": "🔵 *Conoce TODOS los BENEFICIOS a los que accedes*\n\n🔹 Acceso a *Campus Virtual* WE 👩🏻‍🏫\n🔹 Material digital y grabación de clases \n🔹 Certificado digital con respaldo *Microsoft Partner*\n🔹 03 Cursos Online de regalo con acceso ilimitado 📚\n🔹 Desarrollo y seguimiento de tu proyecto *(Evaluado)*\n🔹 Contenido Integrado con - Chat GPT\n🔹 Garantía de Aprendizaje 100% \n\n🔹 *Utilizarán SQL Server* 👩🏻‍💻\n👉🏼 Incluye tutorial y manual de instalación\n💻 _*Importante*: Para la instalación se necesita una Laptop *Windows*_\n\n🚨 *Revisa el BROCHURE* 👇🏻",
-    "POSTDOCEN": "",
+    "BENEFICIOS": "🔵 *Conoce TODOS los BENEFICIOS a los que accedes*\n\n🔹 Acceso a *Campus Virtual* WE 👩🏻‍🏫\n🔹 Material digital y grabación de clases \n🔹 Certificado digital con respaldo *Microsoft Partner*\n🔹 03 Cursos Online de regalo con acceso ilimitado 📚\n🔹 Desarrollo y seguimiento de tu proyecto *(Evaluado)*\n🔹 Contenido Integrado con - Chat GPT\n🔹 Garantía de Aprendizaje 100% \n\n🔹 *Utilizarán SQL Server* 👩🏻‍💻\n👉🏼 Incluye tutorial y manual de instalación\n💻 _*Importante*: Para la instalación se necesita una Laptop *Windows*_\n\n🚨 *Por favor, revisa el BROCHURE* 👇🏻\nAqui encontrarás la información completa del programa, el TEMARIO (malla curricular) y todos los BENEFICIOS 📚",
+    "POSTDOCEN": "images/sqlavanz.jpg",
     "AVALADO": "Avalado por Microsoft Partner Network",
     "CURSO MES": "NO",
     "INV PRO T": 830,
@@ -7038,8 +6762,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-154",
-    "EDICION": "ED2026-ene-I",
+    "LLAVE KEY": "PWE-148",
+    "EDICION": "ENE. I - ED26",
     "LINEA": "SAP",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "SAP HANA IN",
@@ -7084,8 +6808,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-155",
-    "EDICION": "ED2026-ene-I",
+    "LLAVE KEY": "PWE-149",
+    "EDICION": "ENE. I - ED26",
     "LINEA": "SAP",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "SAP HANA SD",
@@ -7130,8 +6854,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-156",
-    "EDICION": "ED2026-ene-II",
+    "LLAVE KEY": "PWE-150",
+    "EDICION": "ENE. II - ED26",
     "LINEA": "BI",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "PYTHON. DATOS",
@@ -7176,8 +6900,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-157",
-    "EDICION": "ED2026-ene-I",
+    "LLAVE KEY": "PWE-151",
+    "EDICION": "ENE. I - ED26",
     "LINEA": "EXCEL",
     "CATEGORIA": "ESP.",
     "PROGRAMA": "ESP. EXCEL EXP",
@@ -7222,8 +6946,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-158",
-    "EDICION": "ED2026-ene-I",
+    "LLAVE KEY": "PWE-152",
+    "EDICION": "ENE. I - ED26",
     "LINEA": "EXCEL",
     "CATEGORIA": "ESP.",
     "PROGRAMA": "ESPEC. EXCEL",
@@ -7268,8 +6992,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-159",
-    "EDICION": "ED2026-ene-I",
+    "LLAVE KEY": "PWE-153",
+    "EDICION": "ENE. I - ED26",
     "LINEA": "EXCEL",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "EXCEL BÁSICO",
@@ -7314,8 +7038,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-160",
-    "EDICION": "ED2026-ene-I",
+    "LLAVE KEY": "PWE-154",
+    "EDICION": "ENE. I - ED26",
     "LINEA": "BI",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "POWER BI PRESENCIAL",
@@ -7338,7 +7062,7 @@
     "SESIONES": 5,
     "BROCHURE": "pdfs/BROCHURE POWER BI PRESENCIAL.pdf",
     "BENEFICIOS": "🔹 Recuerda que si traes tu Propia Laptop a todas las sesiones, te descontamos S/50 en tu inscripción\n\n🚨 Por favor, revisa el BROCHURE 👇🏻\nAqui encontrarás la información completa del programa: Temario (malla curricular) y todos los BENEFICIOS 📚\n\n👉🏼 Te comparto un Modelo de Certificado que elevará tu perfil profesional ",
-    "POSTDOCEN": "",
+    "POSTDOCEN": "images/powerbipres.jpg",
     "AVALADO": "Avalado por Microsoft Partner Network",
     "CURSO MES": "NO",
     "INV PRO T": 940,
@@ -7360,8 +7084,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-161",
-    "EDICION": "ED2026-ene-I",
+    "LLAVE KEY": "PWE-155",
+    "EDICION": "ENE. I - ED26",
     "LINEA": "EXCEL",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "EXCEL INTERM PRESENCIAL",
@@ -7384,7 +7108,7 @@
     "SESIONES": 5,
     "BROCHURE": "",
     "BENEFICIOS": "",
-    "POSTDOCEN": "#N/A",
+    "POSTDOCEN": "",
     "AVALADO": "",
     "CURSO MES": "",
     "INV PRO T": "",
@@ -7406,8 +7130,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-162",
-    "EDICION": "ED2026-ene-I",
+    "LLAVE KEY": "PWE-156",
+    "EDICION": "ENE. I - ED26",
     "LINEA": "LOGÍSTICA",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "PLAN. Y PRONOSTICO V2",
@@ -7452,8 +7176,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-163",
-    "EDICION": "ED2026-ene-I",
+    "LLAVE KEY": "PWE-157",
+    "EDICION": "ENE. I - ED26",
     "LINEA": "EXCEL",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "PROG. MACROS",
@@ -7498,8 +7222,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-164",
-    "EDICION": "ED2026-ene-I",
+    "LLAVE KEY": "PWE-158",
+    "EDICION": "ENE. I - ED26",
     "LINEA": "LOGÍSTICA",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "GER. CENTRO DISTRIB.",
@@ -7544,8 +7268,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-165",
-    "EDICION": "ED2026-ene-I",
+    "LLAVE KEY": "PWE-159",
+    "EDICION": "ENE. I - ED26",
     "LINEA": "LOGÍSTICA",
     "CATEGORIA": "DIPLOMADO",
     "PROGRAMA": "DIP SUPPLY V3",
@@ -7590,8 +7314,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-166",
-    "EDICION": "ED2026-ene-I",
+    "LLAVE KEY": "PWE-160",
+    "EDICION": "ENE. I - ED26",
     "LINEA": "PROCESOS",
     "CATEGORIA": "ESP.",
     "PROGRAMA": "ESP. POWER APPS Y AUT.",
@@ -7636,8 +7360,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-167",
-    "EDICION": "ED2026-ene-I",
+    "LLAVE KEY": "PWE-161",
+    "EDICION": "ENE. I - ED26",
     "LINEA": "PROCESOS",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "POWER APPS Y AUT.",
@@ -7682,8 +7406,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-168",
-    "EDICION": "ED2026-ene-I",
+    "LLAVE KEY": "PWE-162",
+    "EDICION": "ENE. I - ED26",
     "LINEA": "MKT",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "ESTR. Y TEC. COMERCIALES",
@@ -7728,8 +7452,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-169",
-    "EDICION": "ED2026-ene-I",
+    "LLAVE KEY": "PWE-163",
+    "EDICION": "ENE. I - ED26",
     "LINEA": "PROYECTOS",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "MS PROJECT",
@@ -7774,8 +7498,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-170",
-    "EDICION": "ED2026-ene-I",
+    "LLAVE KEY": "PWE-164",
+    "EDICION": "ENE. I - ED26",
     "LINEA": "BI",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "AZURE",
@@ -7820,8 +7544,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-171",
-    "EDICION": "ED2026-ene-I",
+    "LLAVE KEY": "PWE-165",
+    "EDICION": "ENE. I - ED26",
     "LINEA": "SAP",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "SAP HANA HCM",
@@ -7844,7 +7568,7 @@
     "SESIONES": 6,
     "BROCHURE": "pdfs/BROCHURE SAP S4 HANA HCM.pdf",
     "BENEFICIOS": "🔵 *Conoce TODOS los BENEFICIOS a los que accedes*\r\n\r\n🔹 Acceso a Campus Virtual WE 👩🏻‍🏫\r\n🔹 Material digital y grabación de clases \r\n🔹 Certificado digital con respaldo *SAP Partner*\r\n🔹 03 Cursos Online de regalo con acceso ilimitado 📚\r\n🔹 Taller de Automatización SAP con RPA\r\n🔹 Garantía de Aprendizaje 100% \r\n🔹 Desarrollo y seguimiento de tu proyecto *(Evaluado)*\r\n\r\n🔹 *Utilizarán SAP HANA* 👩🏻‍💻\r\n👉🏼 Incluye tutorial y manual de instalación\r\n👉🏼 12 meses de Licencia SAP para practicar\r\n👉🏼 Contarás con Soporte técnico\r\n💻 _*Importante*: Para la instalación se necesita una Laptop *Windows*_\r\n\r\n🚨 *Revisa el BROCHURE* 👇🏻",
-    "POSTDOCEN": "",
+    "POSTDOCEN": "images/hcm.jpg",
     "AVALADO": "Avalado por SAP Partner Open",
     "CURSO MES": "NO",
     "INV PRO T": 900,
@@ -7866,8 +7590,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-172",
-    "EDICION": "ED2026-ene-I",
+    "LLAVE KEY": "PWE-166",
+    "EDICION": "ENE. I - ED26",
     "LINEA": "SAP",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "SAP HANA FI",
@@ -7890,7 +7614,7 @@
     "SESIONES": 6,
     "BROCHURE": "pdfs/BROCHURE SAP HANA FI MODULO FINANZAS.pdf",
     "BENEFICIOS": "🔵 *Utilizarán SAP HANA* 👩🏻‍💻\n👉🏼 Incluye tutorial y manual de instalación\n👉🏼 12 meses de Licencia SAP para practicar\n👉🏼 Contarás con Soporte técnico\n💻 _*Importante*: Para la instalación se necesita una Laptop *Windows*_\n\n🚨 *Por favor, revisa el BROCHURE* 👇🏻\nAqui encontrarás la información completa del programa, el TEMARIO (malla curricular) y todos los BENEFICIOS 📚",
-    "POSTDOCEN": "images/sapfi",
+    "POSTDOCEN": "images/sapfi.jpg",
     "AVALADO": "Avalado por SAP Partner Open",
     "CURSO MES": "NO",
     "INV PRO T": 900,
@@ -7912,8 +7636,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-173",
-    "EDICION": "ED2026-ene-I",
+    "LLAVE KEY": "PWE-167",
+    "EDICION": "ENE. I - ED26",
     "LINEA": "PROYECTOS",
     "CATEGORIA": "DIPLOMADO",
     "PROGRAMA": "DIP GEST PROYECTOS V4",
@@ -7958,8 +7682,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-174",
-    "EDICION": "ED2026-ene-I",
+    "LLAVE KEY": "PWE-168",
+    "EDICION": "ENE. I - ED26",
     "LINEA": "PROYECTOS",
     "CATEGORIA": "PEE",
     "PROGRAMA": "PEE ANALIST PROY V4",
@@ -8004,8 +7728,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-175",
-    "EDICION": "ED2026-ene-I",
+    "LLAVE KEY": "PWE-169",
+    "EDICION": "ENE. I - ED26",
     "LINEA": "PROYECTOS",
     "CATEGORIA": "ESP.",
     "PROGRAMA": "ESP. GEST. PROYECTOS V3",
@@ -8050,8 +7774,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-176",
-    "EDICION": "ED2026-ene-I",
+    "LLAVE KEY": "PWE-170",
+    "EDICION": "ENE. I - ED26",
     "LINEA": "PROYECTOS",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "GEST PROYECT I",
@@ -8096,8 +7820,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-177",
-    "EDICION": "ED2026-ene-I",
+    "LLAVE KEY": "PWE-171",
+    "EDICION": "ENE. I - ED26",
     "LINEA": "EXCEL",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "EXCEL INTERM",
@@ -8142,8 +7866,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-178",
-    "EDICION": "ED2026-ene-I",
+    "LLAVE KEY": "PWE-172",
+    "EDICION": "ENE. I - ED26",
     "LINEA": "BI",
     "CATEGORIA": "PEE",
     "PROGRAMA": "PEE ANALIST DATOS",
@@ -8188,8 +7912,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-179",
-    "EDICION": "ED2026-ene-I",
+    "LLAVE KEY": "PWE-173",
+    "EDICION": "ENE. I - ED26",
     "LINEA": "BI",
     "CATEGORIA": "ESP.",
     "PROGRAMA": "ESP. SQL SERVER",
@@ -8212,7 +7936,7 @@
     "SESIONES": 12,
     "BROCHURE": "pdfs/BROCHURE ESPECIALIZACION DE SQL.pdf",
     "BENEFICIOS": "🔵 *Utilizarán SQL Server* 👩🏻‍💻\n👉🏼 Incluye tutorial y manual de instalación\n💻 _*Importante*: Para la instalación se necesita una Laptop *Windows*_\n\n🚨 *Por favor, revisa el BROCHURE* 👇🏻\nAqui encontrarás la información completa del programa, el TEMARIO (malla curricular) y todos los BENEFICIOS 📚",
-    "POSTDOCEN": "images/espsqljpg",
+    "POSTDOCEN": "images/espsql.jpg",
     "AVALADO": "Avalado por Microsoft Partner Network",
     "CURSO MES": "NO",
     "INV PRO T": 1600,
@@ -8234,8 +7958,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-180",
-    "EDICION": "ED2026-ene-I",
+    "LLAVE KEY": "PWE-174",
+    "EDICION": "ENE. I - ED26",
     "LINEA": "BI",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "SQL SERVER",
@@ -8280,8 +8004,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-181",
-    "EDICION": "ED2026-ene-I",
+    "LLAVE KEY": "PWE-175",
+    "EDICION": "ENE. I - ED26",
     "LINEA": "SAP",
     "CATEGORIA": "ESP.",
     "PROGRAMA": "ESPEC. SAP LOG. INTEGRAL",
@@ -8307,15 +8031,15 @@
     "POSTDOCEN": "",
     "AVALADO": "Avalado por SAP Partner Open",
     "CURSO MES": "NO",
-    "INV PRO T": 2250,
-    "INV EST T": 1920,
-    "INV PRO": 1125,
-    "INV EST": 960,
+    "INV PRO T": 1900,
+    "INV EST T": 1750,
+    "INV PRO": 950,
+    "INV EST": 875,
     "RESEST": 250,
     "RESPRO": 350,
     "VIDEO": "",
-    "EXEST": 864,
-    "EXPRO": 1012.5,
+    "EXEST": 787.5,
+    "EXPRO": 855,
     "PERSONALIZADO": "La logística eficiente mueve los negocios 📦\nDomina la gestión integral en SAP y destaca en supply chain y operaciones 🚛\n👉🏻 Te envío el detalle.",
     "RES1": "📦 Excelente, actualízate en SAP Logística Integral y controla toda la cadena de suministro.",
     "RES2": "💼 Buenísimo, muy solicitado en empresas que requieren gestión logística con SAP.",
@@ -8326,8 +8050,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-182",
-    "EDICION": "ED2026-ene-I",
+    "LLAVE KEY": "PWE-176",
+    "EDICION": "ENE. I - ED26",
     "LINEA": "SAP",
     "CATEGORIA": "ESP.",
     "PROGRAMA": "ESPEC.SAP HANA COMP. Y ALM.",
@@ -8353,15 +8077,15 @@
     "POSTDOCEN": "",
     "AVALADO": "Avalado por SAP Partner Open",
     "CURSO MES": "NO",
-    "INV PRO T": 1600,
-    "INV EST T": 1370,
-    "INV PRO": 800,
-    "INV EST": 685,
+    "INV PRO T": 1350,
+    "INV EST T": 1250,
+    "INV PRO": 675,
+    "INV EST": 625,
     "RESEST": 250,
     "RESPRO": 350,
     "VIDEO": "",
-    "EXEST": 616.5,
-    "EXPRO": 720,
+    "EXEST": 562.5,
+    "EXPRO": 607.5,
     "PERSONALIZADO": "Las compras y almacén son el corazón de la operación 🏭\nEspecialízate en SAP HANA Compras y Almacén y optimiza la gestión de inventarios 📊\n👉🏻 Te paso la información completa.",
     "RES1": "📦 Excelente, actualízate en SAP HANA Compras y Almacén y domina procesos clave.",
     "RES2": "🏭 Buenísimo, las empresas valoran expertos en gestión de compras e inventarios.",
@@ -8372,8 +8096,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-183",
-    "EDICION": "ED2026-ene-I",
+    "LLAVE KEY": "PWE-177",
+    "EDICION": "ENE. I - ED26",
     "LINEA": "SAP",
     "CATEGORIA": "ESP.",
     "PROGRAMA": "ESPEC.SAP HANA PLANIF. DE LA PROD.",
@@ -8399,15 +8123,15 @@
     "POSTDOCEN": "images/espsaphanaplan.jpg",
     "AVALADO": "Avalado por SAP Partner Open",
     "CURSO MES": "NO",
-    "INV PRO T": 1600,
-    "INV EST T": 1370,
-    "INV PRO": 800,
-    "INV EST": 685,
+    "INV PRO T": 1350,
+    "INV EST T": 1250,
+    "INV PRO": 675,
+    "INV EST": 625,
     "RESEST": 250,
     "RESPRO": 350,
     "VIDEO": "",
-    "EXEST": 616.5,
-    "EXPRO": 720,
+    "EXEST": 562.5,
+    "EXPRO": 607.5,
     "PERSONALIZADO": "La producción inteligente necesita planificación 🏗️\nAprende SAP HANA Producción para optimizar operaciones industriales 🔧\n👉🏻 Te paso la info completa.",
     "RES1": "🏭 Excelente, actualízate en SAP HANA Producción y optimiza procesos productivos.",
     "RES2": "💼 Buenísimo, muy demandado en empresas industriales que requieren planificación de planta.",
@@ -8418,8 +8142,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-184",
-    "EDICION": "ED2026-ene-I",
+    "LLAVE KEY": "PWE-178",
+    "EDICION": "ENE. I - ED26",
     "LINEA": "SAP",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "SAP HANA MM",
@@ -8464,8 +8188,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-185",
-    "EDICION": "ED2026-ene-I",
+    "LLAVE KEY": "PWE-179",
+    "EDICION": "ENE. I - ED26",
     "LINEA": "LOGÍSTICA",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "LEAN LOGISTICS",
@@ -8510,8 +8234,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-186",
-    "EDICION": "ED2026-ene-II",
+    "LLAVE KEY": "PWE-180",
+    "EDICION": "ENE. II - ED26",
     "LINEA": "PROCESOS",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "POWER APPS AVANZ",
@@ -8556,8 +8280,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-187",
-    "EDICION": "ED2026-ene-I",
+    "LLAVE KEY": "PWE-181",
+    "EDICION": "ENE. I - ED26",
     "LINEA": "LOGÍSTICA",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "GEST. COMP. Y PROV.",
@@ -8580,7 +8304,7 @@
     "SESIONES": 6,
     "BROCHURE": "pdfs/BROCHURE GEST DE COMPRAS Y PROVEEDORES.pdf",
     "BENEFICIOS": "🔵 *Conoce TODOS los BENEFICIOS a los que accedes*\n\n🔹 Acceso a Campus Virtual WE 👩🏻‍🏫\n🔹 Material digital y grabación de clases \n🔹 Certificado digital \n🔹 04 Cursos Online de regalo con acceso ilimitado 📚\n🔹 Desarrollo y seguimiento de tu proyecto *(Evaluado)*\n🔹 Garantía de Aprendizaje 100%\n\n🚨 *Revisa el BROCHURE* 👇🏻",
-    "POSTDOCEN": "",
+    "POSTDOCEN": "images/gestcomp.jpg",
     "AVALADO": "",
     "CURSO MES": "SI",
     "INV PRO T": 830,
@@ -8602,8 +8326,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-188",
-    "EDICION": "ED2026-ene-I",
+    "LLAVE KEY": "PWE-182",
+    "EDICION": "ENE. I - ED26",
     "LINEA": "BI",
     "CATEGORIA": "DIPLOMADO",
     "PROGRAMA": "DIP INTELIG. Y ANALIST. DATOS V2",
@@ -8648,8 +8372,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-189",
-    "EDICION": "ED2026-ene-I",
+    "LLAVE KEY": "PWE-183",
+    "EDICION": "ENE. I - ED26",
     "LINEA": "BI",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "DATA ANALYTICS",
@@ -8694,8 +8418,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-190",
-    "EDICION": "ED2026-ene-I",
+    "LLAVE KEY": "PWE-184",
+    "EDICION": "ENE. I - ED26",
     "LINEA": "PROCESOS",
     "CATEGORIA": "DIPLOMADO",
     "PROGRAMA": "DIP PROC Y MEJORA V3",
@@ -8740,8 +8464,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-191",
-    "EDICION": "ED2026-ene-I",
+    "LLAVE KEY": "PWE-185",
+    "EDICION": "ENE. I - ED26",
     "LINEA": "PROCESOS",
     "CATEGORIA": "PEE",
     "PROGRAMA": "PEE ANALIST PROC",
@@ -8786,8 +8510,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-192",
-    "EDICION": "ED2026-ene-I",
+    "LLAVE KEY": "PWE-186",
+    "EDICION": "ENE. I - ED26",
     "LINEA": "PROCESOS",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "GEST PROCESOS",
@@ -8832,54 +8556,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-193",
-    "EDICION": "ED2026-ene-II",
-    "LINEA": "PROCESOS",
-    "CATEGORIA": "CURSO",
-    "PROGRAMA": "LEAN SIX SIGMA YELLOW",
-    "INICIO6": "24/1/2026",
-    "CURSO1": "",
-    "INICIO1": "",
-    "CURSO2": "",
-    "INICIO2": "",
-    "CURSO3": "",
-    "INICIO3": "",
-    "CURSO4": "",
-    "INICIO4": "",
-    "CURSO5": "",
-    "INICIO5": "",
-    "DOCENTE": "Maryan Quiñones",
-    "DIAS": "Sáb",
-    "HORARIO": "9AM - 12PM",
-    "INICIO": "Sábado 24 Enero",
-    "FIN": "Sábado 28 Febrero",
-    "SESIONES": 6,
-    "BROCHURE": "pdfs/BROCHURE LEAN SIX SIGMA YELLOW BELT.pdf",
-    "BENEFICIOS": "*Conoce TODOS los BENEFICIOS a los que accedes* \r\n\r\n🔹 Acceso a Campus Virtual WE 👩🏻‍🏫\r\n🔹 Material digital y grabación de clases \r\n🔹 Certificado digital del curso\r\n🔹 02 Cursos Online de regalo con acceso ilimitado 📚\r\n🔹 Desarrollo y seguimiento de tu proyecto *(Evaluado)*\r\n🔹 Garantía de Aprendizaje 100%\r\n\r\n*¡Certificados Adicionales!* ⭐\r\n👉🏻 Certificado *WHITE BELT* tiene la inversión de *$10* ~(Normal $50)~\r\n👉🏻 Certificado *YELLOW BELT* tiene la inversión de *$50* ~(Normal $150)~\r\n_Incluye material de práctica y 2 intentos del examen_\r\n\r\n🔹 *Utilizarán Minitab* 👩🏻‍💻\r\n👉🏻 Incluye tutorial y manual de instalación\r\n💻 _*Importante*: Para la instalación se necesita una Laptop *Windows*_\r\n\r\n🚨 *Revisa el BROCHURE* 👇🏻",
-    "POSTDOCEN": "",
-    "AVALADO": "",
-    "CURSO MES": "NO",
-    "INV PRO T": 820,
-    "INV EST T": 750,
-    "INV PRO": 410,
-    "INV EST": 375,
-    "RESEST": 150,
-    "RESPRO": 150,
-    "VIDEO": "",
-    "EXEST": 337.5,
-    "EXPRO": 369,
-    "PERSONALIZADO": "El primer paso hacia la excelencia es Lean Six Sigma Yellow Belt 🚀\nDominarás las bases de mejora continua y herramientas clave para procesos más eficientes 📊.\nAquí te comparto la información 👇🏻",
-    "RES1": "📘 *Excelente*, actualízate con *LEAN SIX SIGMA YELLOW* y mantente competitivo en el mercado laboral.",
-    "RES2": "📈 Buenísimo, *LEAN SIX SIGMA YELLOW* es de las competencias más pedidas por las empresas y aumentará tus oportunidades laborales.",
-    "RES3": "⚡ ¡Genial! Con *LEAN SIX SIGMA YELLOW* sumarás una habilidad poderosa que te diferenciará desde la universidad.",
-    "RES4": "💼 ¡Perfecto! Saber *LEAN SIX SIGMA YELLOW* te dará ventaja frente a otros postulantes para conseguir prácticas.",
-    "RES5": "📘 ¡Excelente! Con *LEAN SIX SIGMA YELLOW* podrás aplicarlo en tu negocio y tomar decisiones más inteligentes.",
-    "ENLACE": "https://we-educacion.com/slides/lean-six-sigma-yellow-belt-119",
-    "HABITILITADO": 1
-  },
-  {
-    "LLAVE KEY": "PWE-194",
-    "EDICION": "ED2026-ene-I",
+    "LLAVE KEY": "PWE-187",
+    "EDICION": "ENE. I - ED26",
     "LINEA": "WEB",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "PROG. JAVA",
@@ -8924,8 +8602,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-195",
-    "EDICION": "ED2026-ene-II",
+    "LLAVE KEY": "PWE-188",
+    "EDICION": "ENE. II - ED26",
     "LINEA": "EXCEL",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "EXCEL INTERM",
@@ -8970,8 +8648,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-196",
-    "EDICION": "ED2026-ene-I",
+    "LLAVE KEY": "PWE-189",
+    "EDICION": "ENE. I - ED26",
     "LINEA": "PROCESOS",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "MODEL BIZ.",
@@ -9016,8 +8694,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-197",
-    "EDICION": "ED2026-ene-I",
+    "LLAVE KEY": "PWE-190",
+    "EDICION": "ENE. I - ED26",
     "LINEA": "FINANZ",
     "CATEGORIA": "ESP.",
     "PROGRAMA": "ESP. FINANZAS",
@@ -9032,7 +8710,7 @@
     "INICIO4": "",
     "CURSO5": "",
     "INICIO5": "",
-    "DOCENTE": "Christian Montánchez\nRalphi Jauregui\nAndy Leyton",
+    "DOCENTE": "Christian Montánchez\nJosé Botonero\nAndy Leyton",
     "DIAS": "Mar-Jue",
     "HORARIO": "7PM - 10PM",
     "INICIO": "Jueves 29 Enero",
@@ -9062,8 +8740,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-198",
-    "EDICION": "ED2026-ene-I",
+    "LLAVE KEY": "PWE-191",
+    "EDICION": "ENE. I - ED26",
     "LINEA": "FINANZ",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "CONT. FINANCIERA",
@@ -9108,8 +8786,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-199",
-    "EDICION": "ED2026-ene-II",
+    "LLAVE KEY": "PWE-192",
+    "EDICION": "ENE. II - ED26",
     "LINEA": "PROCESOS",
     "CATEGORIA": "ESP.",
     "PROGRAMA": "ESP. POWER APPS Y AUT.",
@@ -9154,8 +8832,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-200",
-    "EDICION": "ED2026-ene-II",
+    "LLAVE KEY": "PWE-193",
+    "EDICION": "ENE. II - ED26",
     "LINEA": "PROCESOS",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "POWER APPS Y AUT.",
@@ -9200,8 +8878,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-201",
-    "EDICION": "ED2026-ene-I",
+    "LLAVE KEY": "PWE-194",
+    "EDICION": "ENE. I - ED26",
     "LINEA": "MINERA",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "PLANIFICACIÓN MINERA",
@@ -9224,7 +8902,7 @@
     "SESIONES": 6,
     "BROCHURE": "",
     "BENEFICIOS": "",
-    "POSTDOCEN": "#N/A",
+    "POSTDOCEN": "",
     "AVALADO": "",
     "CURSO MES": "",
     "INV PRO T": "",
@@ -9246,8 +8924,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-202",
-    "EDICION": "ED2026-ene-II",
+    "LLAVE KEY": "PWE-195",
+    "EDICION": "ENE. II - ED26",
     "LINEA": "BI",
     "CATEGORIA": "ESP.",
     "PROGRAMA": "ESP. POWER BI",
@@ -9292,8 +8970,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-203",
-    "EDICION": "ED2026-ene-II",
+    "LLAVE KEY": "PWE-196",
+    "EDICION": "ENE. II - ED26",
     "LINEA": "BI",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "POWER BI",
@@ -9338,8 +9016,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-204",
-    "EDICION": "ED2026-ene-I",
+    "LLAVE KEY": "PWE-197",
+    "EDICION": "ENE. I - ED26",
     "LINEA": "EXCEL",
     "CATEGORIA": "ESP.",
     "PROGRAMA": "ESP. MACROS",
@@ -9384,8 +9062,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-205",
-    "EDICION": "ED2026-ene-I",
+    "LLAVE KEY": "PWE-198",
+    "EDICION": "ENE. I - ED26",
     "LINEA": "EXCEL",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "EXCEL AVANZ",
@@ -9408,7 +9086,7 @@
     "SESIONES": 6,
     "BROCHURE": "pdfs/BROCHURE EXCEL AVANZADO.pdf",
     "BENEFICIOS": "🔵 *Conoce TODOS los BENEFICIOS a los que accedes*\r\n\r\n🔹 Acceso a *Campus Virtual* WE 👩🏻‍🏫\r\n🔹 Material digital y grabación de clases \r\n🔹 Certificado digital con respaldo *Microsoft Partner*\r\n🔹 03 Cursos Online de regalo con acceso ilimitado 📚\r\n🔹 Desarrollo y seguimiento de tu proyecto *(Evaluado)*\r\n🔹 Contenido Integrado con Chat GPT\r\n🔹 Garantía de Aprendizaje 100%\r\n\r\n🚨 *Revisa el BROCHURE* 👇🏻",
-    "POSTDOCEN": "",
+    "POSTDOCEN": "images/excelavanz.jpg",
     "AVALADO": "Avalado por Microsoft Partner Network",
     "CURSO MES": "NO",
     "INV PRO T": 420,
@@ -9430,8 +9108,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-206",
-    "EDICION": "ED2026-ene-II",
+    "LLAVE KEY": "PWE-199",
+    "EDICION": "ENE. II - ED26",
     "LINEA": "EXCEL",
     "CATEGORIA": "ESP.",
     "PROGRAMA": "ESP. EXCEL EXP",
@@ -9476,8 +9154,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-207",
-    "EDICION": "ED2026-ene-II",
+    "LLAVE KEY": "PWE-200",
+    "EDICION": "ENE. II - ED26",
     "LINEA": "EXCEL",
     "CATEGORIA": "ESP.",
     "PROGRAMA": "ESPEC. EXCEL",
@@ -9522,8 +9200,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-208",
-    "EDICION": "ED2026-ene-II",
+    "LLAVE KEY": "PWE-201",
+    "EDICION": "ENE. II - ED26",
     "LINEA": "EXCEL",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "EXCEL BÁSICO",
@@ -9568,8 +9246,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-209",
-    "EDICION": "ED2026-ene-II",
+    "LLAVE KEY": "PWE-202",
+    "EDICION": "ENE. II - ED26",
     "LINEA": "SAP",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "SAP HANA IN",
@@ -9614,8 +9292,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-210",
-    "EDICION": "ED2026-ene-II",
+    "LLAVE KEY": "PWE-203",
+    "EDICION": "ENE. II - ED26",
     "LINEA": "PROYECTOS",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "MS PROJECT",
@@ -9660,8 +9338,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-211",
-    "EDICION": "ED2026-ene-II",
+    "LLAVE KEY": "PWE-204",
+    "EDICION": "ENE. II - ED26",
     "LINEA": "BI",
     "CATEGORIA": "PEE",
     "PROGRAMA": "PEE ANALIST DATOS",
@@ -9706,8 +9384,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-212",
-    "EDICION": "ED2026-ene-II",
+    "LLAVE KEY": "PWE-205",
+    "EDICION": "ENE. II - ED26",
     "LINEA": "BI",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "SQL SERVER",
@@ -9752,8 +9430,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-213",
-    "EDICION": "ED2026-feb-I",
+    "LLAVE KEY": "PWE-206",
+    "EDICION": "FEB. I - ED26",
     "LINEA": "PROYECTOS",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "GEST FINANC. PROYECT",
@@ -9798,8 +9476,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-214",
-    "EDICION": "ED2026-feb-I",
+    "LLAVE KEY": "PWE-207",
+    "EDICION": "FEB. I - ED26",
     "LINEA": "BI",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "IA & DEEP LEARNING V2",
@@ -9822,7 +9500,7 @@
     "SESIONES": 6,
     "BROCHURE": "pdfs/BROCHURE IA & DEEP LEARNING.pdf",
     "BENEFICIOS": "🔵 *Conoce TODOS los BENEFICIOS a los que accedes*\r\n\r\n🔹 Acceso a *Campus Virtual* WE 👩🏻‍🏫\r\n🔹 Material digital y grabación de clases \r\n🔹 Certificado digital con respaldo *IBM Partner*\r\n🔹 02 Cursos Online de regalo con acceso ilimitado 📚\r\n🔹 Desarrollo y seguimiento de tu proyecto *(Evaluado)*\r\n🔹 Garantía de Aprendizaje 100% \r\n\r\n🔹 *Necesitas tener conocimientos en PYTHON* 👩🏻‍💻\r\n👉🏼 ¡Te regalamos el Curso Online Certificado!\r\n👉🏼 Incluye tutorial y manual de instalación\r\n\r\n*¡Certificado Adicional!* ⭐\r\n👉🏻 Certificado *Artificial Intelligence Professional* tiene la inversión de *$50* ~(Normal $150)~\r\n_Incluye material de práctica y 2 intentos del examen_\r\n\r\n🚨 *Revisa el BROCHURE* 👇🏻",
-    "POSTDOCEN": "",
+    "POSTDOCEN": "images/iadeep.jpg",
     "AVALADO": "Avalado por IBM® Partner World",
     "CURSO MES": "SI",
     "INV PRO T": 690,
@@ -9844,8 +9522,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-215",
-    "EDICION": "ED2026-feb-I",
+    "LLAVE KEY": "PWE-208",
+    "EDICION": "FEB. I - ED26",
     "LINEA": "EXCEL",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "EXCEL AVANZ",
@@ -9868,7 +9546,7 @@
     "SESIONES": 6,
     "BROCHURE": "pdfs/BROCHURE EXCEL AVANZADO.pdf",
     "BENEFICIOS": "🔵 *Conoce TODOS los BENEFICIOS a los que accedes*\r\n\r\n🔹 Acceso a *Campus Virtual* WE 👩🏻‍🏫\r\n🔹 Material digital y grabación de clases \r\n🔹 Certificado digital con respaldo *Microsoft Partner*\r\n🔹 03 Cursos Online de regalo con acceso ilimitado 📚\r\n🔹 Desarrollo y seguimiento de tu proyecto *(Evaluado)*\r\n🔹 Contenido Integrado con Chat GPT\r\n🔹 Garantía de Aprendizaje 100%\r\n\r\n🚨 *Revisa el BROCHURE* 👇🏻",
-    "POSTDOCEN": "",
+    "POSTDOCEN": "images/excelavanz.jpg",
     "AVALADO": "Avalado por Microsoft Partner Network",
     "CURSO MES": "NO",
     "INV PRO T": 420,
@@ -9890,8 +9568,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-216",
-    "EDICION": "ED2026-feb-I",
+    "LLAVE KEY": "PWE-209",
+    "EDICION": "FEB. I - ED26",
     "LINEA": "DISEÑO Y MODELO GRÁFICO",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "AUTOCAD",
@@ -9914,7 +9592,7 @@
     "SESIONES": 6,
     "BROCHURE": "",
     "BENEFICIOS": "",
-    "POSTDOCEN": "#N/A",
+    "POSTDOCEN": "",
     "AVALADO": "",
     "CURSO MES": "",
     "INV PRO T": "",
@@ -9936,8 +9614,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-217",
-    "EDICION": "ED2026-feb-I",
+    "LLAVE KEY": "PWE-210",
+    "EDICION": "FEB. I - ED26",
     "LINEA": "LOGÍSTICA",
     "CATEGORIA": "PEE",
     "PROGRAMA": "PEE PLAN. DEMAN.",
@@ -9982,8 +9660,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-218",
-    "EDICION": "ED2026-feb-I",
+    "LLAVE KEY": "PWE-211",
+    "EDICION": "FEB. I - ED26",
     "LINEA": "LOGÍSTICA",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "KPIS LOGÍSTICOS POWER BI",
@@ -10028,8 +9706,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-219",
-    "EDICION": "ED2026-feb-I",
+    "LLAVE KEY": "PWE-212",
+    "EDICION": "FEB. I - ED26",
     "LINEA": "BI",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "PYTHON AVANZ.",
@@ -10074,8 +9752,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-220",
-    "EDICION": "ED2026-feb-I",
+    "LLAVE KEY": "PWE-213",
+    "EDICION": "FEB. I - ED26",
     "LINEA": "SAP",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "SAP HANA PM",
@@ -10120,8 +9798,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-221",
-    "EDICION": "ED2026-feb-I",
+    "LLAVE KEY": "PWE-214",
+    "EDICION": "FEB. I - ED26",
     "LINEA": "BI",
     "CATEGORIA": "ESP.",
     "PROGRAMA": "ESP. EN PYTHON DATA SCIENCE",
@@ -10166,8 +9844,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-222",
-    "EDICION": "ED2026-feb-I",
+    "LLAVE KEY": "PWE-215",
+    "EDICION": "FEB. I - ED26",
     "LINEA": "BI",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "PYTHON. DATOS",
@@ -10212,8 +9890,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-223",
-    "EDICION": "ED2026-feb-I",
+    "LLAVE KEY": "PWE-216",
+    "EDICION": "FEB. I - ED26",
     "LINEA": "WEB",
     "CATEGORIA": "ESP.",
     "PROGRAMA": "ESP. FRONTEND",
@@ -10258,8 +9936,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-224",
-    "EDICION": "ED2026-feb-I",
+    "LLAVE KEY": "PWE-217",
+    "EDICION": "FEB. I - ED26",
     "LINEA": "WEB",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "PROG. WEB",
@@ -10304,8 +9982,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-225",
-    "EDICION": "ED2026-feb-I",
+    "LLAVE KEY": "PWE-218",
+    "EDICION": "FEB. I - ED26",
     "LINEA": "FINANZ",
     "CATEGORIA": "DIPLOMADO",
     "PROGRAMA": "DIP. FINANZAS",
@@ -10328,7 +10006,7 @@
     "SESIONES": 30,
     "BROCHURE": "pdfs/BROCHURE DIPLOMADO EN GESTION FINANCIERA.pdf",
     "BENEFICIOS": "🔹 Utilizarán SAP HANA 👩🏻‍💻\n👉🏼 Incluye tutorial y manual de instalación\n👉🏼 12 meses de Licencia SAP para practicar\n🔹 Utilizarán CONCAR \n💻 Importante: Para la instalación se necesita una Laptop Windows\n\n🚨 Por favor, revisa el BROCHURE 👇🏻\nAqui encontrarás la información completa del programa: Temario (malla curricular) y todos los BENEFICIOS 📚\n\n👉🏼 Te comparto un Modelo de Certificado que elevará tu perfil profesional ",
-    "POSTDOCEN": "",
+    "POSTDOCEN": "images/dipfin.jpg",
     "AVALADO": "",
     "CURSO MES": "",
     "INV PRO T": 3810,
@@ -10350,8 +10028,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-226",
-    "EDICION": "ED2026-feb-I",
+    "LLAVE KEY": "PWE-219",
+    "EDICION": "FEB. I - ED26",
     "LINEA": "FINANZ",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "PLAN. FINANCIERO",
@@ -10373,8 +10051,8 @@
     "FIN": "Sábado 14 Marzo",
     "SESIONES": 6,
     "BROCHURE": "pdfs/BROCHURE PLANEAMIENTO FINANCIERO.pdf",
-    "BENEFICIOS": "",
-    "POSTDOCEN": "",
+    "BENEFICIOS": "🔹 Utilizarán Excel 👩🏻‍💻\n\n🚨 Por favor, revisa el BROCHURE 👇🏻\nAqui encontrarás la información completa del programa: Temario (malla curricular) y todos los BENEFICIOS 📚",
+    "POSTDOCEN": "images/planfinan.jpg",
     "AVALADO": "",
     "CURSO MES": "NO",
     "INV PRO T": 750,
@@ -10396,8 +10074,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-227",
-    "EDICION": "ED2026-feb-I",
+    "LLAVE KEY": "PWE-220",
+    "EDICION": "FEB. I - ED26",
     "LINEA": "IA",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "IA GENERATIVA APLICADA A PROCESOS EMPRESARIALES",
@@ -10420,7 +10098,7 @@
     "SESIONES": 6,
     "BROCHURE": "",
     "BENEFICIOS": "",
-    "POSTDOCEN": "#N/A",
+    "POSTDOCEN": "",
     "AVALADO": "",
     "CURSO MES": "",
     "INV PRO T": "",
@@ -10442,8 +10120,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-228",
-    "EDICION": "ED2026-feb-I",
+    "LLAVE KEY": "PWE-221",
+    "EDICION": "FEB. I - ED26",
     "LINEA": "BI",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "POWER BI",
@@ -10488,8 +10166,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-229",
-    "EDICION": "ED2026-feb-I",
+    "LLAVE KEY": "PWE-222",
+    "EDICION": "FEB. I - ED26",
     "LINEA": "SAP",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "SAP HANA MM PRESENCIAL",
@@ -10534,8 +10212,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-230",
-    "EDICION": "ED2026-feb-I",
+    "LLAVE KEY": "PWE-223",
+    "EDICION": "FEB. I - ED26",
     "LINEA": "BI",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "SQL AVANZ",
@@ -10557,8 +10235,8 @@
     "FIN": "Lunes 2 Marzo",
     "SESIONES": 6,
     "BROCHURE": "pdfs/BROCHURE SQL SERVER AVANZADO.pdf",
-    "BENEFICIOS": "🔵 *Conoce TODOS los BENEFICIOS a los que accedes*\n\n🔹 Acceso a *Campus Virtual* WE 👩🏻‍🏫\n🔹 Material digital y grabación de clases \n🔹 Certificado digital con respaldo *Microsoft Partner*\n🔹 03 Cursos Online de regalo con acceso ilimitado 📚\n🔹 Desarrollo y seguimiento de tu proyecto *(Evaluado)*\n🔹 Contenido Integrado con - Chat GPT\n🔹 Garantía de Aprendizaje 100% \n\n🔹 *Utilizarán SQL Server* 👩🏻‍💻\n👉🏼 Incluye tutorial y manual de instalación\n💻 _*Importante*: Para la instalación se necesita una Laptop *Windows*_\n\n🚨 *Revisa el BROCHURE* 👇🏻",
-    "POSTDOCEN": "",
+    "BENEFICIOS": "🔵 *Conoce TODOS los BENEFICIOS a los que accedes*\n\n🔹 Acceso a *Campus Virtual* WE 👩🏻‍🏫\n🔹 Material digital y grabación de clases \n🔹 Certificado digital con respaldo *Microsoft Partner*\n🔹 03 Cursos Online de regalo con acceso ilimitado 📚\n🔹 Desarrollo y seguimiento de tu proyecto *(Evaluado)*\n🔹 Contenido Integrado con - Chat GPT\n🔹 Garantía de Aprendizaje 100% \n\n🔹 *Utilizarán SQL Server* 👩🏻‍💻\n👉🏼 Incluye tutorial y manual de instalación\n💻 _*Importante*: Para la instalación se necesita una Laptop *Windows*_\n\n🚨 *Por favor, revisa el BROCHURE* 👇🏻\nAqui encontrarás la información completa del programa, el TEMARIO (malla curricular) y todos los BENEFICIOS 📚",
+    "POSTDOCEN": "images/sqlavanz.jpg",
     "AVALADO": "Avalado por Microsoft Partner Network",
     "CURSO MES": "NO",
     "INV PRO T": 830,
@@ -10580,8 +10258,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-231",
-    "EDICION": "ED2026-feb-I",
+    "LLAVE KEY": "PWE-224",
+    "EDICION": "FEB. I - ED26",
     "LINEA": "SAP",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "SAP HANA EWM",
@@ -10626,8 +10304,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-232",
-    "EDICION": "ED2026-feb-I",
+    "LLAVE KEY": "PWE-225",
+    "EDICION": "FEB. I - ED26",
     "LINEA": "LOGÍSTICA",
     "CATEGORIA": "DIPLOMADO",
     "PROGRAMA": "DIP SUPPLY V3",
@@ -10672,8 +10350,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-233",
-    "EDICION": "ED2026-feb-I",
+    "LLAVE KEY": "PWE-226",
+    "EDICION": "FEB. I - ED26",
     "LINEA": "MINERA",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "RESPONSABILIDAD SOCIAL MINERA",
@@ -10696,7 +10374,7 @@
     "SESIONES": 6,
     "BROCHURE": "",
     "BENEFICIOS": "",
-    "POSTDOCEN": "#N/A",
+    "POSTDOCEN": "",
     "AVALADO": "",
     "CURSO MES": "",
     "INV PRO T": "",
@@ -10718,8 +10396,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-234",
-    "EDICION": "ED2026-feb-I",
+    "LLAVE KEY": "PWE-227",
+    "EDICION": "FEB. I - ED26",
     "LINEA": "LOGÍSTICA",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "PLAN. Y PRONOSTICO V2",
@@ -10764,8 +10442,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-235",
-    "EDICION": "ED2026-feb-I",
+    "LLAVE KEY": "PWE-228",
+    "EDICION": "FEB. I - ED26",
     "LINEA": "PROCESOS",
     "CATEGORIA": "ESP.",
     "PROGRAMA": "ESP. POWER APPS Y AUT.",
@@ -10810,8 +10488,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-236",
-    "EDICION": "ED2026-feb-I",
+    "LLAVE KEY": "PWE-229",
+    "EDICION": "FEB. I - ED26",
     "LINEA": "PROCESOS",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "POWER APPS Y AUT.",
@@ -10856,8 +10534,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-237",
-    "EDICION": "ED2026-feb-I",
+    "LLAVE KEY": "PWE-230",
+    "EDICION": "FEB. I - ED26",
     "LINEA": "SAP",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "SAP HANA IN",
@@ -10902,8 +10580,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-238",
-    "EDICION": "ED2026-feb-I",
+    "LLAVE KEY": "PWE-231",
+    "EDICION": "FEB. I - ED26",
     "LINEA": "BI",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "POWER BI AVANZ",
@@ -10948,8 +10626,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-239",
-    "EDICION": "ED2026-feb-I",
+    "LLAVE KEY": "PWE-232",
+    "EDICION": "FEB. I - ED26",
     "LINEA": "PROCESOS",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "ROBOTIZ.  UIPATH",
@@ -10994,8 +10672,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-240",
-    "EDICION": "ED2026-feb-I",
+    "LLAVE KEY": "PWE-233",
+    "EDICION": "FEB. I - ED26",
     "LINEA": "LOGÍSTICA",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "GEST TRANSPORTES",
@@ -11040,8 +10718,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-241",
-    "EDICION": "ED2026-feb-II",
+    "LLAVE KEY": "PWE-234",
+    "EDICION": "FEB. II - ED26",
     "LINEA": "BI",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "POWER BI AVANZ",
@@ -11086,8 +10764,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-242",
-    "EDICION": "ED2026-feb-II",
+    "LLAVE KEY": "PWE-235",
+    "EDICION": "FEB. II - ED26",
     "LINEA": "BI",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "PYTHON AVANZ.",
@@ -11132,8 +10810,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-243",
-    "EDICION": "ED2026-feb-I",
+    "LLAVE KEY": "PWE-236",
+    "EDICION": "FEB. I - ED26",
     "LINEA": "PROCESOS",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "KPIS Y OKRS",
@@ -11178,8 +10856,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-244",
-    "EDICION": "ED2026-feb-I",
+    "LLAVE KEY": "PWE-237",
+    "EDICION": "FEB. I - ED26",
     "LINEA": "EXCEL",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "PROG. MACROS",
@@ -11224,8 +10902,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-245",
-    "EDICION": "ED2026-feb-I",
+    "LLAVE KEY": "PWE-238",
+    "EDICION": "FEB. I - ED26",
     "LINEA": "EXCEL",
     "CATEGORIA": "ESP.",
     "PROGRAMA": "ESPEC. EXCEL",
@@ -11270,8 +10948,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-246",
-    "EDICION": "ED2026-feb-I",
+    "LLAVE KEY": "PWE-239",
+    "EDICION": "FEB. I - ED26",
     "LINEA": "EXCEL",
     "CATEGORIA": "ESP.",
     "PROGRAMA": "ESP. EXCEL EXP",
@@ -11316,8 +10994,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-247",
-    "EDICION": "ED2026-feb-I",
+    "LLAVE KEY": "PWE-240",
+    "EDICION": "FEB. I - ED26",
     "LINEA": "EXCEL",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "EXCEL BÁSICO",
@@ -11362,8 +11040,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-248",
-    "EDICION": "ED2026-feb-I",
+    "LLAVE KEY": "PWE-241",
+    "EDICION": "FEB. I - ED26",
     "LINEA": "BI",
     "CATEGORIA": "ESP.",
     "PROGRAMA": "ESP. POWER BI",
@@ -11408,8 +11086,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-249",
-    "EDICION": "ED2026-feb-II",
+    "LLAVE KEY": "PWE-242",
+    "EDICION": "FEB. II - ED26",
     "LINEA": "BI",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "POWER BI",
@@ -11454,8 +11132,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-250",
-    "EDICION": "ED2026-feb-I",
+    "LLAVE KEY": "PWE-243",
+    "EDICION": "FEB. I - ED26",
     "LINEA": "SAP",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "SAP HANA FI",
@@ -11478,7 +11156,7 @@
     "SESIONES": 6,
     "BROCHURE": "pdfs/BROCHURE SAP HANA FI MODULO FINANZAS.pdf",
     "BENEFICIOS": "🔵 *Utilizarán SAP HANA* 👩🏻‍💻\n👉🏼 Incluye tutorial y manual de instalación\n👉🏼 12 meses de Licencia SAP para practicar\n👉🏼 Contarás con Soporte técnico\n💻 _*Importante*: Para la instalación se necesita una Laptop *Windows*_\n\n🚨 *Por favor, revisa el BROCHURE* 👇🏻\nAqui encontrarás la información completa del programa, el TEMARIO (malla curricular) y todos los BENEFICIOS 📚",
-    "POSTDOCEN": "images/sapfi",
+    "POSTDOCEN": "images/sapfi.jpg",
     "AVALADO": "Avalado por SAP Partner Open",
     "CURSO MES": "NO",
     "INV PRO T": 900,
@@ -11500,8 +11178,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-251",
-    "EDICION": "ED2026-feb-I",
+    "LLAVE KEY": "PWE-244",
+    "EDICION": "FEB. I - ED26",
     "LINEA": "LOGÍSTICA",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "SUPPLY CHAIN ANALYTICS",
@@ -11523,7 +11201,7 @@
     "FIN": "Martes 10 Marzo",
     "SESIONES": 6,
     "BROCHURE": "pdfs/BROCHURE SUPPLY CHAIN ANALYTICS.pdf",
-    "BENEFICIOS": "🔵 *Conoce TODOS los BENEFICIOS a los que accedes*\r\n\r\n🧑🏻‍🏫 *Docente* Supervisor de Cadena de Suministros En *Samsung* \r\n🔹 Acceso a *Campus Virtual* WE 👩🏻‍🏫\r\n🔹 Material digital y grabación de clases \r\n🔹 Certificado digital incluido\r\n🔹 05 Cursos Online de regalo con acceso ilimitado 📚\r\n🔹 Desarrollo y seguimiento de tu proyecto *(Evaluado)*\r\n🔹 Garantía de Aprendizaje 100%\r\n\r\n🔹 Utilizarán Python👩🏻‍💻\r\n👉🏼 *¡Te regalamos el Curso Python Online!*\r\n👉🏼 Incluye videotutorial y manual de Instalación\r\n💻 _*Importante*: Para la instalación se necesita una Laptop *Windows*_\r\n\r\n🚨 *Revisa el BROCHURE* 👇🏻",
+    "BENEFICIOS": "🔵 *Conoce TODOS los BENEFICIOS a los que accedes*\n\n🧑🏻‍🏫 *Docente* Supervisor de Cadena de Suministros En *Samsung* \n🔹 Acceso a *Campus Virtual* WE 👩🏻‍🏫\n🔹 Material digital y grabación de clases \n🔹 Certificado digital incluido\n🔹 05 Cursos Online de regalo con acceso ilimitado 📚\n🔹 Desarrollo y seguimiento de tu proyecto *(Evaluado)*\n🔹 Garantía de Aprendizaje 100%\n\n🔹 Utilizarán Python👩🏻‍💻\n👉🏼 *¡Te regalamos el Curso Python Online!*\n👉🏼 Incluye videotutorial y manual de Instalación\n💻 _*Importante*: Para la instalación se necesita una Laptop *Windows*_\n\n🚨 *Por favor, revisa el BROCHURE* 👇🏻\nAqui encontrarás la información completa del programa, el TEMARIO (malla curricular) y todos los BENEFICIOS 📚",
     "POSTDOCEN": "",
     "AVALADO": "Avalado por IBM® Partner World",
     "CURSO MES": "NO",
@@ -11546,8 +11224,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-252",
-    "EDICION": "ED2026-feb-I",
+    "LLAVE KEY": "PWE-245",
+    "EDICION": "FEB. I - ED26",
     "LINEA": "FINANZ",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "COST Y PRESUP",
@@ -11562,7 +11240,7 @@
     "INICIO4": "",
     "CURSO5": "",
     "INICIO5": "",
-    "DOCENTE": "Ralphi Jauregui",
+    "DOCENTE": "José Botonero",
     "DIAS": "Mar-Jue",
     "HORARIO": "7PM - 10PM",
     "INICIO": "Jueves 19 Febrero",
@@ -11592,8 +11270,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-253",
-    "EDICION": "ED2026-feb-I",
+    "LLAVE KEY": "PWE-246",
+    "EDICION": "FEB. I - ED26",
     "LINEA": "BI",
     "CATEGORIA": "PEE",
     "PROGRAMA": "PEE ANALIST DATOS",
@@ -11638,8 +11316,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-254",
-    "EDICION": "ED2026-feb-I",
+    "LLAVE KEY": "PWE-247",
+    "EDICION": "FEB. I - ED26",
     "LINEA": "BI",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "SQL SERVER",
@@ -11684,8 +11362,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-255",
-    "EDICION": "ED2026-feb-I",
+    "LLAVE KEY": "PWE-248",
+    "EDICION": "FEB. I - ED26",
     "LINEA": "SAP",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "SAP HANA PP",
@@ -11708,7 +11386,7 @@
     "SESIONES": 6,
     "BROCHURE": "pdfs/BROCHURE SAP HANA PP MODULO PRODUCCION.pdf",
     "BENEFICIOS": "🔵 *Conoce TODOS los BENEFICIOS a los que accedes*\r\n\r\n🔹 Acceso a *Campus Virtual* WE 👩🏻‍🏫\r\n🔹 Material digital y grabación de clases \r\n🔹 Certificado digital con respaldo *SAP Partner*\r\n🔹 04 Cursos Online de regalo con acceso ilimitado 📚\r\n🔹 Acceso a *Curso SAP R3 con certificación* incluida\r\n🔹 Taller de Automatización SAP con RPA\r\n🔹 Garantía de Aprendizaje 100% \r\n\r\n🔹 *Utilizarán SAP HANA* 👩🏻‍💻\r\n👉🏼 Incluye tutorial y manual de instalación\r\n👉🏼 12 meses de Licencia SAP para practicar\r\n👉🏼 Contarás con Soporte técnico\r\n💻 _*Importante*: Para la instalación se necesita una Laptop *Windows*_\r\n\r\n🚨 *Revisa el BROCHURE* 👇🏻",
-    "POSTDOCEN": "",
+    "POSTDOCEN": "images/sappp.jpg",
     "AVALADO": "Avalado por SAP Partner Open",
     "CURSO MES": "NO",
     "INV PRO T": 900,
@@ -11730,8 +11408,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-256",
-    "EDICION": "ED2026-feb-I",
+    "LLAVE KEY": "PWE-249",
+    "EDICION": "FEB. I - ED26",
     "LINEA": "SAP",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "SAP HANA IN PRESENCIAL",
@@ -11776,8 +11454,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-257",
-    "EDICION": "ED2026-feb-I",
+    "LLAVE KEY": "PWE-250",
+    "EDICION": "FEB. I - ED26",
     "LINEA": "LOGÍSTICA",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "GEST. COMP. Y PROV.",
@@ -11800,7 +11478,7 @@
     "SESIONES": 6,
     "BROCHURE": "pdfs/BROCHURE GEST DE COMPRAS Y PROVEEDORES.pdf",
     "BENEFICIOS": "🔵 *Conoce TODOS los BENEFICIOS a los que accedes*\n\n🔹 Acceso a Campus Virtual WE 👩🏻‍🏫\n🔹 Material digital y grabación de clases \n🔹 Certificado digital \n🔹 04 Cursos Online de regalo con acceso ilimitado 📚\n🔹 Desarrollo y seguimiento de tu proyecto *(Evaluado)*\n🔹 Garantía de Aprendizaje 100%\n\n🚨 *Revisa el BROCHURE* 👇🏻",
-    "POSTDOCEN": "",
+    "POSTDOCEN": "images/gestcomp.jpg",
     "AVALADO": "",
     "CURSO MES": "SI",
     "INV PRO T": 830,
@@ -11822,8 +11500,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-258",
-    "EDICION": "ED2026-feb-I",
+    "LLAVE KEY": "PWE-251",
+    "EDICION": "FEB. I - ED26",
     "LINEA": "BI",
     "CATEGORIA": "DIPLOMADO",
     "PROGRAMA": "DIP INTELIG. Y ANALIST. DATOS V2",
@@ -11868,8 +11546,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-259",
-    "EDICION": "ED2026-feb-I",
+    "LLAVE KEY": "PWE-252",
+    "EDICION": "FEB. I - ED26",
     "LINEA": "BI",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "DATA ANALYTICS",
@@ -11914,8 +11592,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-260",
-    "EDICION": "ED2026-feb-I",
+    "LLAVE KEY": "PWE-253",
+    "EDICION": "FEB. I - ED26",
     "LINEA": "PROCESOS",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "POWER APPS AVANZ",
@@ -11960,8 +11638,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-261",
-    "EDICION": "ED2026-feb-I",
+    "LLAVE KEY": "PWE-254",
+    "EDICION": "FEB. I - ED26",
     "LINEA": "PROYECTOS",
     "CATEGORIA": "DIPLOMADO",
     "PROGRAMA": "DIP GEST PROYECTOS V4",
@@ -12006,8 +11684,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-262",
-    "EDICION": "ED2026-feb-I",
+    "LLAVE KEY": "PWE-255",
+    "EDICION": "FEB. I - ED26",
     "LINEA": "PROYECTOS",
     "CATEGORIA": "PEE",
     "PROGRAMA": "PEE ANALIST PROY V4",
@@ -12052,8 +11730,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-263",
-    "EDICION": "ED2026-feb-I",
+    "LLAVE KEY": "PWE-256",
+    "EDICION": "FEB. I - ED26",
     "LINEA": "PROYECTOS",
     "CATEGORIA": "ESP.",
     "PROGRAMA": "ESP. GEST. PROYECTOS V3",
@@ -12098,8 +11776,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-264",
-    "EDICION": "ED2026-feb-I",
+    "LLAVE KEY": "PWE-257",
+    "EDICION": "FEB. I - ED26",
     "LINEA": "PROYECTOS",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "GEST PROYECT I",
@@ -12144,8 +11822,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-265",
-    "EDICION": "ED2026-feb-I",
+    "LLAVE KEY": "PWE-258",
+    "EDICION": "FEB. I - ED26",
     "LINEA": "PROYECTOS",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "PMO",
@@ -12190,8 +11868,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-266",
-    "EDICION": "ED2026-feb-I",
+    "LLAVE KEY": "PWE-259",
+    "EDICION": "FEB. I - ED26",
     "LINEA": "PROYECTOS",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "MS PROJECT",
@@ -12236,8 +11914,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-267",
-    "EDICION": "ED2026-feb-I",
+    "LLAVE KEY": "PWE-260",
+    "EDICION": "FEB. I - ED26",
     "LINEA": "PROCESOS",
     "CATEGORIA": "DIPLOMADO",
     "PROGRAMA": "DIP PROC Y MEJORA V3",
@@ -12282,8 +11960,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-268",
-    "EDICION": "ED2026-feb-I",
+    "LLAVE KEY": "PWE-261",
+    "EDICION": "FEB. I - ED26",
     "LINEA": "PROCESOS",
     "CATEGORIA": "PEE",
     "PROGRAMA": "PEE ANALIST PROC",
@@ -12328,8 +12006,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-269",
-    "EDICION": "ED2026-feb-I",
+    "LLAVE KEY": "PWE-262",
+    "EDICION": "FEB. I - ED26",
     "LINEA": "PROCESOS",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "GEST PROCESOS",
@@ -12374,8 +12052,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-270",
-    "EDICION": "ED2026-feb-II",
+    "LLAVE KEY": "PWE-263",
+    "EDICION": "FEB. II - ED26",
     "LINEA": "SAP",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "SAP HANA IN",
@@ -12420,8 +12098,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-271",
-    "EDICION": "ED2026-feb-I",
+    "LLAVE KEY": "PWE-264",
+    "EDICION": "FEB. I - ED26",
     "LINEA": "BI",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "POWER BI PRESENCIAL",
@@ -12444,7 +12122,7 @@
     "SESIONES": 5,
     "BROCHURE": "pdfs/BROCHURE POWER BI PRESENCIAL.pdf",
     "BENEFICIOS": "🔹 Recuerda que si traes tu Propia Laptop a todas las sesiones, te descontamos S/50 en tu inscripción\n\n🚨 Por favor, revisa el BROCHURE 👇🏻\nAqui encontrarás la información completa del programa: Temario (malla curricular) y todos los BENEFICIOS 📚\n\n👉🏼 Te comparto un Modelo de Certificado que elevará tu perfil profesional ",
-    "POSTDOCEN": "",
+    "POSTDOCEN": "images/powerbipres.jpg",
     "AVALADO": "Avalado por Microsoft Partner Network",
     "CURSO MES": "NO",
     "INV PRO T": 940,
@@ -12466,8 +12144,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-272",
-    "EDICION": "ED2026-feb-I",
+    "LLAVE KEY": "PWE-265",
+    "EDICION": "FEB. I - ED26",
     "LINEA": "BI",
     "CATEGORIA": "ESP.",
     "PROGRAMA": "ESP. SQL SERVER",
@@ -12490,7 +12168,7 @@
     "SESIONES": 12,
     "BROCHURE": "pdfs/BROCHURE ESPECIALIZACION DE SQL.pdf",
     "BENEFICIOS": "🔵 *Utilizarán SQL Server* 👩🏻‍💻\n👉🏼 Incluye tutorial y manual de instalación\n💻 _*Importante*: Para la instalación se necesita una Laptop *Windows*_\n\n🚨 *Por favor, revisa el BROCHURE* 👇🏻\nAqui encontrarás la información completa del programa, el TEMARIO (malla curricular) y todos los BENEFICIOS 📚",
-    "POSTDOCEN": "images/espsqljpg",
+    "POSTDOCEN": "images/espsql.jpg",
     "AVALADO": "Avalado por Microsoft Partner Network",
     "CURSO MES": "NO",
     "INV PRO T": 1600,
@@ -12512,8 +12190,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-273",
-    "EDICION": "ED2026-feb-II",
+    "LLAVE KEY": "PWE-266",
+    "EDICION": "FEB. II - ED26",
     "LINEA": "BI",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "SQL SERVER",
@@ -12558,8 +12236,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-274",
-    "EDICION": "ED2026-feb-I",
+    "LLAVE KEY": "PWE-267",
+    "EDICION": "FEB. I - ED26",
     "LINEA": "SAP",
     "CATEGORIA": "ESP.",
     "PROGRAMA": "ESPEC.SAP HANA",
@@ -12585,15 +12263,15 @@
     "POSTDOCEN": "images/espsap.jpg",
     "AVALADO": "Avalado por SAP Partner Open",
     "CURSO MES": "NO",
-    "INV PRO T": 2250,
-    "INV EST T": 1920,
-    "INV PRO": 1125,
-    "INV EST": 960,
+    "INV PRO T": 1900,
+    "INV EST T": 1750,
+    "INV PRO": 950,
+    "INV EST": 875,
     "RESEST": 250,
     "RESPRO": 350,
     "VIDEO": "",
-    "EXEST": 864,
-    "EXPRO": 1012.5,
+    "EXEST": 787.5,
+    "EXPRO": 855,
     "PERSONALIZADO": "El futuro de SAP está en HANA ⚡\nAprende a manejar esta plataforma de alto rendimiento para impulsar la transformación digital 🌐\n👉🏻 Aquí tienes la información.",
     "RES1": "⚡ Excelente, actualízate en SAP HANA, la base de datos más avanzada del mercado.",
     "RES2": "🏢 Buenísimo, muy buscado en proyectos de transformación digital empresarial.",
@@ -12604,8 +12282,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-275",
-    "EDICION": "ED2026-feb-I",
+    "LLAVE KEY": "PWE-268",
+    "EDICION": "FEB. I - ED26",
     "LINEA": "SAP",
     "CATEGORIA": "ESP.",
     "PROGRAMA": "ESP. SAP MINERÍA",
@@ -12631,15 +12309,15 @@
     "POSTDOCEN": "images/espsapmineria.jpg",
     "AVALADO": "Avalado por SAP Partner Open",
     "CURSO MES": "NO",
-    "INV PRO T": 2250,
-    "INV EST T": 1920,
-    "INV PRO": 1125,
-    "INV EST": 960,
+    "INV PRO T": 1900,
+    "INV EST T": 1750,
+    "INV PRO": 950,
+    "INV EST": 875,
     "RESEST": 250,
     "RESPRO": 350,
     "VIDEO": "",
-    "EXEST": 864,
-    "EXPRO": 1012.5,
+    "EXEST": 787.5,
+    "EXPRO": 855,
     "PERSONALIZADO": "El sector minero apuesta por SAP ⛏️\nEspecialízate en SAP aplicado a minería y lleva tu perfil al siguiente nivel en industrias clave 💼\n👉🏻 Te paso la info completa.",
     "RES1": "⛏️ Excelente, actualízate en SAP aplicado a minería y potencia tu perfil en un sector clave.",
     "RES2": "💼 Buenísimo, las empresas mineras requieren especialistas en procesos con SAP.",
@@ -12650,8 +12328,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-276",
-    "EDICION": "ED2026-feb-I",
+    "LLAVE KEY": "PWE-269",
+    "EDICION": "FEB. I - ED26",
     "LINEA": "SAP",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "SAP HANA MM",
@@ -12696,8 +12374,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-277",
-    "EDICION": "ED2026-feb-I",
+    "LLAVE KEY": "PWE-270",
+    "EDICION": "FEB. I - ED26",
     "LINEA": "PROCESOS",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "APPS SCRIPT",
@@ -12720,7 +12398,7 @@
     "SESIONES": 6,
     "BROCHURE": "",
     "BENEFICIOS": "",
-    "POSTDOCEN": "#N/A",
+    "POSTDOCEN": "",
     "AVALADO": "",
     "CURSO MES": "",
     "INV PRO T": "",
@@ -12742,8 +12420,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-278",
-    "EDICION": "ED2026-mar-I",
+    "LLAVE KEY": "PWE-271",
+    "EDICION": "MAR. I - ED26",
     "LINEA": "PROYECTOS",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "GEST. ÁGIL PROYECT",
@@ -12788,8 +12466,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-279",
-    "EDICION": "ED2026-mar-I",
+    "LLAVE KEY": "PWE-272",
+    "EDICION": "MAR. I - ED26",
     "LINEA": "SAP",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "SAP HANA SD",
@@ -12834,8 +12512,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-280",
-    "EDICION": "ED2026-mar-I",
+    "LLAVE KEY": "PWE-273",
+    "EDICION": "MAR. I - ED26",
     "LINEA": "LOGÍSTICA",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "GER. CENTRO DISTRIB.",
@@ -12880,8 +12558,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-281",
-    "EDICION": "ED2026-mar-I",
+    "LLAVE KEY": "PWE-274",
+    "EDICION": "MAR. I - ED26",
     "LINEA": "LOGÍSTICA",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "GEST. COMP. Y PROV.",
@@ -12904,7 +12582,7 @@
     "SESIONES": 6,
     "BROCHURE": "pdfs/BROCHURE GEST DE COMPRAS Y PROVEEDORES.pdf",
     "BENEFICIOS": "🔵 *Conoce TODOS los BENEFICIOS a los que accedes*\n\n🔹 Acceso a Campus Virtual WE 👩🏻‍🏫\n🔹 Material digital y grabación de clases \n🔹 Certificado digital \n🔹 04 Cursos Online de regalo con acceso ilimitado 📚\n🔹 Desarrollo y seguimiento de tu proyecto *(Evaluado)*\n🔹 Garantía de Aprendizaje 100%\n\n🚨 *Revisa el BROCHURE* 👇🏻",
-    "POSTDOCEN": "",
+    "POSTDOCEN": "images/gestcomp.jpg",
     "AVALADO": "",
     "CURSO MES": "SI",
     "INV PRO T": 830,
@@ -12926,8 +12604,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-282",
-    "EDICION": "ED2026-mar-I",
+    "LLAVE KEY": "PWE-275",
+    "EDICION": "MAR. I - ED26",
     "LINEA": "PROCESOS",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "POWER APPS AVANZ",
@@ -12972,8 +12650,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-283",
-    "EDICION": "ED2026-mar-I",
+    "LLAVE KEY": "PWE-276",
+    "EDICION": "MAR. I - ED26",
     "LINEA": "MKT",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "ESTR. Y TEC. COMERCIALES",
@@ -13018,8 +12696,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-284",
-    "EDICION": "ED2026-mar-I",
+    "LLAVE KEY": "PWE-277",
+    "EDICION": "MAR. I - ED26",
     "LINEA": "PROCESOS",
     "CATEGORIA": "ESP.",
     "PROGRAMA": "ESP. POWER APPS Y AUT.",
@@ -13064,8 +12742,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-285",
-    "EDICION": "ED2026-mar-I",
+    "LLAVE KEY": "PWE-278",
+    "EDICION": "MAR. I - ED26",
     "LINEA": "PROCESOS",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "POWER APPS Y AUT.",
@@ -13110,54 +12788,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-286",
-    "EDICION": "ED2026-mar-I",
-    "LINEA": "PROCESOS",
-    "CATEGORIA": "CURSO",
-    "PROGRAMA": "KPIS Y OKRS",
-    "INICIO6": "7/3/2026",
-    "CURSO1": "",
-    "INICIO1": "",
-    "CURSO2": "",
-    "INICIO2": "",
-    "CURSO3": "",
-    "INICIO3": "",
-    "CURSO4": "",
-    "INICIO4": "",
-    "CURSO5": "",
-    "INICIO5": "",
-    "DOCENTE": "Luis Euribe",
-    "DIAS": "Sáb",
-    "HORARIO": "9AM - 12PM",
-    "INICIO": "Sábado 7 Marzo",
-    "FIN": "Sábado 4 Abril",
-    "SESIONES": 5,
-    "BROCHURE": "pdfs/BROCHURE KPI'S Y OKR'S.pdf",
-    "BENEFICIOS": "🔵*¡Certificado Adicional!* ⭐\n👉🏻 Certificado *OKR Master* tiene la inversión de *$50* ~(Normal $150)~\n_Incluye material de práctica y 2 intentos del examen_\n\n🔹 *Utilizarán Excel* 👩🏻‍💻\n👉🏻 ¡Te regalamos el Curso Online!\n👉🏻 Incluye plantillas y formatos\n\n🚨 *Por favor, revisa el BROCHURE* 👇🏻\nAqui encontrarás la información completa del programa, el TEMARIO (malla curricular) y todos los BENEFICIOS 📚",
-    "POSTDOCEN": "images/kpis.jpg",
-    "AVALADO": "Avalado por Microsoft Partner Network",
-    "CURSO MES": "NO",
-    "INV PRO T": 700,
-    "INV EST T": 636,
-    "INV PRO": 350,
-    "INV EST": 318,
-    "RESEST": 150,
-    "RESPRO": 150,
-    "VIDEO": "",
-    "EXEST": 286.2,
-    "EXPRO": 315,
-    "PERSONALIZADO": "El éxito de los líderes está en medir lo que importa 📈\nCon KPIs y OKRs aprenderás a establecer indicadores y objetivos estratégicos aplicados a casos reales 💼.\nAquí la información completa 👇🏻",
-    "RES1": "🌍 *Excelente*, actualízate con *KPIS Y OKRS* y mantente competitivo en el mercado laboral.",
-    "RES2": "✨ Buenísimo, *KPIS Y OKRS* es de las competencias más pedidas por las empresas y aumentará tus oportunidades laborales.",
-    "RES3": "🌍 ¡Genial! Con *KPIS Y OKRS* sumarás una habilidad poderosa que te diferenciará desde la universidad.",
-    "RES4": "🛠️ ¡Perfecto! Saber *KPIS Y OKRS* te dará ventaja frente a otros postulantes para conseguir prácticas.",
-    "RES5": "🎓 ¡Excelente! Con *KPIS Y OKRS* podrás aplicarlo en tu negocio y tomar decisiones más inteligentes.",
-    "ENLACE": "https://we-educacion.com/slides/kpi-s-y-okr-s-203",
-    "HABITILITADO": 1
-  },
-  {
-    "LLAVE KEY": "PWE-287",
-    "EDICION": "ED2026-mar-I",
+    "LLAVE KEY": "PWE-279",
+    "EDICION": "MAR. I - ED26",
     "LINEA": "WEB",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "REACT JS",
@@ -13202,8 +12834,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-288",
-    "EDICION": "ED2026-mar-I",
+    "LLAVE KEY": "PWE-280",
+    "EDICION": "MAR. I - ED26",
     "LINEA": "EXCEL",
     "CATEGORIA": "ESP.",
     "PROGRAMA": "ESP. MACROS",
@@ -13218,7 +12850,7 @@
     "INICIO4": "",
     "CURSO5": "",
     "INICIO5": "",
-    "DOCENTE": "Jonathan Sanchez\nGiancarlos Barboza",
+    "DOCENTE": "Giancarlos Barboza\nJulio Ccari",
     "DIAS": "Dom",
     "HORARIO": "9AM - 12PM",
     "INICIO": "Domingo 8 Marzo",
@@ -13248,8 +12880,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-289",
-    "EDICION": "ED2026-mar-I",
+    "LLAVE KEY": "PWE-281",
+    "EDICION": "MAR. I - ED26",
     "LINEA": "EXCEL",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "EXCEL AVANZ",
@@ -13272,7 +12904,7 @@
     "SESIONES": 6,
     "BROCHURE": "pdfs/BROCHURE EXCEL AVANZADO.pdf",
     "BENEFICIOS": "🔵 *Conoce TODOS los BENEFICIOS a los que accedes*\r\n\r\n🔹 Acceso a *Campus Virtual* WE 👩🏻‍🏫\r\n🔹 Material digital y grabación de clases \r\n🔹 Certificado digital con respaldo *Microsoft Partner*\r\n🔹 03 Cursos Online de regalo con acceso ilimitado 📚\r\n🔹 Desarrollo y seguimiento de tu proyecto *(Evaluado)*\r\n🔹 Contenido Integrado con Chat GPT\r\n🔹 Garantía de Aprendizaje 100%\r\n\r\n🚨 *Revisa el BROCHURE* 👇🏻",
-    "POSTDOCEN": "",
+    "POSTDOCEN": "images/excelavanz.jpg",
     "AVALADO": "Avalado por Microsoft Partner Network",
     "CURSO MES": "NO",
     "INV PRO T": 420,
@@ -13294,8 +12926,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-290",
-    "EDICION": "ED2026-mar-I",
+    "LLAVE KEY": "PWE-282",
+    "EDICION": "MAR. I - ED26",
     "LINEA": "EXCEL",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "EXCEL INTERM",
@@ -13340,8 +12972,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-291",
-    "EDICION": "ED2026-mar-I",
+    "LLAVE KEY": "PWE-283",
+    "EDICION": "MAR. I - ED26",
     "LINEA": "PROCESOS",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "LEAN SIX SIGMA YELLOW",
@@ -13363,8 +12995,8 @@
     "FIN": "Miércoles 15 Abril",
     "SESIONES": 6,
     "BROCHURE": "pdfs/BROCHURE LEAN SIX SIGMA YELLOW BELT.pdf",
-    "BENEFICIOS": "*Conoce TODOS los BENEFICIOS a los que accedes* \r\n\r\n🔹 Acceso a Campus Virtual WE 👩🏻‍🏫\r\n🔹 Material digital y grabación de clases \r\n🔹 Certificado digital del curso\r\n🔹 02 Cursos Online de regalo con acceso ilimitado 📚\r\n🔹 Desarrollo y seguimiento de tu proyecto *(Evaluado)*\r\n🔹 Garantía de Aprendizaje 100%\r\n\r\n*¡Certificados Adicionales!* ⭐\r\n👉🏻 Certificado *WHITE BELT* tiene la inversión de *$10* ~(Normal $50)~\r\n👉🏻 Certificado *YELLOW BELT* tiene la inversión de *$50* ~(Normal $150)~\r\n_Incluye material de práctica y 2 intentos del examen_\r\n\r\n🔹 *Utilizarán Minitab* 👩🏻‍💻\r\n👉🏻 Incluye tutorial y manual de instalación\r\n💻 _*Importante*: Para la instalación se necesita una Laptop *Windows*_\r\n\r\n🚨 *Revisa el BROCHURE* 👇🏻",
-    "POSTDOCEN": "",
+    "BENEFICIOS": "🔵  *Utilizarán Minitab* 👩🏻‍💻\n👉🏻 Incluye tutorial y manual de instalación\n💻 _*Importante*: Para la instalación se necesita una Laptop *Windows*_\n\n🚨 *Por favor, revisa el BROCHURE* 👇🏻\nAqui encontrarás la información completa del programa, el TEMARIO (malla curricular) y todos los BENEFICIOS 📚",
+    "POSTDOCEN": "images/leansix.jpg",
     "AVALADO": "",
     "CURSO MES": "NO",
     "INV PRO T": 820,
@@ -13386,8 +13018,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-292",
-    "EDICION": "ED2026-mar-I",
+    "LLAVE KEY": "PWE-284",
+    "EDICION": "MAR. I - ED26",
     "LINEA": "BI",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "POWER BI AVANZ",
@@ -13432,8 +13064,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-293",
-    "EDICION": "ED2026-mar-I",
+    "LLAVE KEY": "PWE-285",
+    "EDICION": "MAR. I - ED26",
     "LINEA": "SAP",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "SAP HANA FI",
@@ -13456,7 +13088,7 @@
     "SESIONES": 6,
     "BROCHURE": "pdfs/BROCHURE SAP HANA FI MODULO FINANZAS.pdf",
     "BENEFICIOS": "🔵 *Utilizarán SAP HANA* 👩🏻‍💻\n👉🏼 Incluye tutorial y manual de instalación\n👉🏼 12 meses de Licencia SAP para practicar\n👉🏼 Contarás con Soporte técnico\n💻 _*Importante*: Para la instalación se necesita una Laptop *Windows*_\n\n🚨 *Por favor, revisa el BROCHURE* 👇🏻\nAqui encontrarás la información completa del programa, el TEMARIO (malla curricular) y todos los BENEFICIOS 📚",
-    "POSTDOCEN": "images/sapfi",
+    "POSTDOCEN": "images/sapfi.jpg",
     "AVALADO": "Avalado por SAP Partner Open",
     "CURSO MES": "NO",
     "INV PRO T": 900,
@@ -13478,8 +13110,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-294",
-    "EDICION": "ED2026-mar-I",
+    "LLAVE KEY": "PWE-286",
+    "EDICION": "MAR. I - ED26",
     "LINEA": "BI",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "AZURE",
@@ -13524,8 +13156,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-295",
-    "EDICION": "ED2026-mar-I",
+    "LLAVE KEY": "PWE-287",
+    "EDICION": "MAR. I - ED26",
     "LINEA": "ADMINISTRACIÓN",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "GEST. DE EMPRESAS",
@@ -13548,7 +13180,7 @@
     "SESIONES": 6,
     "BROCHURE": "",
     "BENEFICIOS": "",
-    "POSTDOCEN": "#N/A",
+    "POSTDOCEN": "",
     "AVALADO": "",
     "CURSO MES": "",
     "INV PRO T": "",
@@ -13570,8 +13202,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-296",
-    "EDICION": "ED2026-mar-I",
+    "LLAVE KEY": "PWE-288",
+    "EDICION": "MAR. I - ED26",
     "LINEA": "LOGÍSTICA",
     "CATEGORIA": "DIPLOMADO",
     "PROGRAMA": "DIP SUPPLY V3",
@@ -13616,8 +13248,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-297",
-    "EDICION": "ED2026-mar-I",
+    "LLAVE KEY": "PWE-289",
+    "EDICION": "MAR. I - ED26",
     "LINEA": "LOGÍSTICA",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "PLAN. Y PRONOSTICO V2",
@@ -13662,8 +13294,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-298",
-    "EDICION": "ED2026-mar-I",
+    "LLAVE KEY": "PWE-290",
+    "EDICION": "MAR. I - ED26",
     "LINEA": "EXCEL",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "PROG. MACROS",
@@ -13708,8 +13340,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-299",
-    "EDICION": "ED2026-mar-II",
+    "LLAVE KEY": "PWE-291",
+    "EDICION": "MAR. II - ED26",
     "LINEA": "EXCEL",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "EXCEL INTERM",
@@ -13754,8 +13386,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-300",
-    "EDICION": "ED2026-mar-I",
+    "LLAVE KEY": "PWE-292",
+    "EDICION": "MAR. I - ED26",
     "LINEA": "PROCESOS",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "MODEL BIZ.",
@@ -13800,8 +13432,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-301",
-    "EDICION": "ED2026-mar-I",
+    "LLAVE KEY": "PWE-293",
+    "EDICION": "MAR. I - ED26",
     "LINEA": "PROYECTOS",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "PMO",
@@ -13846,8 +13478,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-302",
-    "EDICION": "ED2026-mar-I",
+    "LLAVE KEY": "PWE-294",
+    "EDICION": "MAR. I - ED26",
     "LINEA": "EXCEL",
     "CATEGORIA": "ESP.",
     "PROGRAMA": "ESP. EXCEL EXP",
@@ -13892,8 +13524,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-303",
-    "EDICION": "ED2026-mar-I",
+    "LLAVE KEY": "PWE-295",
+    "EDICION": "MAR. I - ED26",
     "LINEA": "EXCEL",
     "CATEGORIA": "ESP.",
     "PROGRAMA": "ESPEC. EXCEL",
@@ -13938,8 +13570,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-304",
-    "EDICION": "ED2026-mar-I",
+    "LLAVE KEY": "PWE-296",
+    "EDICION": "MAR. I - ED26",
     "LINEA": "EXCEL",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "EXCEL BÁSICO",
@@ -13984,8 +13616,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-305",
-    "EDICION": "ED2026-mar-I",
+    "LLAVE KEY": "PWE-297",
+    "EDICION": "MAR. I - ED26",
     "LINEA": "SAP",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "SAP HANA IN",
@@ -14030,8 +13662,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-306",
-    "EDICION": "ED2026-mar-I",
+    "LLAVE KEY": "PWE-298",
+    "EDICION": "MAR. I - ED26",
     "LINEA": "BI",
     "CATEGORIA": "ESP.",
     "PROGRAMA": "ESP. EN PYTHON DATA SCIENCE",
@@ -14076,8 +13708,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-307",
-    "EDICION": "ED2026-mar-I",
+    "LLAVE KEY": "PWE-299",
+    "EDICION": "MAR. I - ED26",
     "LINEA": "BI",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "PYTHON. DATOS",
@@ -14122,8 +13754,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-308",
-    "EDICION": "ED2026-mar-II",
+    "LLAVE KEY": "PWE-300",
+    "EDICION": "MAR. II - ED26",
     "LINEA": "PROYECTOS",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "GEST. ÁGIL PROYECT",
@@ -14168,8 +13800,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-309",
-    "EDICION": "ED2026-mar-I",
+    "LLAVE KEY": "PWE-301",
+    "EDICION": "MAR. I - ED26",
     "LINEA": "SAP",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "SAP HANA HCM",
@@ -14192,7 +13824,7 @@
     "SESIONES": 6,
     "BROCHURE": "pdfs/BROCHURE SAP S4 HANA HCM.pdf",
     "BENEFICIOS": "🔵 *Conoce TODOS los BENEFICIOS a los que accedes*\r\n\r\n🔹 Acceso a Campus Virtual WE 👩🏻‍🏫\r\n🔹 Material digital y grabación de clases \r\n🔹 Certificado digital con respaldo *SAP Partner*\r\n🔹 03 Cursos Online de regalo con acceso ilimitado 📚\r\n🔹 Taller de Automatización SAP con RPA\r\n🔹 Garantía de Aprendizaje 100% \r\n🔹 Desarrollo y seguimiento de tu proyecto *(Evaluado)*\r\n\r\n🔹 *Utilizarán SAP HANA* 👩🏻‍💻\r\n👉🏼 Incluye tutorial y manual de instalación\r\n👉🏼 12 meses de Licencia SAP para practicar\r\n👉🏼 Contarás con Soporte técnico\r\n💻 _*Importante*: Para la instalación se necesita una Laptop *Windows*_\r\n\r\n🚨 *Revisa el BROCHURE* 👇🏻",
-    "POSTDOCEN": "",
+    "POSTDOCEN": "images/hcm.jpg",
     "AVALADO": "Avalado por SAP Partner Open",
     "CURSO MES": "NO",
     "INV PRO T": 900,
@@ -14214,8 +13846,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-310",
-    "EDICION": "ED2026-mar-I",
+    "LLAVE KEY": "PWE-302",
+    "EDICION": "MAR. I - ED26",
     "LINEA": "BI",
     "CATEGORIA": "ESP.",
     "PROGRAMA": "ESP. POWER BI",
@@ -14260,8 +13892,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-311",
-    "EDICION": "ED2026-mar-I",
+    "LLAVE KEY": "PWE-303",
+    "EDICION": "MAR. I - ED26",
     "LINEA": "BI",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "POWER BI",
@@ -14306,8 +13938,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-312",
-    "EDICION": "ED2026-mar-I",
+    "LLAVE KEY": "PWE-304",
+    "EDICION": "MAR. I - ED26",
     "LINEA": "BI",
     "CATEGORIA": "ESP.",
     "PROGRAMA": "ESP. SQL SERVER",
@@ -14330,7 +13962,7 @@
     "SESIONES": 12,
     "BROCHURE": "pdfs/BROCHURE ESPECIALIZACION DE SQL.pdf",
     "BENEFICIOS": "🔵 *Utilizarán SQL Server* 👩🏻‍💻\n👉🏼 Incluye tutorial y manual de instalación\n💻 _*Importante*: Para la instalación se necesita una Laptop *Windows*_\n\n🚨 *Por favor, revisa el BROCHURE* 👇🏻\nAqui encontrarás la información completa del programa, el TEMARIO (malla curricular) y todos los BENEFICIOS 📚",
-    "POSTDOCEN": "images/espsqljpg",
+    "POSTDOCEN": "images/espsql.jpg",
     "AVALADO": "Avalado por Microsoft Partner Network",
     "CURSO MES": "NO",
     "INV PRO T": 1600,
@@ -14352,8 +13984,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-313",
-    "EDICION": "ED2026-mar-I",
+    "LLAVE KEY": "PWE-305",
+    "EDICION": "MAR. I - ED26",
     "LINEA": "BI",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "SQL SERVER",
@@ -14398,8 +14030,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-314",
-    "EDICION": "ED2026-mar-I",
+    "LLAVE KEY": "PWE-306",
+    "EDICION": "MAR. I - ED26",
     "LINEA": "FINANZ",
     "CATEGORIA": "ESP.",
     "PROGRAMA": "ESP. FINANZAS",
@@ -14444,8 +14076,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-315",
-    "EDICION": "ED2026-mar-I",
+    "LLAVE KEY": "PWE-307",
+    "EDICION": "MAR. I - ED26",
     "LINEA": "FINANZ",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "CONT. FINANCIERA",
@@ -14490,8 +14122,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-316",
-    "EDICION": "ED2026-mar-I",
+    "LLAVE KEY": "PWE-308",
+    "EDICION": "MAR. I - ED26",
     "LINEA": "LOGÍSTICA",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "LEAN LOGISTICS",
@@ -14536,8 +14168,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-317",
-    "EDICION": "ED2026-mar-II",
+    "LLAVE KEY": "PWE-309",
+    "EDICION": "MAR. II - ED26",
     "LINEA": "BI",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "PYTHON. DATOS",
@@ -14582,8 +14214,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-318",
-    "EDICION": "ED2026-mar-I",
+    "LLAVE KEY": "PWE-310",
+    "EDICION": "MAR. I - ED26",
     "LINEA": "BI",
     "CATEGORIA": "DIPLOMADO",
     "PROGRAMA": "DIP INTELIG. Y ANALIST. DATOS V2",
@@ -14628,8 +14260,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-319",
-    "EDICION": "ED2026-mar-I",
+    "LLAVE KEY": "PWE-311",
+    "EDICION": "MAR. I - ED26",
     "LINEA": "BI",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "DATA ANALYTICS",
@@ -14674,8 +14306,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-320",
-    "EDICION": "ED2026-mar-I",
+    "LLAVE KEY": "PWE-312",
+    "EDICION": "MAR. I - ED26",
     "LINEA": "SAP",
     "CATEGORIA": "ESP.",
     "PROGRAMA": "ESPEC. SAP LOG. INTEGRAL",
@@ -14701,15 +14333,15 @@
     "POSTDOCEN": "",
     "AVALADO": "Avalado por SAP Partner Open",
     "CURSO MES": "NO",
-    "INV PRO T": 2250,
-    "INV EST T": 1920,
-    "INV PRO": 1125,
-    "INV EST": 960,
+    "INV PRO T": 1900,
+    "INV EST T": 1750,
+    "INV PRO": 950,
+    "INV EST": 875,
     "RESEST": 250,
     "RESPRO": 350,
     "VIDEO": "",
-    "EXEST": 864,
-    "EXPRO": 1012.5,
+    "EXEST": 787.5,
+    "EXPRO": 855,
     "PERSONALIZADO": "La logística eficiente mueve los negocios 📦\nDomina la gestión integral en SAP y destaca en supply chain y operaciones 🚛\n👉🏻 Te envío el detalle.",
     "RES1": "📦 Excelente, actualízate en SAP Logística Integral y controla toda la cadena de suministro.",
     "RES2": "💼 Buenísimo, muy solicitado en empresas que requieren gestión logística con SAP.",
@@ -14720,8 +14352,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-321",
-    "EDICION": "ED2026-mar-I",
+    "LLAVE KEY": "PWE-313",
+    "EDICION": "MAR. I - ED26",
     "LINEA": "SAP",
     "CATEGORIA": "ESP.",
     "PROGRAMA": "ESPEC.SAP HANA COMP. Y ALM.",
@@ -14747,15 +14379,15 @@
     "POSTDOCEN": "",
     "AVALADO": "Avalado por SAP Partner Open",
     "CURSO MES": "NO",
-    "INV PRO T": 1600,
-    "INV EST T": 1370,
-    "INV PRO": 800,
-    "INV EST": 685,
+    "INV PRO T": 1350,
+    "INV EST T": 1250,
+    "INV PRO": 675,
+    "INV EST": 625,
     "RESEST": 250,
     "RESPRO": 350,
     "VIDEO": "",
-    "EXEST": 616.5,
-    "EXPRO": 720,
+    "EXEST": 562.5,
+    "EXPRO": 607.5,
     "PERSONALIZADO": "Las compras y almacén son el corazón de la operación 🏭\nEspecialízate en SAP HANA Compras y Almacén y optimiza la gestión de inventarios 📊\n👉🏻 Te paso la información completa.",
     "RES1": "📦 Excelente, actualízate en SAP HANA Compras y Almacén y domina procesos clave.",
     "RES2": "🏭 Buenísimo, las empresas valoran expertos en gestión de compras e inventarios.",
@@ -14766,8 +14398,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-322",
-    "EDICION": "ED2026-mar-I",
+    "LLAVE KEY": "PWE-314",
+    "EDICION": "MAR. I - ED26",
     "LINEA": "SAP",
     "CATEGORIA": "ESP.",
     "PROGRAMA": "ESPEC.SAP HANA GEST. FIN.",
@@ -14793,15 +14425,15 @@
     "POSTDOCEN": "",
     "AVALADO": "Avalado por SAP Partner Open",
     "CURSO MES": "NO",
-    "INV PRO T": 1600,
-    "INV EST T": 1370,
-    "INV PRO": 800,
-    "INV EST": 685,
+    "INV PRO T": 1350,
+    "INV EST T": 1250,
+    "INV PRO": 675,
+    "INV EST": 625,
     "RESEST": 250,
     "RESPRO": 350,
     "VIDEO": "",
-    "EXEST": 616.5,
-    "EXPRO": 720,
+    "EXEST": 562.5,
+    "EXPRO": 607.5,
     "PERSONALIZADO": "La gestión financiera necesita tecnología 💰\nDomina SAP HANA Finanzas y fortalece tu perfil en control y análisis contable 📈\n👉🏻 Aquí está el detalle.",
     "RES1": "💰 Excelente, actualízate en SAP HANA Finanzas y lidera la gestión financiera.",
     "RES2": "🏦 Buenísimo, empresas buscan perfiles con control financiero y contable en SAP.",
@@ -14812,8 +14444,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-323",
-    "EDICION": "ED2026-mar-I",
+    "LLAVE KEY": "PWE-315",
+    "EDICION": "MAR. I - ED26",
     "LINEA": "SAP",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "SAP HANA MM",
@@ -14858,8 +14490,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-324",
-    "EDICION": "ED2026-mar-II",
+    "LLAVE KEY": "PWE-316",
+    "EDICION": "MAR. II - ED26",
     "LINEA": "LOGÍSTICA",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "GER. CENTRO DISTRIB.",
@@ -14904,8 +14536,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-325",
-    "EDICION": "ED2026-mar-I",
+    "LLAVE KEY": "PWE-317",
+    "EDICION": "MAR. I - ED26",
     "LINEA": "BI",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "PYTHON AVANZ.",
@@ -14950,8 +14582,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-326",
-    "EDICION": "ED2026-mar-II",
+    "LLAVE KEY": "PWE-318",
+    "EDICION": "MAR. II - ED26",
     "LINEA": "PROCESOS",
     "CATEGORIA": "ESP.",
     "PROGRAMA": "ESP. POWER APPS Y AUT.",
@@ -14996,8 +14628,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-327",
-    "EDICION": "ED2026-mar-II",
+    "LLAVE KEY": "PWE-319",
+    "EDICION": "MAR. II - ED26",
     "LINEA": "PROCESOS",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "POWER APPS Y AUT.",
@@ -15042,8 +14674,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-328",
-    "EDICION": "ED2026-mar-I",
+    "LLAVE KEY": "PWE-320",
+    "EDICION": "MAR. I - ED26",
     "LINEA": "WEB",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "PROG. JAVA",
@@ -15088,8 +14720,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-329",
-    "EDICION": "ED2026-mar-I",
+    "LLAVE KEY": "PWE-321",
+    "EDICION": "MAR. I - ED26",
     "LINEA": "AGRONOMÍA",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "DIRECCIÓN ESTRATÉGICA DE AGRONEGOCIOS",
@@ -15112,7 +14744,7 @@
     "SESIONES": 6,
     "BROCHURE": "",
     "BENEFICIOS": "",
-    "POSTDOCEN": "#N/A",
+    "POSTDOCEN": "",
     "AVALADO": "",
     "CURSO MES": "",
     "INV PRO T": "",
@@ -15134,8 +14766,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-330",
-    "EDICION": "ED2026-mar-I",
+    "LLAVE KEY": "PWE-322",
+    "EDICION": "MAR. I - ED26",
     "LINEA": "PROCESOS",
     "CATEGORIA": "DIPLOMADO",
     "PROGRAMA": "DIP PROC Y MEJORA V3",
@@ -15180,8 +14812,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-331",
-    "EDICION": "ED2026-mar-I",
+    "LLAVE KEY": "PWE-323",
+    "EDICION": "MAR. I - ED26",
     "LINEA": "PROCESOS",
     "CATEGORIA": "PEE",
     "PROGRAMA": "PEE ANALIST PROC",
@@ -15226,8 +14858,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-332",
-    "EDICION": "ED2026-mar-I",
+    "LLAVE KEY": "PWE-324",
+    "EDICION": "MAR. I - ED26",
     "LINEA": "PROCESOS",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "GEST PROCESOS",
@@ -15272,8 +14904,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-333",
-    "EDICION": "ED2026-mar-I",
+    "LLAVE KEY": "PWE-325",
+    "EDICION": "MAR. I - ED26",
     "LINEA": "BI",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "IA & DEEP LEARNING V2",
@@ -15296,7 +14928,7 @@
     "SESIONES": 6,
     "BROCHURE": "pdfs/BROCHURE IA & DEEP LEARNING.pdf",
     "BENEFICIOS": "🔵 *Conoce TODOS los BENEFICIOS a los que accedes*\r\n\r\n🔹 Acceso a *Campus Virtual* WE 👩🏻‍🏫\r\n🔹 Material digital y grabación de clases \r\n🔹 Certificado digital con respaldo *IBM Partner*\r\n🔹 02 Cursos Online de regalo con acceso ilimitado 📚\r\n🔹 Desarrollo y seguimiento de tu proyecto *(Evaluado)*\r\n🔹 Garantía de Aprendizaje 100% \r\n\r\n🔹 *Necesitas tener conocimientos en PYTHON* 👩🏻‍💻\r\n👉🏼 ¡Te regalamos el Curso Online Certificado!\r\n👉🏼 Incluye tutorial y manual de instalación\r\n\r\n*¡Certificado Adicional!* ⭐\r\n👉🏻 Certificado *Artificial Intelligence Professional* tiene la inversión de *$50* ~(Normal $150)~\r\n_Incluye material de práctica y 2 intentos del examen_\r\n\r\n🚨 *Revisa el BROCHURE* 👇🏻",
-    "POSTDOCEN": "",
+    "POSTDOCEN": "images/iadeep.jpg",
     "AVALADO": "Avalado por IBM® Partner World",
     "CURSO MES": "SI",
     "INV PRO T": 690,
@@ -15318,8 +14950,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-334",
-    "EDICION": "ED2026-mar-I",
+    "LLAVE KEY": "PWE-326",
+    "EDICION": "MAR. I - ED26",
     "LINEA": "BI",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "POWER BI PRESENCIAL",
@@ -15342,7 +14974,7 @@
     "SESIONES": 5,
     "BROCHURE": "pdfs/BROCHURE POWER BI PRESENCIAL.pdf",
     "BENEFICIOS": "🔹 Recuerda que si traes tu Propia Laptop a todas las sesiones, te descontamos S/50 en tu inscripción\n\n🚨 Por favor, revisa el BROCHURE 👇🏻\nAqui encontrarás la información completa del programa: Temario (malla curricular) y todos los BENEFICIOS 📚\n\n👉🏼 Te comparto un Modelo de Certificado que elevará tu perfil profesional ",
-    "POSTDOCEN": "",
+    "POSTDOCEN": "images/powerbipres.jpg",
     "AVALADO": "Avalado por Microsoft Partner Network",
     "CURSO MES": "NO",
     "INV PRO T": 940,
@@ -15364,8 +14996,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-335",
-    "EDICION": "ED2026-abr-I",
+    "LLAVE KEY": "PWE-327",
+    "EDICION": "ABR. I - ED26",
     "LINEA": "PROCESOS",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "ROBOTIZ.  UIPATH",
@@ -15410,8 +15042,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-336",
-    "EDICION": "ED2026-abr-I",
+    "LLAVE KEY": "PWE-328",
+    "EDICION": "ABR. I - ED26",
     "LINEA": "EXCEL",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "EXCEL AVANZ",
@@ -15434,7 +15066,7 @@
     "SESIONES": 6,
     "BROCHURE": "pdfs/BROCHURE EXCEL AVANZADO.pdf",
     "BENEFICIOS": "🔵 *Conoce TODOS los BENEFICIOS a los que accedes*\r\n\r\n🔹 Acceso a *Campus Virtual* WE 👩🏻‍🏫\r\n🔹 Material digital y grabación de clases \r\n🔹 Certificado digital con respaldo *Microsoft Partner*\r\n🔹 03 Cursos Online de regalo con acceso ilimitado 📚\r\n🔹 Desarrollo y seguimiento de tu proyecto *(Evaluado)*\r\n🔹 Contenido Integrado con Chat GPT\r\n🔹 Garantía de Aprendizaje 100%\r\n\r\n🚨 *Revisa el BROCHURE* 👇🏻",
-    "POSTDOCEN": "",
+    "POSTDOCEN": "images/excelavanz.jpg",
     "AVALADO": "Avalado por Microsoft Partner Network",
     "CURSO MES": "NO",
     "INV PRO T": 420,
@@ -15456,8 +15088,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-337",
-    "EDICION": "ED2026-abr-I",
+    "LLAVE KEY": "PWE-329",
+    "EDICION": "ABR. I - ED26",
     "LINEA": "EXCEL",
     "CATEGORIA": "ESP.",
     "PROGRAMA": "ESP. MACROS",
@@ -15502,8 +15134,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-338",
-    "EDICION": "ED2026-abr-I",
+    "LLAVE KEY": "PWE-330",
+    "EDICION": "ABR. I - ED26",
     "LINEA": "SAP",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "SAP HANA FI",
@@ -15526,7 +15158,7 @@
     "SESIONES": 6,
     "BROCHURE": "pdfs/BROCHURE SAP HANA FI MODULO FINANZAS.pdf",
     "BENEFICIOS": "🔵 *Utilizarán SAP HANA* 👩🏻‍💻\n👉🏼 Incluye tutorial y manual de instalación\n👉🏼 12 meses de Licencia SAP para practicar\n👉🏼 Contarás con Soporte técnico\n💻 _*Importante*: Para la instalación se necesita una Laptop *Windows*_\n\n🚨 *Por favor, revisa el BROCHURE* 👇🏻\nAqui encontrarás la información completa del programa, el TEMARIO (malla curricular) y todos los BENEFICIOS 📚",
-    "POSTDOCEN": "images/sapfi",
+    "POSTDOCEN": "images/sapfi.jpg",
     "AVALADO": "Avalado por SAP Partner Open",
     "CURSO MES": "NO",
     "INV PRO T": 900,
@@ -15548,8 +15180,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-339",
-    "EDICION": "ED2026-abr-I",
+    "LLAVE KEY": "PWE-331",
+    "EDICION": "ABR. I - ED26",
     "LINEA": "SAP",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "SAP HANA PM",
@@ -15594,8 +15226,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-340",
-    "EDICION": "ED2026-abr-I",
+    "LLAVE KEY": "PWE-332",
+    "EDICION": "ABR. I - ED26",
     "LINEA": "PROYECTOS",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "GEST FINANC. PROYECT",
@@ -15640,8 +15272,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-341",
-    "EDICION": "ED2026-abr-I",
+    "LLAVE KEY": "PWE-333",
+    "EDICION": "ABR. I - ED26",
     "LINEA": "PROYECTOS",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "MS PROJECT",
@@ -15686,8 +15318,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-342",
-    "EDICION": "ED2026-abr-II",
+    "LLAVE KEY": "PWE-334",
+    "EDICION": "ABR. II - ED26",
     "LINEA": "PROYECTOS",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "GEST FINANC. PROYECT",
@@ -15732,8 +15364,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-343",
-    "EDICION": "ED2026-abr-I",
+    "LLAVE KEY": "PWE-335",
+    "EDICION": "ABR. I - ED26",
     "LINEA": "DISEÑO Y MODELO GRÁFICO",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "AUTOCAD",
@@ -15756,7 +15388,7 @@
     "SESIONES": 6,
     "BROCHURE": "",
     "BENEFICIOS": "",
-    "POSTDOCEN": "#N/A",
+    "POSTDOCEN": "",
     "AVALADO": "",
     "CURSO MES": "",
     "INV PRO T": "",
@@ -15778,54 +15410,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-344",
-    "EDICION": "ED2026-abr-II",
-    "LINEA": "PROCESOS",
-    "CATEGORIA": "CURSO",
-    "PROGRAMA": "ROBOTIZ.  UIPATH",
-    "INICIO6": "11/4/2026",
-    "CURSO1": "",
-    "INICIO1": "",
-    "CURSO2": "",
-    "INICIO2": "",
-    "CURSO3": "",
-    "INICIO3": "",
-    "CURSO4": "",
-    "INICIO4": "",
-    "CURSO5": "",
-    "INICIO5": "",
-    "DOCENTE": "Christian Rojas",
-    "DIAS": "Sáb",
-    "HORARIO": "9AM - 12PM",
-    "INICIO": "Sábado 11 Abril",
-    "FIN": "Sábado 16 Mayo",
-    "SESIONES": 6,
-    "BROCHURE": "pdfs/BROCHURE ROBOTIZACIÓN DE PROCESOS CON UIPATH.pdf",
-    "BENEFICIOS": "🔵 *Utilizarán UIPATH* 👩🏻‍💻\n👉🏼 Incluye tutorial y manual de instalación\n💻 _*Importante*: Para la instalación se necesita una Laptop *Windows*_\n\n🚨 *Por favor, revisa el BROCHURE* 👇🏻\nAqui encontrarás la información completa del programa, el TEMARIO (malla curricular) y todos los BENEFICIOS 📚",
-    "POSTDOCEN": "images/uipath.jpg",
-    "AVALADO": "",
-    "CURSO MES": "NO",
-    "INV PRO T": 780,
-    "INV EST T": 690,
-    "INV PRO": 390,
-    "INV EST": 345,
-    "RESEST": 150,
-    "RESPRO": 150,
-    "VIDEO": "",
-    "EXEST": 310.5,
-    "EXPRO": 351,
-    "PERSONALIZADO": "La eficiencia empresarial avanza con automatización robótica ⚙️\nCon UiPath aprenderás a robotizar procesos repetitivos y ahorrar recursos 💼.\nAquí tienes la info 👇🏻",
-    "RES1": "🤖 Excelente, actualízate con UiPath y domina la automatización robótica de procesos.",
-    "RES2": "💼 Buenísimo, RPA con UiPath es muy demandado en empresas que digitalizan operaciones.",
-    "RES3": "🎓 ¡Genial! Aprender UiPath en la universidad te pondrá al nivel de la industria.",
-    "RES4": "🚀 ¡Perfecto! Con UiPath destacarás en prácticas relacionadas con innovación tecnológica.",
-    "RES5": "📊 ¡Excelente! Con UiPath podrás automatizar procesos y ahorrar tiempo en tu negocio.",
-    "ENLACE": "https://we-educacion.com/slides/robotizacion-de-procesos-con-uipath-274",
-    "HABITILITADO": 1
-  },
-  {
-    "LLAVE KEY": "PWE-345",
-    "EDICION": "ED2026-abr-II",
+    "LLAVE KEY": "PWE-336",
+    "EDICION": "ABR. II - ED26",
     "LINEA": "PROYECTOS",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "MS PROJECT",
@@ -15870,8 +15456,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-346",
-    "EDICION": "ED2026-abr-I",
+    "LLAVE KEY": "PWE-337",
+    "EDICION": "ABR. I - ED26",
     "LINEA": "BI",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "SQL SERVER",
@@ -15916,8 +15502,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-347",
-    "EDICION": "ED2026-abr-I",
+    "LLAVE KEY": "PWE-338",
+    "EDICION": "ABR. I - ED26",
     "LINEA": "BI",
     "CATEGORIA": "ESP.",
     "PROGRAMA": "ESP. SQL SERVER",
@@ -15940,7 +15526,7 @@
     "SESIONES": 12,
     "BROCHURE": "pdfs/BROCHURE ESPECIALIZACION DE SQL.pdf",
     "BENEFICIOS": "🔵 *Utilizarán SQL Server* 👩🏻‍💻\n👉🏼 Incluye tutorial y manual de instalación\n💻 _*Importante*: Para la instalación se necesita una Laptop *Windows*_\n\n🚨 *Por favor, revisa el BROCHURE* 👇🏻\nAqui encontrarás la información completa del programa, el TEMARIO (malla curricular) y todos los BENEFICIOS 📚",
-    "POSTDOCEN": "images/espsqljpg",
+    "POSTDOCEN": "images/espsql.jpg",
     "AVALADO": "Avalado por Microsoft Partner Network",
     "CURSO MES": "NO",
     "INV PRO T": 1600,
@@ -15962,8 +15548,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-348",
-    "EDICION": "ED2026-abr-I",
+    "LLAVE KEY": "PWE-339",
+    "EDICION": "ABR. I - ED26",
     "LINEA": "BI",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "PYTHON AVANZ.",
@@ -16008,8 +15594,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-349",
-    "EDICION": "ED2026-abr-I",
+    "LLAVE KEY": "PWE-340",
+    "EDICION": "ABR. I - ED26",
     "LINEA": "LOGÍSTICA",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "GEST TRANSPORTES",
@@ -16054,8 +15640,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-350",
-    "EDICION": "ED2026-abr-I",
+    "LLAVE KEY": "PWE-341",
+    "EDICION": "ABR. I - ED26",
     "LINEA": "PROCESOS",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "MODEL BIZ.",
@@ -16100,8 +15686,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-351",
-    "EDICION": "ED2026-abr-I",
+    "LLAVE KEY": "PWE-342",
+    "EDICION": "ABR. I - ED26",
     "LINEA": "EXCEL",
     "CATEGORIA": "ESP.",
     "PROGRAMA": "ESP. EXCEL EXP",
@@ -16146,8 +15732,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-352",
-    "EDICION": "ED2026-abr-I",
+    "LLAVE KEY": "PWE-343",
+    "EDICION": "ABR. I - ED26",
     "LINEA": "EXCEL",
     "CATEGORIA": "ESP.",
     "PROGRAMA": "ESPEC. EXCEL",
@@ -16192,8 +15778,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-353",
-    "EDICION": "ED2026-abr-I",
+    "LLAVE KEY": "PWE-344",
+    "EDICION": "ABR. I - ED26",
     "LINEA": "EXCEL",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "EXCEL BÁSICO",
@@ -16238,8 +15824,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-354",
-    "EDICION": "ED2026-abr-I",
+    "LLAVE KEY": "PWE-345",
+    "EDICION": "ABR. I - ED26",
     "LINEA": "BI",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "SQL AVANZ",
@@ -16261,8 +15847,8 @@
     "FIN": "Sábado 23 Mayo",
     "SESIONES": 6,
     "BROCHURE": "pdfs/BROCHURE SQL SERVER AVANZADO.pdf",
-    "BENEFICIOS": "🔵 *Conoce TODOS los BENEFICIOS a los que accedes*\n\n🔹 Acceso a *Campus Virtual* WE 👩🏻‍🏫\n🔹 Material digital y grabación de clases \n🔹 Certificado digital con respaldo *Microsoft Partner*\n🔹 03 Cursos Online de regalo con acceso ilimitado 📚\n🔹 Desarrollo y seguimiento de tu proyecto *(Evaluado)*\n🔹 Contenido Integrado con - Chat GPT\n🔹 Garantía de Aprendizaje 100% \n\n🔹 *Utilizarán SQL Server* 👩🏻‍💻\n👉🏼 Incluye tutorial y manual de instalación\n💻 _*Importante*: Para la instalación se necesita una Laptop *Windows*_\n\n🚨 *Revisa el BROCHURE* 👇🏻",
-    "POSTDOCEN": "",
+    "BENEFICIOS": "🔵 *Conoce TODOS los BENEFICIOS a los que accedes*\n\n🔹 Acceso a *Campus Virtual* WE 👩🏻‍🏫\n🔹 Material digital y grabación de clases \n🔹 Certificado digital con respaldo *Microsoft Partner*\n🔹 03 Cursos Online de regalo con acceso ilimitado 📚\n🔹 Desarrollo y seguimiento de tu proyecto *(Evaluado)*\n🔹 Contenido Integrado con - Chat GPT\n🔹 Garantía de Aprendizaje 100% \n\n🔹 *Utilizarán SQL Server* 👩🏻‍💻\n👉🏼 Incluye tutorial y manual de instalación\n💻 _*Importante*: Para la instalación se necesita una Laptop *Windows*_\n\n🚨 *Por favor, revisa el BROCHURE* 👇🏻\nAqui encontrarás la información completa del programa, el TEMARIO (malla curricular) y todos los BENEFICIOS 📚",
+    "POSTDOCEN": "images/sqlavanz.jpg",
     "AVALADO": "Avalado por Microsoft Partner Network",
     "CURSO MES": "NO",
     "INV PRO T": 830,
@@ -16284,8 +15870,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-355",
-    "EDICION": "ED2026-abr-I",
+    "LLAVE KEY": "PWE-346",
+    "EDICION": "ABR. I - ED26",
     "LINEA": "SAP",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "SAP HANA PP",
@@ -16308,7 +15894,7 @@
     "SESIONES": 6,
     "BROCHURE": "pdfs/BROCHURE SAP HANA PP MODULO PRODUCCION.pdf",
     "BENEFICIOS": "🔵 *Conoce TODOS los BENEFICIOS a los que accedes*\r\n\r\n🔹 Acceso a *Campus Virtual* WE 👩🏻‍🏫\r\n🔹 Material digital y grabación de clases \r\n🔹 Certificado digital con respaldo *SAP Partner*\r\n🔹 04 Cursos Online de regalo con acceso ilimitado 📚\r\n🔹 Acceso a *Curso SAP R3 con certificación* incluida\r\n🔹 Taller de Automatización SAP con RPA\r\n🔹 Garantía de Aprendizaje 100% \r\n\r\n🔹 *Utilizarán SAP HANA* 👩🏻‍💻\r\n👉🏼 Incluye tutorial y manual de instalación\r\n👉🏼 12 meses de Licencia SAP para practicar\r\n👉🏼 Contarás con Soporte técnico\r\n💻 _*Importante*: Para la instalación se necesita una Laptop *Windows*_\r\n\r\n🚨 *Revisa el BROCHURE* 👇🏻",
-    "POSTDOCEN": "",
+    "POSTDOCEN": "images/sappp.jpg",
     "AVALADO": "Avalado por SAP Partner Open",
     "CURSO MES": "NO",
     "INV PRO T": 900,
@@ -16330,8 +15916,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-356",
-    "EDICION": "ED2026-abr-I",
+    "LLAVE KEY": "PWE-347",
+    "EDICION": "ABR. I - ED26",
     "LINEA": "EXCEL",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "EXCEL INTERM",
@@ -16376,8 +15962,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-357",
-    "EDICION": "ED2026-abr-I",
+    "LLAVE KEY": "PWE-348",
+    "EDICION": "ABR. I - ED26",
     "LINEA": "LOGÍSTICA",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "GER. CENTRO DISTRIB.",
@@ -16422,8 +16008,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-358",
-    "EDICION": "ED2026-abr-I",
+    "LLAVE KEY": "PWE-349",
+    "EDICION": "ABR. I - ED26",
     "LINEA": "EXCEL",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "PROG. MACROS",
@@ -16468,8 +16054,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-359",
-    "EDICION": "ED2026-abr-I",
+    "LLAVE KEY": "PWE-350",
+    "EDICION": "ABR. I - ED26",
     "LINEA": "PROCESOS",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "KPIS Y OKRS",
@@ -16514,8 +16100,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-360",
-    "EDICION": "ED2026-abr-I",
+    "LLAVE KEY": "PWE-351",
+    "EDICION": "ABR. I - ED26",
     "LINEA": "LOGÍSTICA",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "PLAN. Y PRONOSTICO V2",
@@ -16560,8 +16146,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-361",
-    "EDICION": "ED2026-abr-I",
+    "LLAVE KEY": "PWE-352",
+    "EDICION": "ABR. I - ED26",
     "LINEA": "BI",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "POWER BI AVANZ",
@@ -16606,8 +16192,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-362",
-    "EDICION": "ED2026-abr-I",
+    "LLAVE KEY": "PWE-353",
+    "EDICION": "ABR. I - ED26",
     "LINEA": "BI",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "PYTHON. DATOS",
@@ -16652,8 +16238,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-363",
-    "EDICION": "ED2026-abr-II",
+    "LLAVE KEY": "PWE-354",
+    "EDICION": "ABR. II - ED26",
     "LINEA": "LOGÍSTICA",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "GEST TRANSPORTES",
@@ -16698,8 +16284,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-364",
-    "EDICION": "ED2026-abr-II",
+    "LLAVE KEY": "PWE-355",
+    "EDICION": "ABR. II - ED26",
     "LINEA": "BI",
     "CATEGORIA": "ESP.",
     "PROGRAMA": "ESP. SQL SERVER",
@@ -16722,7 +16308,7 @@
     "SESIONES": 12,
     "BROCHURE": "pdfs/BROCHURE ESPECIALIZACION DE SQL.pdf",
     "BENEFICIOS": "🔵 *Utilizarán SQL Server* 👩🏻‍💻\n👉🏼 Incluye tutorial y manual de instalación\n💻 _*Importante*: Para la instalación se necesita una Laptop *Windows*_\n\n🚨 *Por favor, revisa el BROCHURE* 👇🏻\nAqui encontrarás la información completa del programa, el TEMARIO (malla curricular) y todos los BENEFICIOS 📚",
-    "POSTDOCEN": "images/espsqljpg",
+    "POSTDOCEN": "images/espsql.jpg",
     "AVALADO": "Avalado por Microsoft Partner Network",
     "CURSO MES": "NO",
     "INV PRO T": 1600,
@@ -16744,8 +16330,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-365",
-    "EDICION": "ED2026-abr-I",
+    "LLAVE KEY": "PWE-356",
+    "EDICION": "ABR. I - ED26",
     "LINEA": "SAP",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "SAP HANA EWM",
@@ -16790,8 +16376,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-366",
-    "EDICION": "ED2026-abr-II",
+    "LLAVE KEY": "PWE-357",
+    "EDICION": "ABR. II - ED26",
     "LINEA": "SAP",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "SAP HANA FI",
@@ -16814,7 +16400,7 @@
     "SESIONES": 6,
     "BROCHURE": "pdfs/BROCHURE SAP HANA FI MODULO FINANZAS.pdf",
     "BENEFICIOS": "🔵 *Utilizarán SAP HANA* 👩🏻‍💻\n👉🏼 Incluye tutorial y manual de instalación\n👉🏼 12 meses de Licencia SAP para practicar\n👉🏼 Contarás con Soporte técnico\n💻 _*Importante*: Para la instalación se necesita una Laptop *Windows*_\n\n🚨 *Por favor, revisa el BROCHURE* 👇🏻\nAqui encontrarás la información completa del programa, el TEMARIO (malla curricular) y todos los BENEFICIOS 📚",
-    "POSTDOCEN": "images/sapfi",
+    "POSTDOCEN": "images/sapfi.jpg",
     "AVALADO": "Avalado por SAP Partner Open",
     "CURSO MES": "NO",
     "INV PRO T": 900,
@@ -16836,8 +16422,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-367",
-    "EDICION": "ED2026-abr-II",
+    "LLAVE KEY": "PWE-358",
+    "EDICION": "ABR. II - ED26",
     "LINEA": "BI",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "SQL SERVER",
@@ -16882,8 +16468,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-368",
-    "EDICION": "ED2026-abr-II",
+    "LLAVE KEY": "PWE-359",
+    "EDICION": "ABR. II - ED26",
     "LINEA": "EXCEL",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "PROG. MACROS",
@@ -16928,8 +16514,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-369",
-    "EDICION": "ED2026-abr-I",
+    "LLAVE KEY": "PWE-360",
+    "EDICION": "ABR. I - ED26",
     "LINEA": "PROYECTOS",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "PMO",
@@ -16974,8 +16560,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-370",
-    "EDICION": "ED2026-may-I",
+    "LLAVE KEY": "PWE-361",
+    "EDICION": "MAY. I - ED26",
     "LINEA": "PROCESOS",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "LEAN SIX SIGMA YELLOW",
@@ -16997,8 +16583,8 @@
     "FIN": "Sábado 6 Junio",
     "SESIONES": 6,
     "BROCHURE": "pdfs/BROCHURE LEAN SIX SIGMA YELLOW BELT.pdf",
-    "BENEFICIOS": "*Conoce TODOS los BENEFICIOS a los que accedes* \r\n\r\n🔹 Acceso a Campus Virtual WE 👩🏻‍🏫\r\n🔹 Material digital y grabación de clases \r\n🔹 Certificado digital del curso\r\n🔹 02 Cursos Online de regalo con acceso ilimitado 📚\r\n🔹 Desarrollo y seguimiento de tu proyecto *(Evaluado)*\r\n🔹 Garantía de Aprendizaje 100%\r\n\r\n*¡Certificados Adicionales!* ⭐\r\n👉🏻 Certificado *WHITE BELT* tiene la inversión de *$10* ~(Normal $50)~\r\n👉🏻 Certificado *YELLOW BELT* tiene la inversión de *$50* ~(Normal $150)~\r\n_Incluye material de práctica y 2 intentos del examen_\r\n\r\n🔹 *Utilizarán Minitab* 👩🏻‍💻\r\n👉🏻 Incluye tutorial y manual de instalación\r\n💻 _*Importante*: Para la instalación se necesita una Laptop *Windows*_\r\n\r\n🚨 *Revisa el BROCHURE* 👇🏻",
-    "POSTDOCEN": "",
+    "BENEFICIOS": "🔵  *Utilizarán Minitab* 👩🏻‍💻\n👉🏻 Incluye tutorial y manual de instalación\n💻 _*Importante*: Para la instalación se necesita una Laptop *Windows*_\n\n🚨 *Por favor, revisa el BROCHURE* 👇🏻\nAqui encontrarás la información completa del programa, el TEMARIO (malla curricular) y todos los BENEFICIOS 📚",
+    "POSTDOCEN": "images/leansix.jpg",
     "AVALADO": "",
     "CURSO MES": "NO",
     "INV PRO T": 820,
@@ -17020,8 +16606,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-371",
-    "EDICION": "ED2026-may-I",
+    "LLAVE KEY": "PWE-362",
+    "EDICION": "MAY. I - ED26",
     "LINEA": "PROYECTOS",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "GEST FINANC. PROYECT",
@@ -17066,8 +16652,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-372",
-    "EDICION": "ED2026-may-I",
+    "LLAVE KEY": "PWE-363",
+    "EDICION": "MAY. I - ED26",
     "LINEA": "LOGÍSTICA",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "GEST. COMP. Y PROV.",
@@ -17090,7 +16676,7 @@
     "SESIONES": 6,
     "BROCHURE": "pdfs/BROCHURE GEST DE COMPRAS Y PROVEEDORES.pdf",
     "BENEFICIOS": "🔵 *Conoce TODOS los BENEFICIOS a los que accedes*\n\n🔹 Acceso a Campus Virtual WE 👩🏻‍🏫\n🔹 Material digital y grabación de clases \n🔹 Certificado digital \n🔹 04 Cursos Online de regalo con acceso ilimitado 📚\n🔹 Desarrollo y seguimiento de tu proyecto *(Evaluado)*\n🔹 Garantía de Aprendizaje 100%\n\n🚨 *Revisa el BROCHURE* 👇🏻",
-    "POSTDOCEN": "",
+    "POSTDOCEN": "images/gestcomp.jpg",
     "AVALADO": "",
     "CURSO MES": "SI",
     "INV PRO T": 830,
@@ -17112,8 +16698,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-373",
-    "EDICION": "ED2026-may-I",
+    "LLAVE KEY": "PWE-364",
+    "EDICION": "MAY. I - ED26",
     "LINEA": "EXCEL",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "EXCEL AVANZ",
@@ -17136,7 +16722,7 @@
     "SESIONES": 6,
     "BROCHURE": "pdfs/BROCHURE EXCEL AVANZADO.pdf",
     "BENEFICIOS": "🔵 *Conoce TODOS los BENEFICIOS a los que accedes*\r\n\r\n🔹 Acceso a *Campus Virtual* WE 👩🏻‍🏫\r\n🔹 Material digital y grabación de clases \r\n🔹 Certificado digital con respaldo *Microsoft Partner*\r\n🔹 03 Cursos Online de regalo con acceso ilimitado 📚\r\n🔹 Desarrollo y seguimiento de tu proyecto *(Evaluado)*\r\n🔹 Contenido Integrado con Chat GPT\r\n🔹 Garantía de Aprendizaje 100%\r\n\r\n🚨 *Revisa el BROCHURE* 👇🏻",
-    "POSTDOCEN": "",
+    "POSTDOCEN": "images/excelavanz.jpg",
     "AVALADO": "Avalado por Microsoft Partner Network",
     "CURSO MES": "NO",
     "INV PRO T": 420,
@@ -17158,8 +16744,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-374",
-    "EDICION": "ED2026-may-I",
+    "LLAVE KEY": "PWE-365",
+    "EDICION": "MAY. I - ED26",
     "LINEA": "EXCEL",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "EXCEL INTERM",
@@ -17204,8 +16790,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-375",
-    "EDICION": "ED2026-may-I",
+    "LLAVE KEY": "PWE-366",
+    "EDICION": "MAY. I - ED26",
     "LINEA": "PROCESOS",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "POWER APPS AVANZ",
@@ -17250,8 +16836,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-376",
-    "EDICION": "ED2026-may-I",
+    "LLAVE KEY": "PWE-367",
+    "EDICION": "MAY. I - ED26",
     "LINEA": "BI",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "SQL AVANZ",
@@ -17273,8 +16859,8 @@
     "FIN": "Sábado 13 Junio",
     "SESIONES": 6,
     "BROCHURE": "pdfs/BROCHURE SQL SERVER AVANZADO.pdf",
-    "BENEFICIOS": "🔵 *Conoce TODOS los BENEFICIOS a los que accedes*\n\n🔹 Acceso a *Campus Virtual* WE 👩🏻‍🏫\n🔹 Material digital y grabación de clases \n🔹 Certificado digital con respaldo *Microsoft Partner*\n🔹 03 Cursos Online de regalo con acceso ilimitado 📚\n🔹 Desarrollo y seguimiento de tu proyecto *(Evaluado)*\n🔹 Contenido Integrado con - Chat GPT\n🔹 Garantía de Aprendizaje 100% \n\n🔹 *Utilizarán SQL Server* 👩🏻‍💻\n👉🏼 Incluye tutorial y manual de instalación\n💻 _*Importante*: Para la instalación se necesita una Laptop *Windows*_\n\n🚨 *Revisa el BROCHURE* 👇🏻",
-    "POSTDOCEN": "",
+    "BENEFICIOS": "🔵 *Conoce TODOS los BENEFICIOS a los que accedes*\n\n🔹 Acceso a *Campus Virtual* WE 👩🏻‍🏫\n🔹 Material digital y grabación de clases \n🔹 Certificado digital con respaldo *Microsoft Partner*\n🔹 03 Cursos Online de regalo con acceso ilimitado 📚\n🔹 Desarrollo y seguimiento de tu proyecto *(Evaluado)*\n🔹 Contenido Integrado con - Chat GPT\n🔹 Garantía de Aprendizaje 100% \n\n🔹 *Utilizarán SQL Server* 👩🏻‍💻\n👉🏼 Incluye tutorial y manual de instalación\n💻 _*Importante*: Para la instalación se necesita una Laptop *Windows*_\n\n🚨 *Por favor, revisa el BROCHURE* 👇🏻\nAqui encontrarás la información completa del programa, el TEMARIO (malla curricular) y todos los BENEFICIOS 📚",
+    "POSTDOCEN": "images/sqlavanz.jpg",
     "AVALADO": "Avalado por Microsoft Partner Network",
     "CURSO MES": "NO",
     "INV PRO T": 830,
@@ -17296,8 +16882,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-377",
-    "EDICION": "ED2026-may-I",
+    "LLAVE KEY": "PWE-368",
+    "EDICION": "MAY. I - ED26",
     "LINEA": "FINANZ",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "COST Y PRESUP",
@@ -17342,8 +16928,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-378",
-    "EDICION": "ED2026-may-I",
+    "LLAVE KEY": "PWE-369",
+    "EDICION": "MAY. I - ED26",
     "LINEA": "BI",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "POWER BI",
@@ -17388,8 +16974,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-379",
-    "EDICION": "ED2026-may-I",
+    "LLAVE KEY": "PWE-370",
+    "EDICION": "MAY. I - ED26",
     "LINEA": "LOGÍSTICA",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "LEAN LOGISTICS",
@@ -17434,8 +17020,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-380",
-    "EDICION": "ED2026-may-II",
+    "LLAVE KEY": "PWE-371",
+    "EDICION": "MAY. II - ED26",
     "LINEA": "BI",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "SQL AVANZ",
@@ -17457,8 +17043,8 @@
     "FIN": "Martes 2 Junio",
     "SESIONES": 6,
     "BROCHURE": "pdfs/BROCHURE SQL SERVER AVANZADO.pdf",
-    "BENEFICIOS": "🔵 *Conoce TODOS los BENEFICIOS a los que accedes*\n\n🔹 Acceso a *Campus Virtual* WE 👩🏻‍🏫\n🔹 Material digital y grabación de clases \n🔹 Certificado digital con respaldo *Microsoft Partner*\n🔹 03 Cursos Online de regalo con acceso ilimitado 📚\n🔹 Desarrollo y seguimiento de tu proyecto *(Evaluado)*\n🔹 Contenido Integrado con - Chat GPT\n🔹 Garantía de Aprendizaje 100% \n\n🔹 *Utilizarán SQL Server* 👩🏻‍💻\n👉🏼 Incluye tutorial y manual de instalación\n💻 _*Importante*: Para la instalación se necesita una Laptop *Windows*_\n\n🚨 *Revisa el BROCHURE* 👇🏻",
-    "POSTDOCEN": "",
+    "BENEFICIOS": "🔵 *Conoce TODOS los BENEFICIOS a los que accedes*\n\n🔹 Acceso a *Campus Virtual* WE 👩🏻‍🏫\n🔹 Material digital y grabación de clases \n🔹 Certificado digital con respaldo *Microsoft Partner*\n🔹 03 Cursos Online de regalo con acceso ilimitado 📚\n🔹 Desarrollo y seguimiento de tu proyecto *(Evaluado)*\n🔹 Contenido Integrado con - Chat GPT\n🔹 Garantía de Aprendizaje 100% \n\n🔹 *Utilizarán SQL Server* 👩🏻‍💻\n👉🏼 Incluye tutorial y manual de instalación\n💻 _*Importante*: Para la instalación se necesita una Laptop *Windows*_\n\n🚨 *Por favor, revisa el BROCHURE* 👇🏻\nAqui encontrarás la información completa del programa, el TEMARIO (malla curricular) y todos los BENEFICIOS 📚",
+    "POSTDOCEN": "images/sqlavanz.jpg",
     "AVALADO": "Avalado por Microsoft Partner Network",
     "CURSO MES": "NO",
     "INV PRO T": 830,
@@ -17480,8 +17066,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-381",
-    "EDICION": "ED2026-may-I",
+    "LLAVE KEY": "PWE-372",
+    "EDICION": "MAY. I - ED26",
     "LINEA": "SAP",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "SAP HANA SD",
@@ -17526,8 +17112,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-382",
-    "EDICION": "ED2026-may-I",
+    "LLAVE KEY": "PWE-373",
+    "EDICION": "MAY. I - ED26",
     "LINEA": "WEB",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "REACT JS",
@@ -17572,8 +17158,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-383",
-    "EDICION": "ED2026-may-I",
+    "LLAVE KEY": "PWE-374",
+    "EDICION": "MAY. I - ED26",
     "LINEA": "BI",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "IA & DEEP LEARNING V2",
@@ -17596,7 +17182,7 @@
     "SESIONES": 6,
     "BROCHURE": "pdfs/BROCHURE IA & DEEP LEARNING.pdf",
     "BENEFICIOS": "🔵 *Conoce TODOS los BENEFICIOS a los que accedes*\r\n\r\n🔹 Acceso a *Campus Virtual* WE 👩🏻‍🏫\r\n🔹 Material digital y grabación de clases \r\n🔹 Certificado digital con respaldo *IBM Partner*\r\n🔹 02 Cursos Online de regalo con acceso ilimitado 📚\r\n🔹 Desarrollo y seguimiento de tu proyecto *(Evaluado)*\r\n🔹 Garantía de Aprendizaje 100% \r\n\r\n🔹 *Necesitas tener conocimientos en PYTHON* 👩🏻‍💻\r\n👉🏼 ¡Te regalamos el Curso Online Certificado!\r\n👉🏼 Incluye tutorial y manual de instalación\r\n\r\n*¡Certificado Adicional!* ⭐\r\n👉🏻 Certificado *Artificial Intelligence Professional* tiene la inversión de *$50* ~(Normal $150)~\r\n_Incluye material de práctica y 2 intentos del examen_\r\n\r\n🚨 *Revisa el BROCHURE* 👇🏻",
-    "POSTDOCEN": "",
+    "POSTDOCEN": "images/iadeep.jpg",
     "AVALADO": "Avalado por IBM® Partner World",
     "CURSO MES": "SI",
     "INV PRO T": 690,
@@ -17618,8 +17204,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-384",
-    "EDICION": "ED2026-may-II",
+    "LLAVE KEY": "PWE-375",
+    "EDICION": "MAY. II - ED26",
     "LINEA": "PROCESOS",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "POWER APPS AVANZ",
@@ -17664,8 +17250,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-385",
-    "EDICION": "ED2026-may-I",
+    "LLAVE KEY": "PWE-376",
+    "EDICION": "MAY. I - ED26",
     "LINEA": "PROCESOS",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "MODEL BIZ.",
@@ -17710,8 +17296,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-386",
-    "EDICION": "ED2026-may-I",
+    "LLAVE KEY": "PWE-377",
+    "EDICION": "MAY. I - ED26",
     "LINEA": "BI",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "PYTHON AVANZ.",
@@ -17756,8 +17342,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-387",
-    "EDICION": "ED2026-may-II",
+    "LLAVE KEY": "PWE-378",
+    "EDICION": "MAY. II - ED26",
     "LINEA": "PROYECTOS",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "GEST FINANC. PROYECT",
@@ -17802,8 +17388,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-388",
-    "EDICION": "ED2026-may-II",
+    "LLAVE KEY": "PWE-379",
+    "EDICION": "MAY. II - ED26",
     "LINEA": "LOGÍSTICA",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "LEAN LOGISTICS",
@@ -17848,8 +17434,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-389",
-    "EDICION": "ED2026-may-II",
+    "LLAVE KEY": "PWE-380",
+    "EDICION": "MAY. II - ED26",
     "LINEA": "BI",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "PYTHON AVANZ.",
@@ -17894,8 +17480,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-390",
-    "EDICION": "ED2026-may-I",
+    "LLAVE KEY": "PWE-381",
+    "EDICION": "MAY. I - ED26",
     "LINEA": "LOGÍSTICA",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "GEST TRANSPORTES",
@@ -17940,8 +17526,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-391",
-    "EDICION": "ED2026-may-II",
+    "LLAVE KEY": "PWE-382",
+    "EDICION": "MAY. II - ED26",
     "LINEA": "PROCESOS",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "LEAN SIX SIGMA YELLOW",
@@ -17963,8 +17549,8 @@
     "FIN": "Jueves 2 Julio",
     "SESIONES": 6,
     "BROCHURE": "pdfs/BROCHURE LEAN SIX SIGMA YELLOW BELT.pdf",
-    "BENEFICIOS": "*Conoce TODOS los BENEFICIOS a los que accedes* \r\n\r\n🔹 Acceso a Campus Virtual WE 👩🏻‍🏫\r\n🔹 Material digital y grabación de clases \r\n🔹 Certificado digital del curso\r\n🔹 02 Cursos Online de regalo con acceso ilimitado 📚\r\n🔹 Desarrollo y seguimiento de tu proyecto *(Evaluado)*\r\n🔹 Garantía de Aprendizaje 100%\r\n\r\n*¡Certificados Adicionales!* ⭐\r\n👉🏻 Certificado *WHITE BELT* tiene la inversión de *$10* ~(Normal $50)~\r\n👉🏻 Certificado *YELLOW BELT* tiene la inversión de *$50* ~(Normal $150)~\r\n_Incluye material de práctica y 2 intentos del examen_\r\n\r\n🔹 *Utilizarán Minitab* 👩🏻‍💻\r\n👉🏻 Incluye tutorial y manual de instalación\r\n💻 _*Importante*: Para la instalación se necesita una Laptop *Windows*_\r\n\r\n🚨 *Revisa el BROCHURE* 👇🏻",
-    "POSTDOCEN": "",
+    "BENEFICIOS": "🔵  *Utilizarán Minitab* 👩🏻‍💻\n👉🏻 Incluye tutorial y manual de instalación\n💻 _*Importante*: Para la instalación se necesita una Laptop *Windows*_\n\n🚨 *Por favor, revisa el BROCHURE* 👇🏻\nAqui encontrarás la información completa del programa, el TEMARIO (malla curricular) y todos los BENEFICIOS 📚",
+    "POSTDOCEN": "images/leansix.jpg",
     "AVALADO": "",
     "CURSO MES": "NO",
     "INV PRO T": 820,
@@ -17986,8 +17572,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-392",
-    "EDICION": "ED2026-may-II",
+    "LLAVE KEY": "PWE-383",
+    "EDICION": "MAY. II - ED26",
     "LINEA": "EXCEL",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "EXCEL AVANZ",
@@ -18010,7 +17596,7 @@
     "SESIONES": 6,
     "BROCHURE": "pdfs/BROCHURE EXCEL AVANZADO.pdf",
     "BENEFICIOS": "🔵 *Conoce TODOS los BENEFICIOS a los que accedes*\r\n\r\n🔹 Acceso a *Campus Virtual* WE 👩🏻‍🏫\r\n🔹 Material digital y grabación de clases \r\n🔹 Certificado digital con respaldo *Microsoft Partner*\r\n🔹 03 Cursos Online de regalo con acceso ilimitado 📚\r\n🔹 Desarrollo y seguimiento de tu proyecto *(Evaluado)*\r\n🔹 Contenido Integrado con Chat GPT\r\n🔹 Garantía de Aprendizaje 100%\r\n\r\n🚨 *Revisa el BROCHURE* 👇🏻",
-    "POSTDOCEN": "",
+    "POSTDOCEN": "images/excelavanz.jpg",
     "AVALADO": "Avalado por Microsoft Partner Network",
     "CURSO MES": "NO",
     "INV PRO T": 420,
@@ -18032,8 +17618,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-393",
-    "EDICION": "ED2026-may-I",
+    "LLAVE KEY": "PWE-384",
+    "EDICION": "MAY. I - ED26",
     "LINEA": "SAP",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "SAP HANA FI",
@@ -18056,7 +17642,7 @@
     "SESIONES": 6,
     "BROCHURE": "pdfs/BROCHURE SAP HANA FI MODULO FINANZAS.pdf",
     "BENEFICIOS": "🔵 *Utilizarán SAP HANA* 👩🏻‍💻\n👉🏼 Incluye tutorial y manual de instalación\n👉🏼 12 meses de Licencia SAP para practicar\n👉🏼 Contarás con Soporte técnico\n💻 _*Importante*: Para la instalación se necesita una Laptop *Windows*_\n\n🚨 *Por favor, revisa el BROCHURE* 👇🏻\nAqui encontrarás la información completa del programa, el TEMARIO (malla curricular) y todos los BENEFICIOS 📚",
-    "POSTDOCEN": "images/sapfi",
+    "POSTDOCEN": "images/sapfi.jpg",
     "AVALADO": "Avalado por SAP Partner Open",
     "CURSO MES": "NO",
     "INV PRO T": 900,
@@ -18078,8 +17664,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-394",
-    "EDICION": "ED2026-may-I",
+    "LLAVE KEY": "PWE-385",
+    "EDICION": "MAY. I - ED26",
     "LINEA": "SAP",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "SAP HANA PM",
@@ -18124,8 +17710,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-395",
-    "EDICION": "ED2026-may-I",
+    "LLAVE KEY": "PWE-386",
+    "EDICION": "MAY. I - ED26",
     "LINEA": "EXCEL",
     "CATEGORIA": "ESP.",
     "PROGRAMA": "ESP. MACROS",
@@ -18170,8 +17756,8 @@
     "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-396",
-    "EDICION": "ED2026-may-III",
+    "LLAVE KEY": "PWE-387",
+    "EDICION": "MAY. III - ED26",
     "LINEA": "EXCEL",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "EXCEL AVANZ",
@@ -18194,7 +17780,7 @@
     "SESIONES": 6,
     "BROCHURE": "pdfs/BROCHURE EXCEL AVANZADO.pdf",
     "BENEFICIOS": "🔵 *Conoce TODOS los BENEFICIOS a los que accedes*\r\n\r\n🔹 Acceso a *Campus Virtual* WE 👩🏻‍🏫\r\n🔹 Material digital y grabación de clases \r\n🔹 Certificado digital con respaldo *Microsoft Partner*\r\n🔹 03 Cursos Online de regalo con acceso ilimitado 📚\r\n🔹 Desarrollo y seguimiento de tu proyecto *(Evaluado)*\r\n🔹 Contenido Integrado con Chat GPT\r\n🔹 Garantía de Aprendizaje 100%\r\n\r\n🚨 *Revisa el BROCHURE* 👇🏻",
-    "POSTDOCEN": "",
+    "POSTDOCEN": "images/excelavanz.jpg",
     "AVALADO": "Avalado por Microsoft Partner Network",
     "CURSO MES": "NO",
     "INV PRO T": 420,
@@ -18213,11 +17799,11 @@
     "RES4": "📘 ¡Perfecto! Saber *EXCEL AVANZ* te dará ventaja frente a otros postulantes para conseguir prácticas.",
     "RES5": "🌍 ¡Excelente! Con *EXCEL AVANZ* podrás aplicarlo en tu negocio y tomar decisiones más inteligentes.",
     "ENLACE": "https://we-educacion.com/slides/microsoft-excel-avanzado-59",
-    "HABITILITADO": ""
+    "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-397",
-    "EDICION": "ED2026-may-I",
+    "LLAVE KEY": "PWE-388",
+    "EDICION": "MAY. I - ED26",
     "LINEA": "PROYECTOS",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "PMO",
@@ -18259,11 +17845,11 @@
     "RES4": "🚀 ¡Perfecto! Manejar PMO será un plus en postulaciones a prácticas en proyectos.",
     "RES5": "📊 ¡Excelente! Con PMO podrás implementar mejores procesos de gestión en tu propio negocio.",
     "ENLACE": "https://we-educacion.com/slides/pmo-gestion-de-portafolio-y-oficina-de-proyectos-1213",
-    "HABITILITADO": ""
+    "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-398",
-    "EDICION": "ED2026-may-II",
+    "LLAVE KEY": "PWE-389",
+    "EDICION": "MAY. II - ED26",
     "LINEA": "BI",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "POWER BI",
@@ -18305,11 +17891,11 @@
     "RES4": "¡Perfecto!, Power BI es muy valorado por las empresas y te hará destacar al postular a prácticas🧳",
     "RES5": "¡Excelente!, con Power BI podrás analizar mejor tus datos y tomar decisiones más estratégicas en tu negocio 🚀",
     "ENLACE": "https://we-educacion.com/slides/power-bi-46",
-    "HABITILITADO": ""
+    "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-399",
-    "EDICION": "ED2026-may-III",
+    "LLAVE KEY": "PWE-390",
+    "EDICION": "MAY. III - ED26",
     "LINEA": "BI",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "SQL AVANZ",
@@ -18331,8 +17917,8 @@
     "FIN": "Domingo 12 Julio",
     "SESIONES": 6,
     "BROCHURE": "pdfs/BROCHURE SQL SERVER AVANZADO.pdf",
-    "BENEFICIOS": "🔵 *Conoce TODOS los BENEFICIOS a los que accedes*\n\n🔹 Acceso a *Campus Virtual* WE 👩🏻‍🏫\n🔹 Material digital y grabación de clases \n🔹 Certificado digital con respaldo *Microsoft Partner*\n🔹 03 Cursos Online de regalo con acceso ilimitado 📚\n🔹 Desarrollo y seguimiento de tu proyecto *(Evaluado)*\n🔹 Contenido Integrado con - Chat GPT\n🔹 Garantía de Aprendizaje 100% \n\n🔹 *Utilizarán SQL Server* 👩🏻‍💻\n👉🏼 Incluye tutorial y manual de instalación\n💻 _*Importante*: Para la instalación se necesita una Laptop *Windows*_\n\n🚨 *Revisa el BROCHURE* 👇🏻",
-    "POSTDOCEN": "",
+    "BENEFICIOS": "🔵 *Conoce TODOS los BENEFICIOS a los que accedes*\n\n🔹 Acceso a *Campus Virtual* WE 👩🏻‍🏫\n🔹 Material digital y grabación de clases \n🔹 Certificado digital con respaldo *Microsoft Partner*\n🔹 03 Cursos Online de regalo con acceso ilimitado 📚\n🔹 Desarrollo y seguimiento de tu proyecto *(Evaluado)*\n🔹 Contenido Integrado con - Chat GPT\n🔹 Garantía de Aprendizaje 100% \n\n🔹 *Utilizarán SQL Server* 👩🏻‍💻\n👉🏼 Incluye tutorial y manual de instalación\n💻 _*Importante*: Para la instalación se necesita una Laptop *Windows*_\n\n🚨 *Por favor, revisa el BROCHURE* 👇🏻\nAqui encontrarás la información completa del programa, el TEMARIO (malla curricular) y todos los BENEFICIOS 📚",
+    "POSTDOCEN": "images/sqlavanz.jpg",
     "AVALADO": "Avalado por Microsoft Partner Network",
     "CURSO MES": "NO",
     "INV PRO T": 830,
@@ -18351,11 +17937,11 @@
     "RES4": "🚀 ¡Perfecto! Saber SQL te dará ventaja en prácticas de análisis e inteligencia de negocios.",
     "RES5": "📊 ¡Excelente! Con SQL Avanzado podrás manejar la información de tu negocio con precisión.",
     "ENLACE": "https://we-educacion.com/slides/sql-server-avanzado-93",
-    "HABITILITADO": ""
+    "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-400",
-    "EDICION": "ED2026-jun-I",
+    "LLAVE KEY": "PWE-391",
+    "EDICION": "JUN. I - ED26",
     "LINEA": "PROCESOS",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "ROBOTIZ.  UIPATH",
@@ -18397,11 +17983,11 @@
     "RES4": "🚀 ¡Perfecto! Con UiPath destacarás en prácticas relacionadas con innovación tecnológica.",
     "RES5": "📊 ¡Excelente! Con UiPath podrás automatizar procesos y ahorrar tiempo en tu negocio.",
     "ENLACE": "https://we-educacion.com/slides/robotizacion-de-procesos-con-uipath-274",
-    "HABITILITADO": ""
+    "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-401",
-    "EDICION": "ED2026-jun-I",
+    "LLAVE KEY": "PWE-392",
+    "EDICION": "JUN. I - ED26",
     "LINEA": "BI",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "PYTHON. DATOS",
@@ -18443,11 +18029,11 @@
     "RES4": "¡Perfecto!, saber Python te dará ventaja frente a otros postulantes, ya que es clave para conseguir prácticas en áreas de datos.",
     "RES5": "¡Excelente!, con Python podrás analizar la información de tu negocio y tomar decisiones más inteligentes y estratégicas.",
     "ENLACE": "https://we-educacion.com/slides/python-analisis-de-datos-259",
-    "HABITILITADO": ""
+    "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-402",
-    "EDICION": "ED2026-jun-I",
+    "LLAVE KEY": "PWE-393",
+    "EDICION": "JUN. I - ED26",
     "LINEA": "PROCESOS",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "KPIS Y OKRS",
@@ -18489,11 +18075,11 @@
     "RES4": "🛠️ ¡Perfecto! Saber *KPIS Y OKRS* te dará ventaja frente a otros postulantes para conseguir prácticas.",
     "RES5": "🎓 ¡Excelente! Con *KPIS Y OKRS* podrás aplicarlo en tu negocio y tomar decisiones más inteligentes.",
     "ENLACE": "https://we-educacion.com/slides/kpi-s-y-okr-s-203",
-    "HABITILITADO": ""
+    "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-403",
-    "EDICION": "ED2026-jun-I",
+    "LLAVE KEY": "PWE-394",
+    "EDICION": "JUN. I - ED26",
     "LINEA": "LOGÍSTICA",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "GER. CENTRO DISTRIB.",
@@ -18535,11 +18121,11 @@
     "RES4": "🏆 ¡Perfecto! Saber *GER. CENTRO DISTRIB.* te dará ventaja frente a otros postulantes para conseguir prácticas.",
     "RES5": "📊 ¡Excelente! Con *GER. CENTRO DISTRIB.* podrás aplicarlo en tu negocio y tomar decisiones más inteligentes.",
     "ENLACE": "https://we-educacion.com/slides/distribucion-y-almacenes-68",
-    "HABITILITADO": ""
+    "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-404",
-    "EDICION": "ED2026-jun-I",
+    "LLAVE KEY": "PWE-395",
+    "EDICION": "JUN. I - ED26",
     "LINEA": "EXCEL",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "PROG. MACROS",
@@ -18581,11 +18167,11 @@
     "RES4": "🚀 ¡Perfecto! Con Macros podrás sobresalir en prácticas de áreas administrativas y financieras.",
     "RES5": "📊 ¡Excelente! Las Macros te permitirán ahorrar tiempo y optimizar tus procesos de negocio.",
     "ENLACE": "https://we-educacion.com/slides/programacion-con-vba-macros-en-excel-159",
-    "HABITILITADO": ""
+    "HABITILITADO": 1
   },
   {
-    "LLAVE KEY": "PWE-405",
-    "EDICION": "ED2026-jun-II",
+    "LLAVE KEY": "PWE-396",
+    "EDICION": "JUN. II - ED26",
     "LINEA": "EXCEL",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "PROG. MACROS",
@@ -18630,8 +18216,8 @@
     "HABITILITADO": ""
   },
   {
-    "LLAVE KEY": "PWE-406",
-    "EDICION": "ED2026-jun-I",
+    "LLAVE KEY": "PWE-397",
+    "EDICION": "JUN. I - ED26",
     "LINEA": "SAP",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "SAP HANA FI",
@@ -18654,7 +18240,7 @@
     "SESIONES": 6,
     "BROCHURE": "pdfs/BROCHURE SAP HANA FI MODULO FINANZAS.pdf",
     "BENEFICIOS": "🔵 *Utilizarán SAP HANA* 👩🏻‍💻\n👉🏼 Incluye tutorial y manual de instalación\n👉🏼 12 meses de Licencia SAP para practicar\n👉🏼 Contarás con Soporte técnico\n💻 _*Importante*: Para la instalación se necesita una Laptop *Windows*_\n\n🚨 *Por favor, revisa el BROCHURE* 👇🏻\nAqui encontrarás la información completa del programa, el TEMARIO (malla curricular) y todos los BENEFICIOS 📚",
-    "POSTDOCEN": "images/sapfi",
+    "POSTDOCEN": "images/sapfi.jpg",
     "AVALADO": "Avalado por SAP Partner Open",
     "CURSO MES": "NO",
     "INV PRO T": 900,
@@ -18676,8 +18262,8 @@
     "HABITILITADO": ""
   },
   {
-    "LLAVE KEY": "PWE-407",
-    "EDICION": "ED2026-jun-I",
+    "LLAVE KEY": "PWE-398",
+    "EDICION": "JUN. I - ED26",
     "LINEA": "BI",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "PYTHON AVANZ.",
@@ -18722,8 +18308,8 @@
     "HABITILITADO": ""
   },
   {
-    "LLAVE KEY": "PWE-408",
-    "EDICION": "ED2026-jun-I",
+    "LLAVE KEY": "PWE-399",
+    "EDICION": "JUN. I - ED26",
     "LINEA": "LOGÍSTICA",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "LEAN LOGISTICS",
@@ -18768,8 +18354,8 @@
     "HABITILITADO": ""
   },
   {
-    "LLAVE KEY": "PWE-409",
-    "EDICION": "ED2026-jun-I",
+    "LLAVE KEY": "PWE-400",
+    "EDICION": "JUN. I - ED26",
     "LINEA": "PROCESOS",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "LEAN SIX SIGMA YELLOW",
@@ -18791,8 +18377,8 @@
     "FIN": "Domingo 2 Agosto",
     "SESIONES": 6,
     "BROCHURE": "pdfs/BROCHURE LEAN SIX SIGMA YELLOW BELT.pdf",
-    "BENEFICIOS": "*Conoce TODOS los BENEFICIOS a los que accedes* \r\n\r\n🔹 Acceso a Campus Virtual WE 👩🏻‍🏫\r\n🔹 Material digital y grabación de clases \r\n🔹 Certificado digital del curso\r\n🔹 02 Cursos Online de regalo con acceso ilimitado 📚\r\n🔹 Desarrollo y seguimiento de tu proyecto *(Evaluado)*\r\n🔹 Garantía de Aprendizaje 100%\r\n\r\n*¡Certificados Adicionales!* ⭐\r\n👉🏻 Certificado *WHITE BELT* tiene la inversión de *$10* ~(Normal $50)~\r\n👉🏻 Certificado *YELLOW BELT* tiene la inversión de *$50* ~(Normal $150)~\r\n_Incluye material de práctica y 2 intentos del examen_\r\n\r\n🔹 *Utilizarán Minitab* 👩🏻‍💻\r\n👉🏻 Incluye tutorial y manual de instalación\r\n💻 _*Importante*: Para la instalación se necesita una Laptop *Windows*_\r\n\r\n🚨 *Revisa el BROCHURE* 👇🏻",
-    "POSTDOCEN": "",
+    "BENEFICIOS": "🔵  *Utilizarán Minitab* 👩🏻‍💻\n👉🏻 Incluye tutorial y manual de instalación\n💻 _*Importante*: Para la instalación se necesita una Laptop *Windows*_\n\n🚨 *Por favor, revisa el BROCHURE* 👇🏻\nAqui encontrarás la información completa del programa, el TEMARIO (malla curricular) y todos los BENEFICIOS 📚",
+    "POSTDOCEN": "images/leansix.jpg",
     "AVALADO": "",
     "CURSO MES": "NO",
     "INV PRO T": 820,
@@ -18814,8 +18400,8 @@
     "HABITILITADO": ""
   },
   {
-    "LLAVE KEY": "PWE-410",
-    "EDICION": "ED2026-jul-I",
+    "LLAVE KEY": "PWE-401",
+    "EDICION": "JUL. I - ED26",
     "LINEA": "PROCESOS",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "KPIS Y OKRS",
@@ -18860,8 +18446,8 @@
     "HABITILITADO": ""
   },
   {
-    "LLAVE KEY": "PWE-411",
-    "EDICION": "ED2026-jul-I",
+    "LLAVE KEY": "PWE-402",
+    "EDICION": "JUL. I - ED26",
     "LINEA": "EXCEL",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "PROG. MACROS",
@@ -18906,8 +18492,8 @@
     "HABITILITADO": ""
   },
   {
-    "LLAVE KEY": "PWE-412",
-    "EDICION": "ED2026-jul-I",
+    "LLAVE KEY": "PWE-403",
+    "EDICION": "JUL. I - ED26",
     "LINEA": "PROCESOS",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "ROBOTIZ.  UIPATH",
@@ -18952,8 +18538,8 @@
     "HABITILITADO": ""
   },
   {
-    "LLAVE KEY": "PWE-413",
-    "EDICION": "ED2026-jul-I",
+    "LLAVE KEY": "PWE-404",
+    "EDICION": "JUL. I - ED26",
     "LINEA": "LOGÍSTICA",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "GEST TRANSPORTES",
@@ -18998,8 +18584,8 @@
     "HABITILITADO": ""
   },
   {
-    "LLAVE KEY": "PWE-414",
-    "EDICION": "ED2026-jul-I",
+    "LLAVE KEY": "PWE-405",
+    "EDICION": "JUL. I - ED26",
     "LINEA": "PROYECTOS",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "GEST FINANC. PROYECT",
@@ -19044,8 +18630,8 @@
     "HABITILITADO": ""
   },
   {
-    "LLAVE KEY": "PWE-415",
-    "EDICION": "ED2026-jul-I",
+    "LLAVE KEY": "PWE-406",
+    "EDICION": "JUL. I - ED26",
     "LINEA": "BI",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "PYTHON. DATOS",
@@ -19090,8 +18676,8 @@
     "HABITILITADO": ""
   },
   {
-    "LLAVE KEY": "PWE-416",
-    "EDICION": "ED2026-ago-I",
+    "LLAVE KEY": "PWE-407",
+    "EDICION": "AGO. I - ED26",
     "LINEA": "PROYECTOS",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "GEST FINANC. PROYECT",
@@ -19136,8 +18722,8 @@
     "HABITILITADO": ""
   },
   {
-    "LLAVE KEY": "PWE-417",
-    "EDICION": "ED2026-ago-I",
+    "LLAVE KEY": "PWE-408",
+    "EDICION": "AGO. I - ED26",
     "LINEA": "PROCESOS",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "KPIS Y OKRS",
@@ -19182,8 +18768,8 @@
     "HABITILITADO": ""
   },
   {
-    "LLAVE KEY": "PWE-418",
-    "EDICION": "ED2026-ago-I",
+    "LLAVE KEY": "PWE-409",
+    "EDICION": "AGO. I - ED26",
     "LINEA": "PROCESOS",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "ROBOTIZ.  UIPATH",
@@ -19228,8 +18814,8 @@
     "HABITILITADO": ""
   },
   {
-    "LLAVE KEY": "PWE-419",
-    "EDICION": "ED2026-ago-I",
+    "LLAVE KEY": "PWE-410",
+    "EDICION": "AGO. I - ED26",
     "LINEA": "LOGÍSTICA",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "LEAN LOGISTICS",
@@ -19274,8 +18860,8 @@
     "HABITILITADO": ""
   },
   {
-    "LLAVE KEY": "PWE-420",
-    "EDICION": "ED2026-sep-I",
+    "LLAVE KEY": "PWE-411",
+    "EDICION": "SEP. I - ED26",
     "LINEA": "BI",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "PYTHON AVANZ.",
@@ -19320,8 +18906,8 @@
     "HABITILITADO": ""
   },
   {
-    "LLAVE KEY": "PWE-421",
-    "EDICION": "ED2026-sep-I",
+    "LLAVE KEY": "PWE-412",
+    "EDICION": "SEP. I - ED26",
     "LINEA": "PROCESOS",
     "CATEGORIA": "CURSO",
     "PROGRAMA": "ROBOTIZ.  UIPATH",
