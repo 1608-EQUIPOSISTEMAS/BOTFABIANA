@@ -1,13 +1,13 @@
 {
-  "totalReceived": 619,
-  "totalResponded": 153,
+  "totalReceived": 684,
+  "totalResponded": 155,
   "keywords": {
-    "info": 66,
+    "info": 67,
     "hola": 0,
     "estoy": 0
   },
   "programInquiries": {
-    "POWER BI": 6,
+    "POWER BI": 7,
     "SAP HANA MM": 7,
     "PYTHON. DATOS": 2,
     "ESPEC. EXCEL": 3,
