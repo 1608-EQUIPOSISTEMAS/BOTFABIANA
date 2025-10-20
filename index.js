@@ -423,12 +423,12 @@ Facilidades de pago:
         }
 
         // --- FLUJO: 0. INICIO DE CONVERSACIÓN (Detectar programa) ---
-        if (texto.includes("hola estoy en") || texto.includes("info") || texto.includes("información") || texto.includes("facilitar")) {
+        if (texto.includes("hola, estoy en") || texto.includes("info") || texto.includes("información") || texto.includes("facilitar")  || texto.includes("quiero")) {
             const resultados = encontrarPrograma(textoOriginal, programasData);
 
             if (resultados.length === 1) {
                 const p = resultados[0];
-                let keywordUsed = texto.includes("hola") ? 'hola' : texto.includes("info") ? 'info' : texto.includes("estoy") ? 'estoy' : null;
+                let keywordUsed = texto.includes("hola") ? 'hola' : texto.includes("info") ? 'info' : texto.includes("estoy") ? 'estoy' : texto.includes("quiero") ? 'quiero' : null;
                 recordMessage('responded', keywordUsed, p.PROGRAMA);
 
                 // Enviar información del programa
