@@ -423,7 +423,7 @@ Facilidades de pago:
         }
 
         // --- FLUJO: 0. INICIO DE CONVERSACIÓN (Detectar programa) ---
-        if (texto.includes("hola estoy en") || texto.includes("info") || texto.includes("facilitar")) {
+        if (texto.includes("hola estoy en") || texto.includes("info") || texto.includes("información") || texto.includes("facilitar")) {
             const resultados = encontrarPrograma(textoOriginal, programasData);
 
             if (resultados.length === 1) {
