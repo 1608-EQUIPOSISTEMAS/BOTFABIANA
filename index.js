@@ -217,7 +217,7 @@ client.on("message", async (message) => {
 
             // --- Pago 1: Yape ---
             if (texto.includes("1") || texto.includes("yape")) {
-                await client.sendMessage(numero, `*Perfecto* ✨\n\nTe envío el número de Yape y Código QR 👇\n\n📲 979 493 060 // WE Foundation`);
+                await client.sendMessage(numero, `*Perfecto* ✨\n\nTe envío el número de Yape y Código QR 👇\n\n📲 999 606 366 // WE Educación Ejecutiva`);
                 const nombreYape = esCurso ? "yapecursos.jpeg" : "yapeprog.jpeg";
                 const rutaQR = path.join(mediaPath, "pago", nombreYape);
 
