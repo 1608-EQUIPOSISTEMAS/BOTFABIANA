@@ -1,88 +1,22 @@
 {
-    "AZURE": [
-        "Azure"
-    ],
-    "COST Y PRESUP": [
-        "Costos y Presupuestos"
-    ],
-    "DIP GEST PROYECTOS V4": [
-        "diplo de proyectos",
-        "diplomado de proyectos",
-        "diplomado proyectos",
-        "diplomado en Gestión de Proyectos"
-    ],
-    "DIP PROC Y MEJORA V3": [
-        "Procesos y Mejora Continua",
-        "dip proc",
-        "dip de proc",
-        "diplomado de Procesos y Mejora Continua"
-    ],
-    "DIP. FINANZAS": [
-        "diplomado en gestión financiera"
-    ],
-    "ESP. SAP MINERÍA": [
-        "especialización en SAP S/4 HANA: Minería"
-    ],
-    "ESPEC.SAP HANA": [
-        "especialización en SAP",
-        "esp sap"
-    ],
-    "ESPEC.SAP HANA PLANIF. DE LA PROD.": [
-        "especilización SAP HANNA Planificación de la producción"
-    ],
-    "GER. CENTRO DISTRIB.": [
-        "Distribución y Almacenes"
-    ],
-    "GEST TRANSPORTES": [
-        "Gestión de Transportes",
-        "transporte"
-    ],
-    "PEE ANALIST DATOS": [
-        "pee de dato",
-        "pee | analista de datos",
-        "Pee Analista de Datos",
-        "PEE Datos"
-    ],
-    "PEE ANALIST PROC": [
-        "pee de proceso",
-        "Pee Analista de Procesos",
-        "pee procesos",
-        "Pee Analista de Proyectos"
-    ],
-    "PEE ANALIST PROY V4": [
-        "pee de proyecto",
-        "PEE | Analista de Proyectos",
-        "Pee Analista de Proyectos",
-        "Pee Analista de Proyectos",
-        "pee proyectos",
-        "pee proyecto"
-    ],
-    "PLAN. Y PRONOSTICO": [
-        "Planeamiento y pronóstico de la demanda",
-        "plan y pronostico",
-        "plan y prono"
-    ],
-    "POWER APPS AVANZ": [
-        "power avanz",
-        "power apps avanzado",
-        "Power Apps y Power Automate Avanzado"
-    ],
-    "POWER APPS Y AUT.": [
-        "Power Apps y Power Automate",
-        "power apps. & automate",
-        "power apps y aut."
-    ],
-    "PROG. WEB": [
-        "Introducción a la Programación Web",
-        "programacion web"
-    ],
-    "REACT JS": [
-        "React Js & React Native"
-    ],
-    "PLAN. FINANCIERO": [
-        "Planeamiento Financiero"
-    ],
-    "GEST. COMP. Y PROV.": [
-        "Gestión de Compras y Proveedores"
-    ]
+    "AZURE": ["Azure"],
+    "COST Y PRESUP": ["Costos y Presupuestos"],
+    "DIP GEST PROYECTOS V4": ["diplo de proyectos","diplomado de proyectos","diplomado proyectos","diplomado en Gestión de Proyectos"],
+    "DIP PROC Y MEJORA V3": ["Procesos y Mejora Continua","dip proc","dip de proc","diplomado de Procesos y Mejora Continua"],
+    "DIP. FINANZAS": ["diplomado en gestión financiera"],
+    "ESP. SAP MINERÍA": ["especialización en SAP S/4 HANA: Minería"],
+    "ESPEC.SAP HANA": ["especialización en SAP","esp sap"],
+    "ESPEC.SAP HANA PLANIF. DE LA PROD.": ["especilización SAP HANNA Planificación de la producción"],
+    "GER. CENTRO DISTRIB.": ["Distribución y Almacenes"],
+    "GEST TRANSPORTES": ["Gestión de Transportes","transporte"],
+    "PEE ANALIST DATOS": ["pee de dato","pee | analista de datos","Pee Analista de Datos","PEE Datos"],
+    "PEE ANALIST PROC": ["pee de proceso","Pee Analista de Procesos","pee procesos","Pee Analista de Proyectos"],
+    "PEE ANALIST PROY V4": ["pee de proyecto","PEE | Analista de Proyectos","Pee Analista de Proyectos","pee proyectos"],
+    "PLAN. Y PRONOSTICO": ["Planeamiento y pronóstico de la demanda"],
+    "POWER APPS AVANZ": ["power avanz","power apps avanzado","Power Apps y Power Automate Avanzado"],
+    "POWER APPS Y AUT.": ["Power Apps y Power Automate","power apps. & automate","power apps y aut."],
+    "PROG. WEB": ["Introducción a la Programación Web","programacion web"],
+    "REACT JS": ["React Js & React Native"],
+    "PLAN. FINANCIERO": ["Planeamiento Financiero"],
+    "GEST. COMP. Y PROV.": ["Gestión de Compras y Proveedores"]
 }
