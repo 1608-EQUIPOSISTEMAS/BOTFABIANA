@@ -348,7 +348,7 @@ client.on("message", async (message) => {
             // ✅ INICIO: LÓGICA COMPLETA DE INVERSIÓN (RESTAURADA)
             if (esCurso) {
                 if (esEstudiante) {
-                    inversionMsg = `*Hasta el Viernes 24 de Octubre HalloW|E 👻🎃*
+                    inversionMsg = `*Hasta el Viernes 31 de Octubre HalloW|E 👻🎃*
 
 Opciones de pago:
 1️⃣ *Al Contado* Ahorro máximo😉
@@ -360,7 +360,7 @@ Opciones de pago:
 
 *La inversión incluye el CERTIFICADO* 📚`;
                 } else {
-                    inversionMsg = `*Hasta el Viernes 24 de Octubre HalloW|E 👻🎃*
+                    inversionMsg = `*Hasta el Viernes 31 de Octubre HalloW|E 👻🎃*
 
 Opciones de pago:
 1️⃣ *Al Contado* Ahorro máximo😉
@@ -375,7 +375,7 @@ Opciones de pago:
             } else {
                 // Es un "Programa" (no un Curso)
                 if (esEstudiante) {
-                    inversionMsg = `*Hasta el Viernes 24 de Octubre HalloW|E 👻🎃*
+                    inversionMsg = `*Hasta el Viernes 31 de Octubre HalloW|E 👻🎃*
 
 Facilidades de pago:
 1️⃣ *En Cuotas sin Intereses* 
@@ -388,7 +388,7 @@ Facilidades de pago:
 *La inversión incluye el CERTIFICADO* 📚`;
                 } else {
                     // Profesional (no estudiante)
-                    inversionMsg = `*Hasta el Viernes 24 de Octubre HalloW|E 👻🎃*
+                    inversionMsg = `*Hasta el Viernes 31 de Octubre HalloW|E 👻🎃*
 
 Facilidades de pago:
 1️⃣ *En Cuotas sin Intereses* 
