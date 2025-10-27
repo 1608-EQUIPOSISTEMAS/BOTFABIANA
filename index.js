@@ -147,7 +147,23 @@ client.on("message", async (message) => {
         const numero = message.from;
         const nombre = message._data?.notifyName || "Sin nombre";
 
-        console.log(`\n📩 Mensaje de ${nombre} (${numero}): ${textoOriginal}`);
+        // Especifica la zona horaria de Perú
+        const opciones = {
+            timeZone: 'America/Lima',
+            // Opcional: puedes forzar un formato de 24 horas y qué mostrar
+            hour12: false,
+            year: 'numeric',
+            month: '2-digit',
+            day: '2-digit',
+            hour: '2-digit',
+            minute: '2-digit',
+            second: '2-digit'
+        };
+
+        const fechaYHoraPeru = new Date().toLocaleString('es-PE', opciones);
+
+        console.log(`\n[${fechaYHoraPeru}] 📩 Mensaje de ${nombre} (${numero}): ${textoOriginal}`);
+
 
         // --- FLUJO: 4. ESPERANDO DECISIÓN WEB (Seguimiento de 3 minutos) ---
         if (estadoUsuarios[numero]?.estado === "esperandoDecisionWeb") {
@@ -423,7 +439,7 @@ Facilidades de pago:
         }
 
         // --- FLUJO: 0. INICIO DE CONVERSACIÓN (Detectar programa) ---
-        if (texto.includes("hola, estoy en") || texto.includes("info") || texto.includes("información") || texto.includes("facilitar")  || texto.includes("quiero") || texto.includes("quisiera")) {
+        if (texto.includes("hola, estoy en") || texto.includes("info") || texto.includes("información") || texto.includes("facilitar") || texto.includes("quiero") || texto.includes("quisiera")) {
             const resultados = encontrarPrograma(textoOriginal, programasData);
 
             if (resultados.length === 1) {

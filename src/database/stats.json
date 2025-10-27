@@ -1,8 +1,8 @@
 {
-  "totalReceived": 1010,
-  "totalResponded": 414,
+  "totalReceived": 1012,
+  "totalResponded": 415,
   "keywords": {
-    "info": 81,
+    "info": 82,
     "hola": 77,
     "estoy": 0
   },
@@ -26,7 +26,7 @@
     "ROBOTIZ.  UIPATH": 2,
     "PYTHON AVANZ.": 3,
     "SAP HANA IN PRESENCIAL": 3,
-    "AZURE": 3,
+    "AZURE": 4,
     "COST Y PRESUP": 3,
     "SQL SERVER": 1,
     "PROG. WEB": 4,
