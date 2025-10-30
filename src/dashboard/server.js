@@ -51,7 +51,6 @@ function recargarStatsEnMemoria() {
     try {
         const data = fs.readFileSync(STATS_PATH, "utf8");
         statsEnMemoria = JSON.parse(data);
-        console.log("✅ Datos de estadísticas recargados en memoria.");
     } catch (err) {
         console.error("❌ Error al recargar estadísticas en memoria:", err);
         statsEnMemoria = { totalReceived: 0, totalResponded: 0, keywords: { info: 0, hola: 0, estoy: 0 } };
@@ -100,7 +99,6 @@ function recargarPlusEnMemoria() {
     try {
         const data = fs.readFileSync(PLUS_PATH, "utf8");
         plusEnMemoria = JSON.parse(data);
-        console.log("✅ Datos de plus recargados en memoria.");
     } catch (err) {
         console.error("❌ Error al recargar plus en memoria:", err);
         plusEnMemoria = {};
@@ -111,7 +109,6 @@ function recargarSaludosEnMemoria() {
     try {
         const data = fs.readFileSync(SALUDOS_PATH, "utf8");
         saludosEnMemoria = JSON.parse(data);
-        console.log("✅ Datos de saludos recargados en memoria.");
     } catch (err) {
         console.error("❌ Error al recargar saludos en memoria:", err);
         saludosEnMemoria = {};
@@ -123,7 +120,6 @@ function recargarPerfilEnMemoria() {
     try {
         const data = fs.readFileSync(PERFIL_PATH, "utf8");
         perfilEnMemoria = JSON.parse(data);
-        console.log("✅ Datos de perfil recargados en memoria.");
     } catch (err) {
         console.error("❌ Error al recargar perfil en memoria:", err);
         perfilEnMemoria = {};
@@ -135,7 +131,6 @@ function recargarCtaEnMemoria() {
     try {
         const data = fs.readFileSync(CTA_PATH, "utf8");
         ctaEnMemoria = JSON.parse(data);
-        console.log("✅ Datos de cta recargados en memoria.");
     } catch (err) {
         console.error("❌ Error al recargar cta en memoria:", err);
         ctaEnMemoria = {};

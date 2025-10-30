@@ -7,19 +7,36 @@ const { crearCliente } = require("./src/bot/cliente");
 const { normalizarTexto } = require("./src/utils/normalizar");
 const { encontrarPrograma } = require("./src/services/encontrarPrograma");
 
+// --- ❗️ REDES DE SEGURIDAD GLOBALES ❗️ ---
+// Capturan errores inesperados que podrían "tumbar" el script.
+process.on('unhandledRejection', (reason, promise) => {
+    console.error('=============== ❗️ RECHAZO DE PROMESA NO MANEJADO ❗️ ===============');
+    console.error('Razón:', reason);
+    console.error('===================================================================');
+});
+
+process.on('uncaughtException', (error) => {
+    console.error('=============== ❗️ EXCEPCIÓN NO CAPTURADA ❗️ ===============');
+    console.error('Error:', error);
+    console.error('============================================================');
+    // Salir es lo recomendado para que PM2 reinicie el script de forma limpia
+    process.exit(1);
+});
+// ---------------------------------------------
+
 // --- INICIALIZACIÓN DE SERVIDOR Y CLIENTE ---
 const { iniciarServidor } = require("./src/dashboard/server");
 iniciarServidor(); // Inicia el servidor
 
 const client = crearCliente();
-const estadoUsuarios = {}; // 🔹 Estado temporal para seguir conversaciones
+let estadoUsuarios = {}; // 🔹 Estado para seguir conversaciones (es 'let')
 
 // --- CONFIGURACIÓN DE RUTAS ---
 const projectRoot = process.cwd();
 const mediaPath = path.join(projectRoot, 'media');
 
 const PATHS = {
-    STATS: path.join(projectRoot, "src", "database", "stats.json"),
+    ESTADOS: path.join(projectRoot, "src", "database", "estados.json"),
     PROGRAMAS: path.join(projectRoot, "src", "database", "programas.json"),
     PLUS: path.join(projectRoot, "src", "database", "plus.json"),
     SALUDOS: path.join(projectRoot, "src", "database", "saludos.json"),
@@ -33,66 +50,33 @@ let plusData = {};
 let saludosData = {};
 let perfilData = {};
 let ctaData = {};
-let statsEnMemoria = {};
 
-// 📌 CONFIGURACIÓN DE ESTADÍSTICAS (KPIs) 📌
-const DEFAULT_STATS = {
-    "totalReceived": 0,
-    "totalResponded": 0,
-    "keywords": {
-        "info": 0,
-        "hola": 0,
-        "estoy": 0
-    },
-    "programInquiries": {}
-};
-
-function loadStats() {
+// --- MANEJO DE ESTADO PERSISTENTE ---
+function loadEstados() {
     try {
-        const data = fs.readFileSync(PATHS.STATS, "utf8");
-        statsEnMemoria = JSON.parse(data);
-        // Asegura que la estructura base exista
-        statsEnMemoria.keywords = statsEnMemoria.keywords || JSON.parse(JSON.stringify(DEFAULT_STATS.keywords));
-        statsEnMemoria.programInquiries = statsEnMemoria.programInquiries || {};
-    } catch (err) {
-        console.error("❌ Error cargando stats.json. Inicializando por defecto:", err.message);
-        statsEnMemoria = JSON.parse(JSON.stringify(DEFAULT_STATS));
-    }
-}
-
-function saveStats() {
-    try {
-        fs.writeFileSync(PATHS.STATS, JSON.stringify(statsEnMemoria, null, 2), "utf8");
-    } catch (err) {
-        console.error("❌ Error guardando stats.json:", err.message);
-    }
-}
-
-function recordMessage(type, keyword = null, programName = null) {
-    if (type === 'received') {
-        statsEnMemoria.totalReceived += 1;
-    }
-
-    if (type === 'responded') {
-        statsEnMemoria.totalResponded += 1;
-
-        if (keyword) {
-            const key = keyword.toLowerCase().trim();
-            if (statsEnMemoria.keywords.hasOwnProperty(key)) {
-                statsEnMemoria.keywords[key] += 1;
-            }
+        if (fs.existsSync(PATHS.ESTADOS)) {
+            const data = fs.readFileSync(PATHS.ESTADOS, "utf8");
+            estadoUsuarios = JSON.parse(data);
+            console.log("✅ Estados de usuario cargados correctamente.");
+        } else {
+            console.log("ℹ️ No se encontró 'estados.json'. Iniciando vacío.");
+            estadoUsuarios = {};
         }
+    } catch (error) {
+        console.error("❌ Error cargando estados.json. Iniciando vacío:", error.message);
+        estadoUsuarios = {};
     }
-
-    if (programName) {
-        const key = programName.toUpperCase().trim();
-        statsEnMemoria.programInquiries[key] = (statsEnMemoria.programInquiries[key] || 0) + 1;
-    }
-
-    saveStats();
 }
 
-// ✅ Función para cargar todos los JSON al inicio (SOLUCIÓN AL PROBLEMA DE RENDIMIENTO)
+async function saveEstados() {
+    try {
+        await fs.promises.writeFile(PATHS.ESTADOS, JSON.stringify(estadoUsuarios, null, 2), "utf8");
+    } catch (err) {
+        console.error("❌ Error guardando estados.json:", err.message);
+    }
+}
+
+// --- CARGA DE DATOS ---
 function loadAllData() {
     try {
         programasData = JSON.parse(fs.readFileSync(PATHS.PROGRAMAS, "utf8"));
@@ -103,7 +87,6 @@ function loadAllData() {
         console.log("✅ Todos los datos JSON cargados correctamente en memoria.");
     } catch (error) {
         console.error("❌ Error al cargar datos JSON:", error.message);
-        // Establecer valores por defecto si falla la carga de algún archivo crucial
         perfilData = {
             texto: "🚨 *Para asesorarte y brindarte la INVERSIÓN del programa, por favor indícame tu perfil:* \n1) Soy egresado...\n5) Soy independiente"
         };
@@ -116,28 +99,48 @@ function estaDentroHorario() {
     const opciones = { timeZone: "America/Lima", hour: "2-digit", hour12: false, weekday: "long" };
     const horaPeru = parseInt(ahora.toLocaleString("es-PE", opciones), 10);
     const dia = ahora.toLocaleDateString("es-PE", { timeZone: "America/Lima", weekday: "long" }).toLowerCase();
-
     const esFinDeSemana = (dia === "sábado" || dia === "domingo");
-
-    if (!esFinDeSemana && horaPeru >= 9 && horaPeru < 18) { // Lunes a Viernes: 9am a 6pm
-        return true;
-    }
-    if (esFinDeSemana && horaPeru >= 9 && horaPeru < 13) { // Sábado/Domingo: 9am a 1pm
-        return true;
-    }
+    if (!esFinDeSemana && horaPeru >= 9 && horaPeru < 18) { return true; }
+    if (esFinDeSemana && horaPeru >= 9 && horaPeru < 13) { return true; }
     return false;
 }
 
+// --- ✨ NUEVA FUNCIÓN REFACTORIZADA ---
+// Agrupa el envío de los 6 mensajes iniciales
+async function enviarBloqueInfo(numero, p) {
+    if (saludosData?.texto) await client.sendMessage(numero, saludosData.texto);
+    if (p.PERSONALIZADO) await client.sendMessage(numero, p.PERSONALIZADO);
+
+    const videoPath = p.VIDEO ? path.join(mediaPath, p.VIDEO) : null;
+    const imagePath = p.POSTDOCEN ? path.join(mediaPath, p.POSTDOCEN) : null;
+    const pdfPath = p.BROCHURE ? path.join(mediaPath, p.BROCHURE) : null;
+
+    if (videoPath && fs.existsSync(videoPath)) {
+        await client.sendMessage(numero, MessageMedia.fromFilePath(videoPath));
+    } else if (imagePath && fs.existsSync(imagePath)) {
+        await client.sendMessage(numero, MessageMedia.fromFilePath(imagePath));
+    }
+
+    if (p.BENEFICIOS) await client.sendMessage(numero, p.BENEFICIOS);
+
+    if (pdfPath && fs.existsSync(pdfPath)) {
+        await client.sendMessage(numero, MessageMedia.fromFilePath(pdfPath));
+    }
+
+    await enviarHorarios(client, numero, p.PROGRAMA);
+
+    const perfilMsg = perfilData?.texto || "🚨 *Para asesorarte y brindarte la INVERSIÓN del programa, por favor indícame tu perfil...*";
+    await client.sendMessage(numero, perfilMsg);
+}
+// ----------------------------------------
+
 // 🚨 Cargar datos al inicio del bot
-loadStats();
 loadAllData();
+loadEstados();
 // -----------------------------------------------------
 
 client.on("message", async (message) => {
     try {
-        // 1. Filtros y Registro
-        recordMessage('received');
-
         if (message.from.includes("@g.us") || message.from.includes("@broadcast") || message.type !== "chat") {
             return;
         }
@@ -147,72 +150,88 @@ client.on("message", async (message) => {
         const numero = message.from;
         const nombre = message._data?.notifyName || "Sin nombre";
 
-        // Especifica la zona horaria de Perú
-        const opciones = {
-            timeZone: 'America/Lima',
-            // Opcional: puedes forzar un formato de 24 horas y qué mostrar
-            hour12: false,
-            year: 'numeric',
-            month: '2-digit',
-            day: '2-digit',
-            hour: '2-digit',
-            minute: '2-digit',
-            second: '2-digit'
-        };
-
+        const opciones = { timeZone: 'America/Lima', hour12: false, year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit', second: '2-digit' };
         const fechaYHoraPeru = new Date().toLocaleString('es-PE', opciones);
-
         console.log(`\n[${fechaYHoraPeru}] 📩 Mensaje de ${nombre} (${numero}): ${textoOriginal}`);
 
+        // -----------------------------------------------------------------
+        // --- ❗️ FLUJO 0: INICIO O REINICIO DE CONVERSACIÓN (MÁXIMA PRIORIDAD) ---
+        // -----------------------------------------------------------------
+        if (texto.includes("hola, estoy en") || texto.includes("info") || texto.includes("información") || texto.includes("facilitar") || texto.includes("quiero") || texto.includes("quisiera")) {
+            const resultados = encontrarPrograma(textoOriginal, programasData);
 
-        // --- FLUJO: 4. ESPERANDO DECISIÓN WEB (Seguimiento de 3 minutos) ---
-        if (estadoUsuarios[numero]?.estado === "esperandoDecisionWeb") {
-            // 1. Opcion: Sí, todo correcto (1)
-            if (texto === "1") {
-                await client.sendMessage(numero, `*¡Ya te hemos registrado al Programa!* 🚀\nRecuerda tener en cuenta lo siguiente 💙👇🏻`);
+            if (resultados.length === 1) {
+                const p = resultados[0];
 
-                // 1b. Enviar imagen de registro completo
-                const IMAGEN_REGISTRO_PATH = path.join(mediaPath, "pago", "webins.jpg");
-                if (fs.existsSync(IMAGEN_REGISTRO_PATH)) {
-                    const media = MessageMedia.fromFilePath(IMAGEN_REGISTRO_PATH);
-                    await client.sendMessage(numero, media);
-                } else {
-                    console.log("⚠️ No se encontró la imagen de registro completo.");
+                // 1. Guardar estado temporal ANTES de enviar
+                estadoUsuarios[numero] = {
+                    estado: "enviandoInfo", // Estado temporal
+                    nombrePrograma: p.PROGRAMA,
+                    edicion: p.EDICION,
+                    categoria: (p.CATEGORIA || "").toUpperCase()
+                };
+                await saveEstados();
+                console.log(`[FLOW 0] Estado 'enviandoInfo' guardado para ${numero}.`);
+
+                // 2. Intentar enviar el bloque completo
+                try {
+                    await enviarBloqueInfo(numero, p);
+                } catch (sendError) {
+                    console.error(`❌ Falla al enviar bloque de info a ${numero}. El estado persiste como 'enviandoInfo'.`, sendError);
+                    return; // Salir. El estado ya está guardado como "enviandoInfo".
                 }
 
-                // 1c. Mensaje 3: Bienvenida y Links
-                await client.sendMessage(numero, `*Bienvenid@ a la Comunidad WE* 💙\n¡Que disfrutes tu programa!\n\n📲 *Agéndanos en tus contactos* ...\n\n👩🏻‍💻 *Evalúa nuestra atención* 👉🏼 bit.ly/4azD6Z4\n\n👥 *Únete a nuestra Comunidad WE* 👉🏼 bit.ly/COMUNIDAD_WE \n\n¡Gracias por confiar en WE! 🚀`);
-
-                // 1d. Mensaje 4: Promoción PLUS
-                await client.sendMessage(numero, `💎 *Beneficio Exclusivo* 💎\n\nPor tu inscripción, adquiere la MEMBRESÍA PLUS, donde podrás acceder a *+50 Cursos y Especializaciones Online Certificados*, además de increíbles beneficios 📚⚡\n\n👉🏼 *Única Inversión > S/ 150* (Normal S/250)\n\nPuedes validarlo, para un amigo o familiar que también esté interesado en capacitarse 🚀\n\n _Válido por 3 días_ 📍`);
-
-                recordMessage('responded');
-                delete estadoUsuarios[numero]; // Limpieza final
+                // 3. Si TODO salió bien, guardar estado FINAL
+                estadoUsuarios[numero].estado = "esperandoPerfil";
+                await saveEstados();
+                console.log(`[FLOW 0] Bloque enviado OK. Estado 'esperandoPerfil' guardado para ${numero}.`);
                 return;
-
-                // 2. Opcion: Aún no, necesito ayuda (2)
-            } else if (texto === "2") {
-                const msgFuera = "✨ Genial, en un momento un asesor se comunicará contigo para resolver tus consultas 😄";
-                const msgDentro = "⏰ ¡Estamos contentos de poder ayudarte en tu elección! Un asesor se comunicará contigo el día de *mañana*. Por favor, indícame un *horario* para que se contacte contigo. 🙋🏻‍♀️";
-
-                // Se usa la lógica de horario para determinar si se comunica en un momento o mañana (asesor)
-                await client.sendMessage(numero, estaDentroHorario() ? msgDentro : msgFuera);
-
-                recordMessage('responded');
-                delete estadoUsuarios[numero]; // Limpieza final
-                return;
-
-                // 3. Opcion: Respuesta inválida (BUG CORREGIDO)
-            } else {
-                return; // Mantiene el estado esperandoDecisionWeb
             }
+
+            // -----------------------------------------------------------------
+            // --- ❗️ FLUJO 0.5: REINTENTO POR FALLO DE ENVÍO ---
+            // -----------------------------------------------------------------
+        } else if (estadoUsuarios[numero]?.estado === "enviandoInfo") {
+            // El usuario NO escribió "info", pero su estado SIGUE en "enviandoInfo".
+            // Esto significa que el envío anterior falló y el usuario está atascado.
+            console.warn(`[FLOW 0.5] Detectado estado 'enviandoInfo' para ${numero} con texto: '${texto}'. Reintentando envío...`);
+
+            const { nombrePrograma, edicion } = estadoUsuarios[numero];
+            const p = programasData.find(
+                (pr) => normalizarTexto(pr.PROGRAMA) === normalizarTexto(nombrePrograma) &&
+                    normalizarTexto(pr.EDICION) === normalizarTexto(edicion)
+            );
+
+            if (!p) {
+                console.error(`[FLOW 0.5] No se pudo encontrar el programa ${nombrePrograma} para el reintento.`);
+                delete estadoUsuarios[numero];
+                await saveEstados();
+                return;
+            }
+
+            // 1. Reintentar enviar el bloque completo
+            try {
+                await enviarBloqueInfo(numero, p);
+            } catch (sendError) {
+                console.error(`❌ Falla en el REINTENTO de envío a ${numero}. El estado persiste como 'enviandoInfo'.`, sendError);
+                return; // Salir. Esperar otro mensaje del usuario para reintentar.
+            }
+
+            // 2. Si el REINTENTO salió bien, guardar estado FINAL
+            estadoUsuarios[numero].estado = "esperandoPerfil";
+            await saveEstados();
+            console.log(`[FLOW 0.5] Reintento enviado OK. Estado 'esperandoPerfil' guardado para ${numero}.`);
+
+            // 3. IMPORTANTE: NO hacemos 'return'.
+            // Dejamos que el código continúe al siguiente 'else if'
+            // para procesar el mensaje actual (ej. "1") con el estado ya corregido.
         }
 
-        // --- FLUJO: 3. ESPERANDO MÉTODO DE PAGO ---
-        if (estadoUsuarios[numero]?.estado === "esperandoMetodoPago") {
+        // -----------------------------------------------------------------
+        // --- FLUJO 1: ESPERANDO PERFIL (Respuesta 1-5) ---
+        // -----------------------------------------------------------------
+        else if (estadoUsuarios[numero]?.estado === "esperandoPerfil") {
             const { nombrePrograma, edicion } = estadoUsuarios[numero];
-
-            // Re-busca el programa para obtener el ENLACE (solo si es necesario)
             const p = programasData.find(
                 (pr) => normalizarTexto(pr.PROGRAMA) === normalizarTexto(nombrePrograma) &&
                     normalizarTexto(pr.EDICION) === normalizarTexto(edicion)
@@ -220,123 +239,7 @@ client.on("message", async (message) => {
 
             if (!p) {
                 delete estadoUsuarios[numero];
-                return;
-            }
-
-            const esEstudiante = estadoUsuarios[numero].esEstudiante;
-            const categoria = estadoUsuarios[numero].categoria || "CURSO";
-            const esCurso = categoria === "CURSO";
-
-            const datosMsg = esEstudiante ?
-                `*Bríndame por favor, los siguientes datos*:\n\n🔹DNI o CÉDULA:\n🔹Nombre completo:\n🔹Número de Celular:\n🔹Fecha de Inicio:\n🔹Correo (Gmail):\n🔹Foto de Voucher:\n🔹Foto de Intranet o Carnet Universitario:\n\nY listo! 🌟 Cuando realices el pago y envío de tus datos, me avisas para comentarte los siguientes detalles. 🙋🏻‍♀️💙` :
-                `*Bríndame por favor, los siguientes datos*:\n\n🔹DNI o CÉDULA:\n🔹Nombre completo:\n🔹Número de Celular:\n🔹Fecha de Inicio:\n🔹Correo (Gmail):\n🔹Foto de Voucher:\n\nY listo! 🌟 Cuando realices el pago y envío de tus datos, me avisas para comentarte los siguientes detalles. 🙋🏻‍♀️💙`;
-
-            // --- Pago 1: Yape ---
-            if (texto.includes("1") || texto.includes("yape")) {
-                await client.sendMessage(numero, `*Perfecto* ✨\n\nTe envío el número de Yape y Código QR 👇\n\n📲 999 606 366 // WE Educación Ejecutiva`);
-                const nombreYape = esCurso ? "yapecursos.jpeg" : "yapeprog.jpeg";
-                const rutaQR = path.join(mediaPath, "pago", nombreYape);
-
-                if (fs.existsSync(rutaQR)) {
-                    const media = MessageMedia.fromFilePath(rutaQR);
-                    await client.sendMessage(numero, media);
-                }
-
-                await client.sendMessage(numero, datosMsg);
-                recordMessage('responded');
-                delete estadoUsuarios[numero];
-                return;
-            }
-
-            // --- Pago 2: Depósito o Transferencia ---
-            if (texto.includes("2") || texto.includes("bcp") || texto.includes("deposito") || texto.includes("transferencia")) {
-                const mensajeDepo = esCurso ?
-                    `¡Excelente! Te comparto los datos de nuestra cuenta para que realices la transferencia:\n\n🏛️ *Banco: BCP*\nNúmero de cuenta: 193-9914694-0-22\ny desde *otros Bancos*, puedes transferir a esta cuenta:\nCCI: 00219300991469402218\n\n*Titular*: WE Foundation` :
-                    `¡Excelente! Te comparto los datos de nuestra cuenta para que realices la transferencia:\n\n🏛️ *Banco: BCP*\nNúmero de cuenta: 193-9285511-0-38\ny desde *otros Bancos*, puedes transferir a esta cuenta:\nCCI: 002-19300928551103810\n\n*Titular*: WE Educación Ejecutiva SAC`;
-
-                await client.sendMessage(numero, mensajeDepo);
-                await client.sendMessage(numero, datosMsg);
-                recordMessage('responded');
-                delete estadoUsuarios[numero];
-                return;
-            }
-
-            // --- Pago 3: Web (Lógica original con seguimiento de 3 minutos) ---
-            if (texto.includes("3") || texto.includes("web")) {
-                if (!p.ENLACE) {
-                    delete estadoUsuarios[numero];
-                    return;
-                }
-
-                const mensajeTexto = `👉 “Perfecto, puedes hacer tu pago de manera rápida y 100% segura a través de nuestra web:\n\n🔗 ${p["ENLACE"]}\n\n💡 Ventaja: El pago se confirma al instante, tu matrícula queda asegurada y podrás acceder a tus cursos online gratuitos en el Campus Virtual W|E⚡”\n\n🚨Revisa los pasos del video 👇🏻 e inscríbete en menos de 1 minuto, fácil, rápido y seguro.\n\nY listo! 🌟 Cuando realices el pago y envío de tus datos, me avisas para comentarte los siguientes detalles. 🙋🏻‍♀️💙`;
-                await client.sendMessage(numero, mensajeTexto);
-
-                const rutaVideo = path.join(mediaPath, "videos", "WEB.mp4");
-                if (fs.existsSync(rutaVideo)) {
-                    const media = MessageMedia.fromFilePath(rutaVideo);
-                    await client.sendMessage(numero, media);
-                }
-
-                recordMessage('responded');
-                estadoUsuarios[numero].estado = "esperandoDecisionWeb";
-
-                // Programar el mensaje de seguimiento (3 minutos)
-                const followUpMessage = `💳 Cuentame, ¿Pudiste completar tu pago en el link web? 🌐\n\n1️⃣ Sí, todo correcto 🙌\n2️⃣ Aún no, necesito ayuda 🤔`;
-
-                setTimeout(async () => {
-                    try {
-                        if (estadoUsuarios[numero]?.estado === "esperandoDecisionWeb") {
-                            await client.sendMessage(numero, followUpMessage);
-                            console.log(`✅ Mensaje de seguimiento enviado a ${numero}.`);
-                        }
-                    } catch (error) {
-                        console.error(`❌ Error en el setTimeout para follow-up de ${numero}:`, error);
-                    }
-                }, 3 * 60 * 1000); // 3 minutos
-
-                return;
-            }
-            // Respuesta Inválida
-            return;
-        }
-
-        // --- FLUJO: 2. ESPERANDO DECISIÓN (Después de la Inversión) ---
-        if (estadoUsuarios[numero]?.estado === "esperandoDecision") {
-            const msgFuera = "✨ Genial, en un momento un asesor se comunicará contigo para resolver tus consultas 😄";
-            const msgDentro = "⏰ ¡Estamos contentos de poder ayudarte en tu elección! Un asesor se comunicará contigo el día de *mañana*. Por favor, indícame un *horario* para que se contacte contigo. 🙋🏻‍♀️";
-
-            switch (texto) {
-                case "1":
-                case "2": // Opción de inscripción
-                    await client.sendMessage(numero, `*¡Perfecto!* La inscripción es muy sencilla 😇\n\nContamos con los siguientes MÉTODOS DE PAGO👇🏻\n\n1️⃣ Yape 📲\n2️⃣ Depósito o transferencia bancaria 🏛️\n3️⃣ Pago online vía Web 🌐(Aceptamos todas las tarjetas 💳)\n\nComéntame *¿Cuál sería tu mejor opción de pago?* 😊`);
-                    estadoUsuarios[numero].estado = "esperandoMetodoPago";
-                    recordMessage('responded');
-                    return;
-
-                case "3":
-                case "4": // Opción de llamada/asesoría
-                    await client.sendMessage(numero, estaDentroHorario() ? msgDentro : msgFuera);
-                    delete estadoUsuarios[numero];
-                    recordMessage('responded');
-                    return;
-
-                default:
-                    return;
-            }
-        }
-
-        // --- FLUJO: 1. ESPERANDO PERFIL (Respuesta 1-5) ---
-        if (estadoUsuarios[numero]?.estado === "esperandoPerfil") {
-            const { nombrePrograma, edicion } = estadoUsuarios[numero];
-
-            // Re-busca el programa usando el nombre y la edición guardados
-            const p = programasData.find(
-                (pr) => normalizarTexto(pr.PROGRAMA) === normalizarTexto(nombrePrograma) &&
-                    normalizarTexto(pr.EDICION) === normalizarTexto(edicion)
-            );
-
-            if (!p) {
-                delete estadoUsuarios[numero];
+                await saveEstados();
                 return;
             }
 
@@ -348,10 +251,10 @@ client.on("message", async (message) => {
                 case "4": resKeyName = "RES4"; break;
                 case "5": resKeyName = "RES5"; break;
                 default:
-                    return;
+                    console.log(`[FLOW 1] Respuesta inválida para 'esperandoPerfil': ${texto}`);
+                    return; // No hacer nada, esperar respuesta 1-5
             }
 
-            // Enviar respuesta personalizada (RES1-RES5)
             const resValue = p[resKeyName];
             if (resValue) {
                 await client.sendMessage(numero, resValue);
@@ -418,14 +321,12 @@ Facilidades de pago:
                 }
             }
             // ✅ FIN: LÓGICA COMPLETA DE INVERSIÓN (RESTAURADA)
+            // ... (FIN Lógica de INVERSIÓN)
 
             await client.sendMessage(numero, inversionMsg);
 
-            // Enviar mensajes de seguimiento (PLUS y CTA)
             if (plusData?.texto) await client.sendMessage(numero, plusData.texto);
             if (ctaData?.texto) await client.sendMessage(numero, ctaData.texto);
-
-            recordMessage('responded');
 
             // Actualizar estado para la siguiente decisión
             estadoUsuarios[numero] = {
@@ -435,58 +336,152 @@ Facilidades de pago:
                 esEstudiante,
                 categoria: (p.CATEGORIA || "").toUpperCase()
             };
+            await saveEstados();
             return;
         }
 
-        // --- FLUJO: 0. INICIO DE CONVERSACIÓN (Detectar programa) ---
-        if (texto.includes("hola, estoy en") || texto.includes("info") || texto.includes("información") || texto.includes("facilitar") || texto.includes("quiero") || texto.includes("quisiera")) {
-            const resultados = encontrarPrograma(textoOriginal, programasData);
+        // -----------------------------------------------------------------
+        // --- FLUJO 2: ESPERANDO DECISIÓN (Después de la Inversión) ---
+        // -----------------------------------------------------------------
+        else if (estadoUsuarios[numero]?.estado === "esperandoDecision") {
+            const msgFuera = "✨ Genial, en un momento un asesor se comunicará contigo para resolver tus consultas 😄";
+            const msgDentro = "⏰ ¡Estamos contentos de poder ayudarte en tu elección! Un asesor se comunicará contigo el día de *mañana*. Por favor, indícame un *horario* para que se contacte contigo. 🙋🏻‍♀️";
 
-            if (resultados.length === 1) {
-                const p = resultados[0];
-                let keywordUsed = texto.includes("hola") ? 'hola' : texto.includes("info") ? 'info' : texto.includes("estoy") ? 'estoy' : texto.includes("quiero") ? 'quiero' : texto.includes("quisiera") ? 'quisiera' : null;
-                recordMessage('responded', keywordUsed, p.PROGRAMA);
-
-                // Enviar información del programa
-                if (saludosData?.texto) await client.sendMessage(message.from, saludosData.texto);
-                if (p.PERSONALIZADO) await client.sendMessage(message.from, p.PERSONALIZADO);
-
-                // Envío de media (video, imagen, PDF)
-                const videoPath = p.VIDEO ? path.join(mediaPath, p.VIDEO) : null;
-                const imagePath = p.POSTDOCEN ? path.join(mediaPath, p.POSTDOCEN) : null;
-                const pdfPath = p.BROCHURE ? path.join(mediaPath, p.BROCHURE) : null;
-
-                if (videoPath && fs.existsSync(videoPath)) {
-                    await client.sendMessage(message.from, MessageMedia.fromFilePath(videoPath));
-                } else if (imagePath && fs.existsSync(imagePath)) {
-                    await client.sendMessage(message.from, MessageMedia.fromFilePath(imagePath));
-                }
-
-                if (p.BENEFICIOS) await client.sendMessage(message.from, p.BENEFICIOS);
-
-                if (pdfPath && fs.existsSync(pdfPath)) {
-                    await client.sendMessage(message.from, MessageMedia.fromFilePath(pdfPath));
-                }
-
-                await enviarHorarios(client, message.from, p.PROGRAMA);
-
-                // Pregunta de perfil
-                const perfilMsg = perfilData?.texto || "🚨 *Para asesorarte y brindarte la INVERSIÓN del programa, por favor indícame tu perfil...*";
-                await client.sendMessage(message.from, perfilMsg);
-
-                // Guardar estado (solo el nombre y edición para buscar después)
-                estadoUsuarios[numero] = {
-                    estado: "esperandoPerfil",
-                    nombrePrograma: p.PROGRAMA,
-                    edicion: p.EDICION,
-                    categoria: (p.CATEGORIA || "").toUpperCase()
-                };
-                return;
+            switch (texto) {
+                case "1":
+                case "2": // Opción de inscripción
+                    await client.sendMessage(numero, `*¡Perfecto!* La inscripción es muy sencilla 😇\n\nContamos con los siguientes MÉTODOS DE PAGO👇🏻\n\n1️⃣ Yape 📲\n2️⃣ Depósito o transferencia bancaria 🏛️\n3️⃣ Pago online vía Web 🌐(Aceptamos todas las tarjetas 💳)\n\nComéntame *¿Cuál sería tu mejor opción de pago?* 😊`);
+                    estadoUsuarios[numero].estado = "esperandoMetodoPago";
+                    await saveEstados();
+                    return;
+                case "3":
+                case "4": // Opción de llamada/asesoría
+                    await client.sendMessage(numero, estaDentroHorario() ? msgDentro : msgFuera);
+                    delete estadoUsuarios[numero];
+                    await saveEstados();
+                    return;
+                default:
+                    console.log(`[FLOW 2] Respuesta inválida para 'esperandoDecision': ${texto}`);
+                    return; // No hacer nada, esperar respuesta 1-4
             }
         }
+
+        // -----------------------------------------------------------------
+        // --- FLUJO 3: ESPERANDO MÉTODO DE PAGO ---
+        // -----------------------------------------------------------------
+        else if (estadoUsuarios[numero]?.estado === "esperandoMetodoPago") {
+            const { nombrePrograma, edicion } = estadoUsuarios[numero];
+            const p = programasData.find(
+                (pr) => normalizarTexto(pr.PROGRAMA) === normalizarTexto(nombrePrograma) &&
+                    normalizarTexto(pr.EDICION) === normalizarTexto(edicion)
+            );
+
+            if (!p) {
+                delete estadoUsuarios[numero];
+                await saveEstados();
+                return;
+            }
+
+            const esEstudiante = estadoUsuarios[numero].esEstudiante;
+            const esCurso = (estadoUsuarios[numero].categoria || "CURSO") === "CURSO";
+            const datosMsg = esEstudiante ?
+                `*Bríndame por favor, los siguientes datos*:\n\n🔹DNI o CÉDULA:\n🔹Nombre completo:\n🔹Número de Celular:\n🔹Fecha de Inicio:\n🔹Correo (Gmail):\n🔹Foto de Voucher:\n🔹Foto de Intranet o Carnet Universitario:\n\nY listo! 🌟 Cuando realices el pago y envío de tus datos, me avisas para comentarte los siguientes detalles. 🙋🏻‍♀️💙` :
+                `*Bríndame por favor, los siguientes datos*:\n\n🔹DNI o CÉDULA:\n🔹Nombre completo:\n🔹Número de Celular:\n🔹Fecha de Inicio:\n🔹Correo (Gmail):\n🔹Foto de Voucher:\n\nY listo! 🌟 Cuando realices el pago y envío de tus datos, me avisas para comentarte los siguientes detalles. 🙋🏻‍♀️💙`;
+
+            // --- Pago 1: Yape ---
+            if (texto.includes("1") || texto.includes("yape")) {
+                await client.sendMessage(numero, `*Perfecto* ✨\n\nTe envío el número de Yape y Código QR 👇\n\n📲 999 606 366 // WE Educación Ejecutiva`);
+                const nombreYape = esCurso ? "yapecursos.jpeg" : "yapeprog.jpeg";
+                const rutaQR = path.join(mediaPath, "pago", nombreYape);
+                if (fs.existsSync(rutaQR)) {
+                    await client.sendMessage(numero, MessageMedia.fromFilePath(rutaQR));
+                }
+                await client.sendMessage(numero, datosMsg);
+                delete estadoUsuarios[numero];
+                await saveEstados();
+                return;
+            }
+
+            // --- Pago 2: Depósito o Transferencia ---
+            if (texto.includes("2") || texto.includes("bcp") || texto.includes("deposito") || texto.includes("transferencia")) {
+                const mensajeDepo = esCurso ?
+                    `¡Excelente! Te comparto los datos de nuestra cuenta... *Titular*: WE Foundation` :
+                    `¡Excelente! Te comparto los datos de nuestra cuenta... *Titular*: WE Educación Ejecutiva SAC`;
+                await client.sendMessage(numero, mensajeDepo);
+                await client.sendMessage(numero, datosMsg);
+                delete estadoUsuarios[numero];
+                await saveEstados();
+                return;
+            }
+
+            // --- Pago 3: Web ---
+            if (texto.includes("3") || texto.includes("web")) {
+                if (!p.ENLACE) {
+                    delete estadoUsuarios[numero];
+                    await saveEstados();
+                    return;
+                }
+                const mensajeTexto = `👉 “Perfecto, puedes hacer tu pago de manera rápida y 100% segura...\n\n🔗 ${p["ENLACE"]}\n\n...`;
+                await client.sendMessage(numero, mensajeTexto);
+                const rutaVideo = path.join(mediaPath, "videos", "WEB.mp4");
+                if (fs.existsSync(rutaVideo)) {
+                    await client.sendMessage(numero, MessageMedia.fromFilePath(rutaVideo));
+                }
+                estadoUsuarios[numero].estado = "esperandoDecisionWeb";
+                await saveEstados();
+                const followUpMessage = `💳 Cuentame, ¿Pudiste completar tu pago en el link web? 🌐\n\n1️⃣ Sí, todo correcto 🙌\n2️⃣ Aún no, necesito ayuda 🤔`;
+                setTimeout(async () => {
+                    try {
+                        if (estadoUsuarios[numero]?.estado === "esperandoDecisionWeb") {
+                            await client.sendMessage(numero, followUpMessage);
+                            console.log(`✅ Mensaje de seguimiento enviado a ${numero}.`);
+                        }
+                    } catch (error) {
+                        console.error(`❌ Error en el setTimeout para follow-up de ${numero}:`, error);
+                    }
+                }, 3 * 60 * 1000); // 3 minutos
+                return;
+            }
+
+            console.log(`[FLOW 3] Respuesta inválida para 'esperandoMetodoPago': ${texto}`);
+            return; // No hacer nada, esperar respuesta 1-3
+        }
+
+        // -----------------------------------------------------------------
+        // --- FLUJO 4: ESPERANDO DECISIÓN WEB ---
+        // -----------------------------------------------------------------
+        else if (estadoUsuarios[numero]?.estado === "esperandoDecisionWeb") {
+            if (texto === "1") {
+                await client.sendMessage(numero, `*¡Ya te hemos registrado al Programa!* 🚀\nRecuerda tener en cuenta lo siguiente 💙👇🏻`);
+                const IMAGEN_REGISTRO_PATH = path.join(mediaPath, "pago", "webins.jpg");
+                if (fs.existsSync(IMAGEN_REGISTRO_PATH)) {
+                    await client.sendMessage(numero, MessageMedia.fromFilePath(IMAGEN_REGISTRO_PATH));
+                } else {
+                    console.log("⚠️ No se encontró la imagen de registro completo.");
+                }
+                await client.sendMessage(numero, `*Bienvenid@ a la Comunidad WE* 💙\n¡Que disfrutes tu programa!\n\n📲 *Agéndanos en tus contactos* ...\n\n👩🏻‍💻 *Evalúa nuestra atención* 👉🏼 bit.ly/4azD6Z4\n\n👥 *Únete a nuestra Comunidad WE* 👉🏼 bit.ly/COMUNIDAD_WE \n\n¡Gracias por confiar en WE! 🚀`);
+                await client.sendMessage(numero, `💎 *Beneficio Exclusivo* 💎\n\nPor tu inscripción, adquiere la MEMBRESÍA PLUS...\n\n _Válido por 3 días_ 📍`);
+                delete estadoUsuarios[numero];
+                await saveEstados();
+                return;
+
+            } else if (texto === "2") {
+                const msgFuera = "✨ Genial, en un momento un asesor se comunicará contigo para resolver tus consultas 😄";
+                const msgDentro = "⏰ ¡Estamos contentos de poder ayudarte en tu elección! Un asesor se comunicará contigo el día de *mañana*. Por favor, indícame un *horario* para que se contacte contigo. 🙋🏻‍♀️";
+                await client.sendMessage(numero, estaDentroHorario() ? msgDentro : msgFuera);
+                delete estadoUsuarios[numero];
+                await saveEstados();
+                return;
+            } else {
+                console.log(`[FLOW 4] Respuesta inválida para 'esperandoDecisionWeb': ${texto}`);
+                return; // No hacer nada, esperar respuesta 1-2
+            }
+        }
+
     } catch (error) {
         console.error("❌ Error procesando mensaje:", error);
-        // Manejo de error de protocolo para intentar el reinicio
+        // El 'listener' global 'uncaughtException' se encargará si el error es fatal.
+        // Este catch maneja errores de promesas dentro del 'on message'
         if (error.message.includes('Protocol error (Runtime.callFunctionOn)')) {
             console.log("🚨 Reintentando inicializar el cliente de WhatsApp en 10 segundos...");
             setTimeout(() => {
