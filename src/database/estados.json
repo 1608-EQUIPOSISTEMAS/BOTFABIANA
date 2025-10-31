@@ -1,1 +1,15 @@
-{}
+{
+  "15551768842@c.us": {
+    "estado": "esperandoDecision",
+    "nombrePrograma": "COST Y PRESUP",
+    "edicion": "NOV. I - ED25",
+    "esEstudiante": true,
+    "categoria": "CURSO"
+  },
+  "51955091726@c.us": {
+    "estado": "esperandoPerfil",
+    "nombrePrograma": "PEE ANALIST PROY V4",
+    "edicion": "NOV. I - ED25",
+    "categoria": "PEE"
+  }
+}

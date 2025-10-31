@@ -105,6 +105,37 @@ function estaDentroHorario() {
     return false;
 }
 
+// ... (justo después de la función estaDentroHorario)
+
+// --- 💰 NUEVA FUNCIÓN DE UTILIDAD: CONVERTIR MONEDA ---
+function formatearPrecio(numero, precioSoles) {
+    const TIPO_CAMBIO_USD = 3.7;
+    
+    // El 'numero' viene como '519...@c.us' o '549...@c.us'
+    const esPeru = numero.startsWith("51"); 
+
+    // Limpiar el precioSoles por si viene como string con comas
+    const valorSoles = parseFloat(String(precioSoles).replace(/,/g, ''));
+
+    if (isNaN(valorSoles)) {
+        return "Precio no disponible"; // Fallback por si el dato está mal
+    }
+
+    if (esPeru) {
+        // 1. Si es de Perú, lo deja en Soles
+        return `S/ ${valorSoles}`;
+    } else {
+        // 2. Si es extranjero, convierte a USD y REDONDEA
+        const precioUSD = Math.round(valorSoles / TIPO_CAMBIO_USD);
+        return `USD ${precioUSD}`;
+    }
+}
+// ---------------------------------------------------
+
+// --- ✨ NUEVA FUNCIÓN REFACTORIZADA ---
+// ... (el resto de tu código sigue igual)
+
+
 // --- ✨ NUEVA FUNCIÓN REFACTORIZADA ---
 // Agrupa el envío de los 6 mensajes iniciales
 async function enviarBloqueInfo(numero, p) {
@@ -264,18 +295,18 @@ client.on("message", async (message) => {
             const esCurso = (p.CATEGORIA || "").toUpperCase() === "CURSO";
             let inversionMsg = "";
 
-            // ✅ INICIO: LÓGICA COMPLETA DE INVERSIÓN (RESTAURADA)
+            // ✅ INICIO: LÓGICA COMPLETA DE INVERSIÓN (CON CONVERSIÓN DE MONEDA)
             if (esCurso) {
                 if (esEstudiante) {
                     inversionMsg = `*Hasta el Viernes 31 de Octubre HalloW|E 👻🎃*
 
 Opciones de pago:
 1️⃣ *Al Contado* Ahorro máximo😉
-🔥55% Dcto > S/ ${p["EXEST"]} ~(Normal S/ ${p["INV EST T"]})~
+🔥55% Dcto > ${formatearPrecio(numero, p["EXEST"])} ~(Normal ${formatearPrecio(numero, p["INV EST T"])})~
 
 2️⃣ *En Cuotas sin intereses*
-50% Dcto > S/ ${p["INV EST"]} ~(Normal S/ ${p["INV EST T"]})~
-💳 Reserva con S/ ${p["RESEST"]}
+50% Dcto > ${formatearPrecio(numero, p["INV EST"])} ~(Normal ${formatearPrecio(numero, p["INV EST T"])})~
+💳 Reserva con ${formatearPrecio(numero, p["RESEST"])}
 
 *La inversión incluye el CERTIFICADO* 📚`;
                 } else {
@@ -283,11 +314,11 @@ Opciones de pago:
 
 Opciones de pago:
 1️⃣ *Al Contado* Ahorro máximo😉
-🔥55% Dcto > S/ ${p["EXPRO"]} ~(Normal S/ ${p["INV PRO T"]})~
+🔥55% Dcto > ${formatearPrecio(numero, p["EXPRO"])} ~(Normal ${formatearPrecio(numero, p["INV PRO T"])})~
 
 2️⃣ *En Cuotas sin intereses*
-50% Dcto > S/ ${p["INV PRO"]} ~(Normal S/ ${p["INV PRO T"]})~
-💳 Reserva con S/ ${p["RESPRO"]}
+50% Dcto > ${formatearPrecio(numero, p["INV PRO"])} ~(Normal ${formatearPrecio(numero, p["INV PRO T"])})~
+💳 Reserva con ${formatearPrecio(numero, p["RESPRO"])}
 
 *La inversión incluye el CERTIFICADO* 📚`;
                 }
@@ -297,12 +328,11 @@ Opciones de pago:
                     inversionMsg = `*Hasta el Viernes 31 de Octubre HalloW|E 👻🎃*
 
 Facilidades de pago:
-1️⃣ *En Cuotas sin Intereses* 
-🔥50% Dcto > S/ ${p["INV EST"]} ~(Normal S/ ${p["INV EST T"]})~
-💳 Reserva con S/ ${p["RESEST"]}
+1️⃣ *En Cuotas sin Intereses* 🔥50% Dcto > ${formatearPrecio(numero, p["INV EST"])} ~(Normal ${formatearPrecio(numero, p["INV EST T"])})~
+💳 Reserva con ${formatearPrecio(numero, p["RESEST"])}
 
 2️⃣ *Al Contado* Ahorro máximo😉
-🔥55% Dcto > S/ ${p["EXEST"]} ~(Normal S/ ${p["INV EST T"]})~
+🔥55% Dcto > ${formatearPrecio(numero, p["EXEST"])} ~(Normal ${formatearPrecio(numero, p["INV EST T"])})~
 
 *La inversión incluye el CERTIFICADO* 📚`;
                 } else {
@@ -310,18 +340,16 @@ Facilidades de pago:
                     inversionMsg = `*Hasta el Viernes 31 de Octubre HalloW|E 👻🎃*
 
 Facilidades de pago:
-1️⃣ *En Cuotas sin Intereses* 
-🔥50% Dcto > S/ ${p["INV PRO"]} ~(Normal S/ ${p["INV PRO T"]})~
-💳 Reserva con S/ ${p["RESPRO"]}
+1️⃣ *En Cuotas sin Intereses* 🔥50% Dcto > ${formatearPrecio(numero, p["INV PRO"])} ~(Normal ${formatearPrecio(numero, p["INV PRO T"])})~
+💳 Reserva con ${formatearPrecio(numero, p["RESPRO"])}
 
 2️⃣ *Al Contado* Ahorro máximo😉
-🔥55% Dcto > S/ ${p["EXPRO"]} ~(Normal S/ ${p["INV PRO T"]})~
+🔥55% Dcto > ${formatearPrecio(numero, p["EXPRO"])} ~(Normal ${formatearPrecio(numero, p["INV PRO T"])})~
 
 *La inversión incluye el CERTIFICADO* 📚`;
                 }
             }
-            // ✅ FIN: LÓGICA COMPLETA DE INVERSIÓN (RESTAURADA)
-            // ... (FIN Lógica de INVERSIÓN)
+            // ✅ FIN: LÓGICA COMPLETA DE INVERSIÓN (CON CONVERSIÓN DE MONEDA)
 
             await client.sendMessage(numero, inversionMsg);
 
