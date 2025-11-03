@@ -6,10 +6,17 @@
     "esEstudiante": true,
     "categoria": "CURSO"
   },
-  "51955091726@c.us": {
-    "estado": "esperandoPerfil",
-    "nombrePrograma": "PEE ANALIST PROY V4",
+  "47683330932792@lid": {
+    "estado": "esperandoDecision",
+    "nombrePrograma": "POWER BI",
     "edicion": "NOV. I - ED25",
-    "categoria": "PEE"
+    "esEstudiante": true,
+    "categoria": "CURSO"
+  },
+  "172241476137003@lid": {
+    "estado": "esperandoPerfil",
+    "nombrePrograma": "POWER BI",
+    "edicion": "NOV. I - ED25",
+    "categoria": "CURSO"
   }
 }

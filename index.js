@@ -8,7 +8,6 @@ const { normalizarTexto } = require("./src/utils/normalizar");
 const { encontrarPrograma } = require("./src/services/encontrarPrograma");
 
 // --- ❗️ REDES DE SEGURIDAD GLOBALES ❗️ ---
-// Capturan errores inesperados que podrían "tumbar" el script.
 process.on('unhandledRejection', (reason, promise) => {
     console.error('=============== ❗️ RECHAZO DE PROMESA NO MANEJADO ❗️ ===============');
     console.error('Razón:', reason);
@@ -19,7 +18,6 @@ process.on('uncaughtException', (error) => {
     console.error('=============== ❗️ EXCEPCIÓN NO CAPTURADA ❗️ ===============');
     console.error('Error:', error);
     console.error('============================================================');
-    // Salir es lo recomendado para que PM2 reinicie el script de forma limpia
     process.exit(1);
 });
 // ---------------------------------------------
@@ -105,14 +103,12 @@ function estaDentroHorario() {
     return false;
 }
 
-// ... (justo después de la función estaDentroHorario)
-
 // --- 💰 NUEVA FUNCIÓN DE UTILIDAD: CONVERTIR MONEDA ---
 function formatearPrecio(numero, precioSoles) {
     const TIPO_CAMBIO_USD = 3.7;
-    
+
     // El 'numero' viene como '519...@c.us' o '549...@c.us'
-    const esPeru = numero.startsWith("51"); 
+    const esPeru = numero.startsWith("51");
 
     // Limpiar el precioSoles por si viene como string con comas
     const valorSoles = parseFloat(String(precioSoles).replace(/,/g, ''));
@@ -133,11 +129,8 @@ function formatearPrecio(numero, precioSoles) {
 // ---------------------------------------------------
 
 // --- ✨ NUEVA FUNCIÓN REFACTORIZADA ---
-// ... (el resto de tu código sigue igual)
-
-
-// --- ✨ NUEVA FUNCIÓN REFACTORIZADA ---
 // Agrupa el envío de los 6 mensajes iniciales
+// ❗️ CORRECCIÓN: 'numero' aquí es el 'idParaResponder'. Se usa para todo.
 async function enviarBloqueInfo(numero, p) {
     if (saludosData?.texto) await client.sendMessage(numero, saludosData.texto);
     if (p.PERSONALIZADO) await client.sendMessage(numero, p.PERSONALIZADO);
@@ -158,6 +151,7 @@ async function enviarBloqueInfo(numero, p) {
         await client.sendMessage(numero, MessageMedia.fromFilePath(pdfPath));
     }
 
+    // 'enviarHorarios' también envía mensajes, así que usa el 'idParaResponder' (que es 'numero' aquí)
     await enviarHorarios(client, numero, p.PROGRAMA);
 
     const perfilMsg = perfilData?.texto || "🚨 *Para asesorarte y brindarte la INVERSIÓN del programa, por favor indícame tu perfil...*";
@@ -172,13 +166,24 @@ loadEstados();
 
 client.on("message", async (message) => {
     try {
-        if (message.from.includes("@g.us") || message.from.includes("@broadcast") || message.type !== "chat") {
+        // --- ❗️ CORRECCIÓN: FILTRO MEJORADO ---
+        // Acepta solo chats 1-a-1 (terminados en @c.us o @lid) y que sean de tipo 'chat'
+        if ((!message.from.endsWith("@c.us") && !message.from.endsWith("@lid")) || message.type !== "chat") {
             return;
         }
 
         const textoOriginal = (message.body || "").trim();
         const texto = normalizarTexto(textoOriginal);
-        const numero = message.from;
+
+        // --- ⬇️ INICIO DE LA SOLUCIÓN LID/JID ⬇️ ---
+        // 1. ID PARA RESPONDER (El que te escribió, puede ser @lid)
+        const idParaResponder = message.from;
+
+        // 2. ID PARA LÓGICA (El número real, siempre @c.us)
+        const contact = await message.getContact();
+        const numero = contact.id._serialized; // Sigue siendo 'numero' para tu lógica
+        // --- ⬆️ FIN DE LA SOLUCIÓN ⬆️ ---
+
         const nombre = message._data?.notifyName || "Sin nombre";
 
         const opciones = { timeZone: 'America/Lima', hour12: false, year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit', second: '2-digit' };
@@ -194,7 +199,7 @@ client.on("message", async (message) => {
             if (resultados.length === 1) {
                 const p = resultados[0];
 
-                // 1. Guardar estado temporal ANTES de enviar
+                // 1. Guardar estado temporal ANTES de enviar (usa 'numero' real)
                 estadoUsuarios[numero] = {
                     estado: "enviandoInfo", // Estado temporal
                     nombrePrograma: p.PROGRAMA,
@@ -204,15 +209,15 @@ client.on("message", async (message) => {
                 await saveEstados();
                 console.log(`[FLOW 0] Estado 'enviandoInfo' guardado para ${numero}.`);
 
-                // 2. Intentar enviar el bloque completo
+                // 2. Intentar enviar el bloque completo (usa 'idParaResponder')
                 try {
-                    await enviarBloqueInfo(numero, p);
+                    await enviarBloqueInfo(idParaResponder, p);
                 } catch (sendError) {
-                    console.error(`❌ Falla al enviar bloque de info a ${numero}. El estado persiste como 'enviandoInfo'.`, sendError);
+                    console.error(`❌ Falla al enviar bloque de info a ${idParaResponder}. El estado persiste como 'enviandoInfo'.`, sendError);
                     return; // Salir. El estado ya está guardado como "enviandoInfo".
                 }
 
-                // 3. Si TODO salió bien, guardar estado FINAL
+                // 3. Si TODO salió bien, guardar estado FINAL (usa 'numero' real)
                 estadoUsuarios[numero].estado = "esperandoPerfil";
                 await saveEstados();
                 console.log(`[FLOW 0] Bloque enviado OK. Estado 'esperandoPerfil' guardado para ${numero}.`);
@@ -223,8 +228,6 @@ client.on("message", async (message) => {
             // --- ❗️ FLUJO 0.5: REINTENTO POR FALLO DE ENVÍO ---
             // -----------------------------------------------------------------
         } else if (estadoUsuarios[numero]?.estado === "enviandoInfo") {
-            // El usuario NO escribió "info", pero su estado SIGUE en "enviandoInfo".
-            // Esto significa que el envío anterior falló y el usuario está atascado.
             console.warn(`[FLOW 0.5] Detectado estado 'enviandoInfo' para ${numero} con texto: '${texto}'. Reintentando envío...`);
 
             const { nombrePrograma, edicion } = estadoUsuarios[numero];
@@ -240,22 +243,19 @@ client.on("message", async (message) => {
                 return;
             }
 
-            // 1. Reintentar enviar el bloque completo
+            // 1. Reintentar enviar el bloque completo (usa 'idParaResponder')
             try {
-                await enviarBloqueInfo(numero, p);
+                await enviarBloqueInfo(idParaResponder, p);
             } catch (sendError) {
-                console.error(`❌ Falla en el REINTENTO de envío a ${numero}. El estado persiste como 'enviandoInfo'.`, sendError);
+                console.error(`❌ Falla en el REINTENTO de envío a ${idParaResponder}. El estado persiste como 'enviandoInfo'.`, sendError);
                 return; // Salir. Esperar otro mensaje del usuario para reintentar.
             }
 
-            // 2. Si el REINTENTO salió bien, guardar estado FINAL
+            // 2. Si el REINTENTO salió bien, guardar estado FINAL (usa 'numero' real)
             estadoUsuarios[numero].estado = "esperandoPerfil";
             await saveEstados();
             console.log(`[FLOW 0.5] Reintento enviado OK. Estado 'esperandoPerfil' guardado para ${numero}.`);
-
-            // 3. IMPORTANTE: NO hacemos 'return'.
-            // Dejamos que el código continúe al siguiente 'else if'
-            // para procesar el mensaje actual (ej. "1") con el estado ya corregido.
+            // NO HACER RETURN, dejar que procese el mensaje actual
         }
 
         // -----------------------------------------------------------------
@@ -288,17 +288,17 @@ client.on("message", async (message) => {
 
             const resValue = p[resKeyName];
             if (resValue) {
-                await client.sendMessage(numero, resValue);
+                await client.sendMessage(idParaResponder, resValue); // Usa idParaResponder
             }
 
             const esEstudiante = texto === "3" || texto === "4";
             const esCurso = (p.CATEGORIA || "").toUpperCase() === "CURSO";
             let inversionMsg = "";
 
-            // ✅ INICIO: LÓGICA COMPLETA DE INVERSIÓN (CON CONVERSIÓN DE MONEDA)
+            // Lógica de Inversión (usa 'numero' para formatearPrecio)
             if (esCurso) {
                 if (esEstudiante) {
-                    inversionMsg = `*Hasta el Viernes 31 de Octubre HalloW|E 👻🎃*
+                    inversionMsg = `*Hasta el Viernes 07 de Noviembre por CyberWow 💥😲*
 
 Opciones de pago:
 1️⃣ *Al Contado* Ahorro máximo😉
@@ -310,7 +310,7 @@ Opciones de pago:
 
 *La inversión incluye el CERTIFICADO* 📚`;
                 } else {
-                    inversionMsg = `*Hasta el Viernes 31 de Octubre HalloW|E 👻🎃*
+                    inversionMsg = `*Hasta el Viernes 07 de Noviembre por CyberWow 💥😲*
 
 Opciones de pago:
 1️⃣ *Al Contado* Ahorro máximo😉
@@ -323,9 +323,8 @@ Opciones de pago:
 *La inversión incluye el CERTIFICADO* 📚`;
                 }
             } else {
-                // Es un "Programa" (no un Curso)
                 if (esEstudiante) {
-                    inversionMsg = `*Hasta el Viernes 31 de Octubre HalloW|E 👻🎃*
+                    inversionMsg = `*Hasta el Viernes 07 de Noviembre por CyberWow 💥😲*
 
 Facilidades de pago:
 1️⃣ *En Cuotas sin Intereses* 🔥50% Dcto > ${formatearPrecio(numero, p["INV EST"])} ~(Normal ${formatearPrecio(numero, p["INV EST T"])})~
@@ -336,8 +335,7 @@ Facilidades de pago:
 
 *La inversión incluye el CERTIFICADO* 📚`;
                 } else {
-                    // Profesional (no estudiante)
-                    inversionMsg = `*Hasta el Viernes 31 de Octubre HalloW|E 👻🎃*
+                    inversionMsg = `*Hasta el Viernes 07 de Noviembre por CyberWow 💥😲*
 
 Facilidades de pago:
 1️⃣ *En Cuotas sin Intereses* 🔥50% Dcto > ${formatearPrecio(numero, p["INV PRO"])} ~(Normal ${formatearPrecio(numero, p["INV PRO T"])})~
@@ -349,14 +347,12 @@ Facilidades de pago:
 *La inversión incluye el CERTIFICADO* 📚`;
                 }
             }
-            // ✅ FIN: LÓGICA COMPLETA DE INVERSIÓN (CON CONVERSIÓN DE MONEDA)
 
-            await client.sendMessage(numero, inversionMsg);
+            await client.sendMessage(idParaResponder, inversionMsg); // Usa idParaResponder
+            if (plusData?.texto) await client.sendMessage(idParaResponder, plusData.texto); // Usa idParaResponder
+            if (ctaData?.texto) await client.sendMessage(idParaResponder, ctaData.texto); // Usa idParaResponder
 
-            if (plusData?.texto) await client.sendMessage(numero, plusData.texto);
-            if (ctaData?.texto) await client.sendMessage(numero, ctaData.texto);
-
-            // Actualizar estado para la siguiente decisión
+            // Actualizar estado (usa 'numero' real)
             estadoUsuarios[numero] = {
                 estado: "esperandoDecision",
                 nombrePrograma: p.PROGRAMA,
@@ -378,13 +374,13 @@ Facilidades de pago:
             switch (texto) {
                 case "1":
                 case "2": // Opción de inscripción
-                    await client.sendMessage(numero, `*¡Perfecto!* La inscripción es muy sencilla 😇\n\nContamos con los siguientes MÉTODOS DE PAGO👇🏻\n\n1️⃣ Yape 📲\n2️⃣ Depósito o transferencia bancaria 🏛️\n3️⃣ Pago online vía Web 🌐(Aceptamos todas las tarjetas 💳)\n\nComéntame *¿Cuál sería tu mejor opción de pago?* 😊`);
+                    await client.sendMessage(idParaResponder, `*¡Perfecto!* La inscripción es muy sencilla 😇\n\nContamos con los siguientes MÉTODOS DE PAGO👇🏻\n\n1️⃣ Yape 📲\n2️⃣ Depósito o transferencia bancaria 🏛️\n3️⃣ Pago online vía Web 🌐(Aceptamos todas las tarjetas 💳)\n\nComéntame *¿Cuál sería tu mejor opción de pago?* 😊`);
                     estadoUsuarios[numero].estado = "esperandoMetodoPago";
                     await saveEstados();
                     return;
                 case "3":
                 case "4": // Opción de llamada/asesoría
-                    await client.sendMessage(numero, estaDentroHorario() ? msgDentro : msgFuera);
+                    await client.sendMessage(idParaResponder, estaDentroHorario() ? msgDentro : msgFuera);
                     delete estadoUsuarios[numero];
                     await saveEstados();
                     return;
@@ -418,25 +414,42 @@ Facilidades de pago:
 
             // --- Pago 1: Yape ---
             if (texto.includes("1") || texto.includes("yape")) {
-                await client.sendMessage(numero, `*Perfecto* ✨\n\nTe envío el número de Yape y Código QR 👇\n\n📲 999 606 366 // WE Educación Ejecutiva`);
+                // ❗️ CORRECCIÓN: Usar idParaResponder
+                await client.sendMessage(idParaResponder, `*Perfecto* ✨\n\nTe envío el número de Yape y Código QR 👇\n\n📲 979 493 060 // WE Foundation`);
                 const nombreYape = esCurso ? "yapecursos.jpeg" : "yapeprog.jpeg";
                 const rutaQR = path.join(mediaPath, "pago", nombreYape);
                 if (fs.existsSync(rutaQR)) {
-                    await client.sendMessage(numero, MessageMedia.fromFilePath(rutaQR));
+                    // ❗️ CORRECCIÓN: Usar idParaResponder
+                    await client.sendMessage(idParaResponder, MessageMedia.fromFilePath(rutaQR));
                 }
-                await client.sendMessage(numero, datosMsg);
+                await client.sendMessage(idParaResponder, datosMsg);
                 delete estadoUsuarios[numero];
                 await saveEstados();
                 return;
             }
 
-            // --- Pago 2: Depósito o Transferencia ---
             if (texto.includes("2") || texto.includes("bcp") || texto.includes("deposito") || texto.includes("transferencia")) {
                 const mensajeDepo = esCurso ?
-                    `¡Excelente! Te comparto los datos de nuestra cuenta... *Titular*: WE Foundation` :
-                    `¡Excelente! Te comparto los datos de nuestra cuenta... *Titular*: WE Educación Ejecutiva SAC`;
-                await client.sendMessage(numero, mensajeDepo);
-                await client.sendMessage(numero, datosMsg);
+                    `👉 ¡Excelente! Te comparto los datos de nuestra cuenta para que realices la transferencia:
+
+🏛️ *Banco: BCP*
+Número de cuenta: 193-9914694-0-22
+
+y desde *otros Bancos*, puedes transferir a esta cuenta:
+CCI: 00219300991469402218
+
+*Titular*: WE Foundation` :
+                    `👉 ¡Excelente! Te comparto los datos de nuestra cuenta para que realices la transferencia:
+
+🏛️ *Banco: BCP*
+Número de cuenta: 193-9285511-0-38
+
+y desde *otros Bancos*, puedes transferir a esta cuenta:
+CCI: 002-19300928551103810
+
+*Titular*: WE Educación Ejecutiva SAC`;
+                await client.sendMessage(idParaResponder, mensajeDepo);
+                await client.sendMessage(idParaResponder, datosMsg);
                 delete estadoUsuarios[numero];
                 await saveEstados();
                 return;
@@ -450,22 +463,23 @@ Facilidades de pago:
                     return;
                 }
                 const mensajeTexto = `👉 “Perfecto, puedes hacer tu pago de manera rápida y 100% segura...\n\n🔗 ${p["ENLACE"]}\n\n...`;
-                await client.sendMessage(numero, mensajeTexto);
+                await client.sendMessage(idParaResponder, mensajeTexto);
                 const rutaVideo = path.join(mediaPath, "videos", "WEB.mp4");
                 if (fs.existsSync(rutaVideo)) {
-                    await client.sendMessage(numero, MessageMedia.fromFilePath(rutaVideo));
+                    await client.sendMessage(idParaResponder, MessageMedia.fromFilePath(rutaVideo));
                 }
                 estadoUsuarios[numero].estado = "esperandoDecisionWeb";
                 await saveEstados();
                 const followUpMessage = `💳 Cuentame, ¿Pudiste completar tu pago en el link web? 🌐\n\n1️⃣ Sí, todo correcto 🙌\n2️⃣ Aún no, necesito ayuda 🤔`;
                 setTimeout(async () => {
                     try {
+                        // Re-chequear estado antes de enviar
                         if (estadoUsuarios[numero]?.estado === "esperandoDecisionWeb") {
-                            await client.sendMessage(numero, followUpMessage);
-                            console.log(`✅ Mensaje de seguimiento enviado a ${numero}.`);
+                            await client.sendMessage(idParaResponder, followUpMessage);
+                            console.log(`✅ Mensaje de seguimiento enviado a ${idParaResponder}.`);
                         }
                     } catch (error) {
-                        console.error(`❌ Error en el setTimeout para follow-up de ${numero}:`, error);
+                        console.error(`❌ Error en el setTimeout para follow-up de ${idParaResponder}:`, error);
                     }
                 }, 3 * 60 * 1000); // 3 minutos
                 return;
@@ -480,15 +494,15 @@ Facilidades de pago:
         // -----------------------------------------------------------------
         else if (estadoUsuarios[numero]?.estado === "esperandoDecisionWeb") {
             if (texto === "1") {
-                await client.sendMessage(numero, `*¡Ya te hemos registrado al Programa!* 🚀\nRecuerda tener en cuenta lo siguiente 💙👇🏻`);
+                await client.sendMessage(idParaResponder, `*¡Ya te hemos registrado al Programa!* 🚀\nRecuerda tener en cuenta lo siguiente 💙👇🏻`);
                 const IMAGEN_REGISTRO_PATH = path.join(mediaPath, "pago", "webins.jpg");
                 if (fs.existsSync(IMAGEN_REGISTRO_PATH)) {
-                    await client.sendMessage(numero, MessageMedia.fromFilePath(IMAGEN_REGISTRO_PATH));
+                    await client.sendMessage(idParaResponder, MessageMedia.fromFilePath(IMAGEN_REGISTRO_PATH));
                 } else {
                     console.log("⚠️ No se encontró la imagen de registro completo.");
                 }
-                await client.sendMessage(numero, `*Bienvenid@ a la Comunidad WE* 💙\n¡Que disfrutes tu programa!\n\n📲 *Agéndanos en tus contactos* ...\n\n👩🏻‍💻 *Evalúa nuestra atención* 👉🏼 bit.ly/4azD6Z4\n\n👥 *Únete a nuestra Comunidad WE* 👉🏼 bit.ly/COMUNIDAD_WE \n\n¡Gracias por confiar en WE! 🚀`);
-                await client.sendMessage(numero, `💎 *Beneficio Exclusivo* 💎\n\nPor tu inscripción, adquiere la MEMBRESÍA PLUS...\n\n _Válido por 3 días_ 📍`);
+                await client.sendMessage(idParaResponder, `*Bienvenid@ a la Comunidad WE* 💙\n¡Que disfrutes tu programa!\n\n📲 *Agéndanos en tus contactos* ...\n\n👩🏻‍💻 *Evalúa nuestra atención* 👉🏼 bit.ly/4azD6Z4\n\n👥 *Únete a nuestra Comunidad WE* 👉🏼 bit.ly/COMUNIDAD_WE \n\n¡Gracias por confiar en WE! 🚀`);
+                await client.sendMessage(idParaResponder, `💎 *Beneficio Exclusivo* 💎\n\nPor tu inscripción, adquiere la MEMBRESÍA PLUS...\n\n _Válido por 3 días_ 📍`);
                 delete estadoUsuarios[numero];
                 await saveEstados();
                 return;
@@ -496,7 +510,7 @@ Facilidades de pago:
             } else if (texto === "2") {
                 const msgFuera = "✨ Genial, en un momento un asesor se comunicará contigo para resolver tus consultas 😄";
                 const msgDentro = "⏰ ¡Estamos contentos de poder ayudarte en tu elección! Un asesor se comunicará contigo el día de *mañana*. Por favor, indícame un *horario* para que se contacte contigo. 🙋🏻‍♀️";
-                await client.sendMessage(numero, estaDentroHorario() ? msgDentro : msgFuera);
+                await client.sendMessage(idParaResponder, estaDentroHorario() ? msgDentro : msgFuera);
                 delete estadoUsuarios[numero];
                 await saveEstados();
                 return;
@@ -508,8 +522,6 @@ Facilidades de pago:
 
     } catch (error) {
         console.error("❌ Error procesando mensaje:", error);
-        // El 'listener' global 'uncaughtException' se encargará si el error es fatal.
-        // Este catch maneja errores de promesas dentro del 'on message'
         if (error.message.includes('Protocol error (Runtime.callFunctionOn)')) {
             console.log("🚨 Reintentando inicializar el cliente de WhatsApp en 10 segundos...");
             setTimeout(() => {
